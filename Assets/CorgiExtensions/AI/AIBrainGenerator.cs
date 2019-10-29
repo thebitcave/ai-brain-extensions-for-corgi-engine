@@ -19,9 +19,9 @@ namespace TheBitCave.CorgiExensions.AI
         public float actionsFrequency = 0;
         public float decisionFrequency = 0;
 
-        private Dictionary<DecisionNode, AIDecision> _decisions;
-        private Dictionary<ActionNode, AIAction> _actions;
-        private Dictionary<string, BrainStateNode> _brainStates;
+        private Dictionary<AIDecisionNode, AIDecision> _decisions;
+        private Dictionary<AIActionNode, AIAction> _actions;
+        private Dictionary<string, AIBrainStateNode> _brainStates;
         
         private void Start()
         {
@@ -32,9 +32,9 @@ namespace TheBitCave.CorgiExensions.AI
         {
             Cleanup();
 
-            _decisions = new Dictionary<DecisionNode, AIDecision>();
-            _actions = new Dictionary<ActionNode, AIAction>();
-            _brainStates = new Dictionary<string, BrainStateNode>();
+            _decisions = new Dictionary<AIDecisionNode, AIDecision>();
+            _actions = new Dictionary<AIActionNode, AIAction>();
+            _brainStates = new Dictionary<string, AIBrainStateNode>();
             
             GenerateActions();
             GenerateDecisions();
@@ -43,8 +43,8 @@ namespace TheBitCave.CorgiExensions.AI
 
         private void GenerateDecisions()
         {
-            foreach (var decisionNode in aiBrainGraph.nodes.OfType<DecisionNode>()
-                .Select(node => (node as DecisionNode)))
+            foreach (var decisionNode in aiBrainGraph.nodes.OfType<AIDecisionNode>()
+                .Select(node => (node as AIDecisionNode)))
             {
                 var aiDecision =  decisionNode.AddDecisionComponent(gameObject);
                 _decisions.Add(decisionNode, aiDecision);
@@ -53,8 +53,8 @@ namespace TheBitCave.CorgiExensions.AI
 
         private void GenerateActions()
         {
-            foreach (var actionNode in aiBrainGraph.nodes.OfType<ActionNode>()
-                .Select(node => (node as ActionNode)))
+            foreach (var actionNode in aiBrainGraph.nodes.OfType<AIActionNode>()
+                .Select(node => (node as AIActionNode)))
             {
                 var aiAction =  actionNode.AddActionComponent(gameObject);
                 _actions.Add(actionNode, aiAction);
@@ -69,8 +69,8 @@ namespace TheBitCave.CorgiExensions.AI
             brain.DecisionFrequency = decisionFrequency;
             brain.States = new List<AIState>();
 
-            foreach (var brainStateNode in aiBrainGraph.nodes.OfType<BrainStateNode>()
-                .Select(node => (node as BrainStateNode)))
+            foreach (var brainStateNode in aiBrainGraph.nodes.OfType<AIBrainStateNode>()
+                .Select(node => (node as AIBrainStateNode)))
             {
                 _brainStates.Add(brainStateNode.name, brainStateNode);
                 var aiState = new AIState
@@ -78,6 +78,9 @@ namespace TheBitCave.CorgiExensions.AI
                     StateName = brainStateNode.name
                 };
                 brain.States.Add(aiState);
+                
+        //        Debug.Log("Actions: " + brainStateNode.GetInputValues());
+        //         Debug.Log("Transitions: " + brainStateNode.transitions.Length);
             }
         }
 

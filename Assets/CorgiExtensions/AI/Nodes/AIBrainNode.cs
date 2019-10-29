@@ -5,10 +5,10 @@ namespace TheBitCave.CorgiExensions.AI
 {
 	[CreateNodeMenu("AI/Brain")]
 	[NodeTint("#aaaaff")]
-	public class BrainNode : Node
+	public class AIBrainNode : Node
 	{
 
-		[Input] public BrainStateNode[] states;
+		[Input] public AIBrainStateNode[] states;
 		[Input] public float actionsFrequency;
 		[Input] public float decisionFrequency;
 

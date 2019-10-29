@@ -6,7 +6,7 @@ using XNode;
 namespace TheBitCave.CorgiExensions.AI
 {
 	[CreateNodeMenu("AI/Action/Fly Towards Target")]
-	public class ActionFlyTowardsTargetNode : ActionNode
+	public class AIActionFlyTowardsTargetNode : AIActionNode
 	{
 
 		[Header("Settings")] public float minimumDistance;

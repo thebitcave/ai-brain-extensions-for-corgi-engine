@@ -6,7 +6,7 @@ using XNode;
 namespace TheBitCave.CorgiExensions.AI
 {
 	[CreateNodeMenu("AI/Decision/Target Facing AI")]
-	public class DecisionTargetFacingAINode : DecisionNode
+	public class AIDecisionTargetFacingAiNode : AIDecisionNode
 	{
 
 		// Use this for initialization

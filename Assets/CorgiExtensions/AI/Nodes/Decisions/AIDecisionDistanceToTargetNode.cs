@@ -6,7 +6,7 @@ using MoreMountains.Tools;
 namespace TheBitCave.CorgiExensions.AI
 {
 	[CreateNodeMenu("AI/Decision/Distance To Target")]
-	public class DecisionDistanceToTargetNode : DecisionNode
+	public class AIDecisionDistanceToTargetNode : AIDecisionNode
 	{
 
 		[Header("Settings")] public float distance;

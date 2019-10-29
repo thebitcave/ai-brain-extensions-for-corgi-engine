@@ -1,19 +1,18 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using XNode;
 
 namespace TheBitCave.CorgiExensions.AI
 {
 	[CreateNodeMenu("AI/Brain State")]
-	public class BrainStateNode : Node
+	public class AIBrainStateNode : Node
 	{
 
-		[Input] public string transitionIn;
+		[Input] public TransitionConnection transitionsIn;
 
-		//public string stateName;
-		[Input] public ActionNode[] actions;
-		//[Input] public DecisionNode[] transitions;
+		[Input] public ActionConnection actions;
 
-		[Output] public string transitions;
+		[Output] public DecisionConnection decisions;
 
 		// Use this for initialization
 		protected override void Init()
@@ -26,6 +25,5 @@ namespace TheBitCave.CorgiExensions.AI
 		{
 			return null; // Replace this
 		}
-		
 	}
 }
