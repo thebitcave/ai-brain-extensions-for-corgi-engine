@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/CorgiEngine/Common/Scenes/SplashScreen.unity
+    guid: 7b96552fd1198fa4eaae54a2f975645e
+  - enabled: 1
+    path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/SceneLoading/LoadingScreen.unity
+    guid: 888394d52616e5e42b3b54c3f2bbd3eb
+  - enabled: 1
+    path: Assets/CorgiEngine/Common/Scenes/StartScreen.unity
+    guid: b9cf7e391a5874f80a0485164885fe54
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/LevelSelection/LevelSelection.unity
+    guid: 38b3bbb0fec788241870d54b46b03e47
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/LevelSelection/LevelSelectionMap.unity
+    guid: 0bba9bfc439ed1f458ec61e4c0008ebd
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Corgi3D/NewCorgi3D.unity
+    guid: 193c7309ff376d1489dcd808b644fdef
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Corgi2D/Mesa1.unity
+    guid: 3255dcacf4a25fc4c8070322156f10cd
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Corgi2D/Mesa2.unity
+    guid: 808661879b505b84ca4f4d679b486cd5
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Corgi2D/Mountains.unity
+    guid: 95d196af875ba35478432a81627a3084
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Corgi2D/Lava.unity
+    guid: 021858c77d85c1e4a944245dd9e0cf08
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Pixel/PixelLevel.unity
+    guid: 2380b3a9640179c4791abe8cdec4ea5c
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Brobro/BrobroLevel.unity
+    guid: a4b03f0bea3ef6444819e45677eee09f
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Corgi2D/Sandbox.unity
+    guid: 834d2ad12a39c48bba0d203a2d9de965
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/SuperHipsterBros/HipsterLevel.unity
+    guid: 67d7231ca91f47a43932691bedc7be2a
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Corgi3D/Corgi3D.unity
+    guid: 21235c11eb96a4cce9524e313642ab64
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/MinimalLevel.unity
+    guid: b5dafbb7f5956d94ba41cd169cc39435
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/MinimalFlight.unity
+    guid: 5714929c69111d6479988071c2f49c7c
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/FeaturesGravity.unity
+    guid: 6bc87e572545fc543b9e3a9a445f0e44
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/FeaturesPlatforms.unity
+    guid: 7c52201ab32b101488d1487d7683ccdb
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/FeaturesInventory.unity
+    guid: 01cc8dfd93b2bf64c8ffaea6085007d9
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/FeaturesWeapons.unity
+    guid: ebcd6de0032f6a946a11ce7c5c7e5b02
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/MinimalSpawners.unity
+    guid: 4c2aaf8a2f44b4dd8bcabba19d475c87
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/FeaturesKeys.unity
+    guid: 654cb02afee826c4e8c21a77155e84e3
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/MinimalOneWayLevelHorizontal.unity
+    guid: 5e74e8fd6deb84749a4fc4e4b8d7ea09
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/MinimalOneWayLevelVertical.unity
+    guid: c8d1ba4ad1f68a5449b10a0921eabb7a
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/MinimalOneWayLevelAutoScrolling.unity
+    guid: cec1726c18982b84b8cf78b0b33025c7
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/MinimalSlopes.unity
+    guid: 5a37564541f3b554d83f69844d59b915
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/FeaturesPlatformsGravityFlipped.unity
+    guid: 0ed1a168af3dfbd4d84d743d54fb49e8
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/Minimal4Players.unity
+    guid: 473ff282eb94d494290a75136e630771
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/MinimalPixelPerfect.unity
+    guid: 222134e89397758428b4027f33abba30
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/MinimalRooms1.unity
+    guid: 8c65f7d9dde72e74d93288177dad2006
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/MinimalRooms2.unity
+    guid: c982ea55a70c24044a9b4226f6446108
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/MinimalCharacterSwap.unity
+    guid: 71edfb2fd45021646941033d28e781fb
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/MinimalCharacterSwitch.unity
+    guid: e88faf07b1c65904c9a50ac65f300878
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/MinimalModelSwitch.unity
+    guid: d7b557f6a71b64946a3fe442e825d5fb
+  - enabled: 1
+    path: Assets/CorgiEngine/ThirdParty/MoreMountains/InventoryEngine/Demos/PixelRogue/Minimal1.unity
+    guid: b7b14cfcf997f4d40a54d4eee5f33401
+  - enabled: 1
+    path: Assets/CorgiEngine/ThirdParty/MoreMountains/InventoryEngine/Demos/PixelRogue/Minimal2.unity
+    guid: 77c11560aca2ca24595389a0ea78a11a
+  - enabled: 1
+    path: Assets/CorgiEngine/ThirdParty/MoreMountains/InventoryEngine/Demos/PixelRogue/PixelRogueRoom1.unity
+    guid: bbd1671f1789c734ebafbab88956dd66
+  - enabled: 1
+    path: Assets/CorgiEngine/ThirdParty/MoreMountains/InventoryEngine/Demos/PixelRogue/PixelRogueRoom2.unity
+    guid: c3ccf26bc08e243b1aae7d13d40d2ec4
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/TheHunt/TheHunt.unity
+    guid: a54626feab65cca4dbcea4dd435ad9be
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Retro/RetroClouds.unity
+    guid: 7f88f9618b30a48dd84ec6896516d345
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Retro/RetroForest.unity
+    guid: 651fe2312d8cc4f5587ce3e96e9609b0
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Retro/RetroMountains.unity
+    guid: e2fd718f497d2408ea6a1661ea861316
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Retro/RetroAI.unity
+    guid: c04efd6e72733294a8e7c8111aa5f4c4
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Retro/RetroCopter.unity
+    guid: 9fe3f55d8fbc69e498173731635e42f5
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/Corgi3D/Corgi3DxTheHunt.unity
+    guid: 520006148e7fc614ea1e13df3773d7cc
+  - enabled: 1
+    path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMInterface/Styles/Mini/1-StyleguideIntro.unity
+    guid: b67d0d2664281d04899a99f80395448a
+  - enabled: 1
+    path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMInterface/Styles/Mini/2-StyleguideButtons.unity
+    guid: de77af6972b276946bc69e387fc8d713
+  - enabled: 1
+    path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMInterface/Styles/Mini/3-StyleguideButtonsAnimations.unity
+    guid: ea89bc72dea980d4abccc06d3614ecc2
+  - enabled: 1
+    path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMInterface/Styles/Mini/4-StyleguideForms.unity
+    guid: 8f8c2f0b710e68d438bf4858e885b305
+  - enabled: 1
+    path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMInterface/Styles/Mini/5-StyleguideDark.unity
+    guid: 53a6867d9e449ca4394561ea3eaaa7eb
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/RetroAdventure/RetroAdventure1.unity
+    guid: 2004874d46ed82941a677f3ee2b78d64
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/RetroAdventure/RetroAdventure2.unity
+    guid: b9ffc1b3add71414181574775f050d6a
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/RetroAdventure/RetroAdventure3.unity
+    guid: 46fcc2c18a399f747b0673aacb693b94
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/RetroAdventure/RetroAdventure4.unity
+    guid: a263b887440dd564983da172c7fe783d
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/RetroAdventure/RetroAdventure5.unity
+    guid: 702b1d26cdfc0ae4e9b4fd1d881b1e8f
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/RetroAdventure/RetroAdventureLevelSelection.unity
+    guid: a70302a2680553d40a0f9d57ee57ca5b
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/RetroAdventure/RetroAdventureCharacterSelection.unity
+    guid: 5716dd8c709a03142b13533ed057a262
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/RetroAdventure/RetroAdventureGameOver.unity
+    guid: aba2daab4ea9f82428c58d957862f82d
+  m_configObjects: {}

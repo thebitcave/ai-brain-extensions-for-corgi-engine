@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - LevelBounds
+  - Music
+  - Background
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Platforms
+  - Player
+  - Volumes
+  - OneWayPlatforms
+  - Projectiles
+  - Enemies
+  - LevelBounds
+  - Ladders
+  - PlayerProjectiles
+  - MovingObjects
+  - MovingPlatforms
+  - Foreground
+  - MovingOneWayPlatforms
+  - NoCollision
+  - Background
+  - Friendlies
+  - Invulnerable
+  - PlatformsPlayerOnly
+  - MidHeightOneWayPlatforms
+  - Pushables
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 2674791413
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Between
+    uniqueID: 606350985
+    locked: 0
+  - name: Player
+    uniqueID: 2666359821
+    locked: 0
+  - name: Platforms
+    uniqueID: 600026165
+    locked: 0
+  - name: Foreground
+    uniqueID: 1795597123
+    locked: 0
+  - name: VisibleParticles
+    uniqueID: 940224915
+    locked: 0
+  - name: UI
+    uniqueID: 3241408355
+    locked: 0

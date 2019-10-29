@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5fd69eea-775c-497d-88e4-15c17fbc2bcf" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/AI/AIBrain.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Editor/AIBrainGraphGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/_ai/Scripts/Nodes/Actions/ActionDoNothing.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/Scripts/Nodes/Actions/ActionDoNothing.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/Scripts/Nodes/Actions/ActionFlyTowardsTarget.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/Scripts/Nodes/Decisions/DecisionDistanceToTarget.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/Scripts/Nodes/Decisions/DecisionTargetFacingAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/Scripts/Nodes/BrainNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/Scripts/Nodes/BrainStateNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/Scripts/CorgiBrainGraph.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/Scripts/Nodes/Actions/ActionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/Scripts/Nodes/Decisions/DecisionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/Scripts/BrainGraph.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/Scripts/AIBrainGraph.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/Scripts/BrainGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Ss47Vz68Imcb59DY7OdmeMCODa" />
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5fd69eea-775c-497d-88e4-15c17fbc2bcf" name="Default Changelist" comment="" />
+      <created>1572338801969</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572338801969</updated>
+      <workItem from="1572338805465" duration="2069000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
