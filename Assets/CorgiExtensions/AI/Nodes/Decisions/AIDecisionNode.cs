@@ -15,12 +15,10 @@ namespace TheBitCave.CorgiExensions.AI
 
 		public string label;
 
-		[Input] public DecisionConnection inputState;
+		[Input(connectionType = ConnectionType.Override, typeConstraint = TypeConstraint.Strict)] public DecisionConnection inputState;
 
-		[Output] public TransitionConnection trueState;
-		[Output] public TransitionConnection falseState;
-
-		//	[Output] public DecisionNode output;
+		[Output(connectionType = ConnectionType.Override)] public TransitionConnection trueState;
+		[Output(connectionType = ConnectionType.Override)] public TransitionConnection falseState;
 
 		// Use this for initialization
 		protected override void Init()

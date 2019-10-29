@@ -1,8 +1,11 @@
-﻿
-namespace TheBitCave.CorgiExensions.AI
+﻿namespace TheBitCave.CorgiExensions.AI
 {
-    public class C
+    /// <summary>
+    /// A list of utility constants
+    /// </summary>
+    public static class C
     {
+        // Port names
         public const string PORT_ACTIONS                   = "actions";
         public const string PORT_TRUE_STATE                = "trueState";
         public const string PORT_FALSE_STATE               = "falseState";

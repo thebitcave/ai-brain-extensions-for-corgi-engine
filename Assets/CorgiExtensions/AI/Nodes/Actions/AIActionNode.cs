@@ -13,14 +13,7 @@ namespace TheBitCave.CorgiExensions.AI
 
 		public string label;
 
-		[Output] public ActionConnection output;
-
-		// Use this for initialization
-		protected override void Init()
-		{
-			base.Init();
-
-		}
+		[Output(connectionType = ConnectionType.Multiple)] public ActionConnection output;
 
 		// Return the correct value of an output port when requested
 		public override object GetValue(NodePort port)

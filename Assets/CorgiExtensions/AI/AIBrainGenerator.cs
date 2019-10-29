@@ -14,9 +14,10 @@ namespace TheBitCave.CorgiExensions.AI
 
         public AIBrainGraph aiBrainGraph;
 
+        [Header("Brain Settings")]
         public bool brainActive = true;
 
-        [Header("Frequencies")]
+        [Space]
         public float actionsFrequency = 0;
         public float decisionFrequency = 0;
 
@@ -26,7 +27,6 @@ namespace TheBitCave.CorgiExensions.AI
         
         private void Start()
         {
-            Cleanup();
         }
 
         public void Generate()
@@ -80,7 +80,7 @@ namespace TheBitCave.CorgiExensions.AI
                     Transitions = new AITransitionsList(),
                     Actions = new AIActionsList()
                 };
-                if (brainStateNode.defaultState)
+                if (AIBrainStateNode.StartingNode == brainStateNode)
                 {
                     brain.States.Insert(0, aiState);                    
                 }
@@ -112,7 +112,7 @@ namespace TheBitCave.CorgiExensions.AI
             }
         }
 
-        private void Cleanup()
+        public void Cleanup()
         {
             var brain = GetComponent<AIBrain>();
             DestroyImmediate(brain);
