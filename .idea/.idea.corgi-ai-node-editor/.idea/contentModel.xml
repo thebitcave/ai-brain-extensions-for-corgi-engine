@@ -869,7 +869,7 @@
             <e p="AIBrainGenerator.cs" t="Include" />
             <e p="AIBrainGraph.cs" t="Include" />
             <e p="Editor" t="Include">
-              <e p="AIBrainGraphGeneratorEditor.cs" t="Include" />
+              <e p="AIBrainGeneratorEditor.cs" t="Include" />
             </e>
             <e p="Nodes" t="Include">
               <e p="Actions" t="Include">
