@@ -11,6 +11,7 @@ namespace TheBitCave.CorgiExensions.AI
 
 		[Header("Settings")] public float distance;
 
+		[NodeEnum]
 		public AIDecisionDistanceToTarget.ComparisonModes comparisonMode =
 			AIDecisionDistanceToTarget.ComparisonModes.GreatherThan;
 
@@ -32,6 +33,7 @@ namespace TheBitCave.CorgiExensions.AI
 			var decision = go.AddComponent<AIDecisionDistanceToTarget>();
 			decision.Label = label;
 			decision.Distance = distance;
+			decision.ComparisonMode = comparisonMode;
 			return decision;
 		}
 
