@@ -2,6 +2,8 @@
 using UnityEngine;
 using XNode;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace TheBitCave.CorgiExensions.AI
 {

@@ -102,6 +102,13 @@ namespace TheBitCave.CorgiExensions.AI
                     aiState.Transitions.Add(transition);
                 }
 
+                var actionPort = brainStateNode.GetInputPort(C.PORT_ACTIONS);
+                foreach (var actionNode in actionPort.GetConnections().Select(connection => connection.node).OfType<AIActionNode>())
+                {
+                    _actions.TryGetValue(actionNode, out var actionComponent);
+                    aiState.Actions.Add(actionComponent);
+                }
+
             }
         }
 
