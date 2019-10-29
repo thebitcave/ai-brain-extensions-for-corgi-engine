@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using XNode;
 using MoreMountains.CorgiEngine;
+using MoreMountains.Tools;
 
 namespace TheBitCave.CorgiExensions.AI
 {
 	[CreateNodeMenu("AI/Decision/Distance To Target")]
-	public class DecisionDistanceToTarget : DecisionNode
+	public class DecisionDistanceToTargetNode : DecisionNode
 	{
 
 		[Header("Settings")] public float distance;
@@ -25,5 +26,14 @@ namespace TheBitCave.CorgiExensions.AI
 		{
 			return null; // Replace this
 		}
+		
+		public override AIDecision AddDecisionComponent(GameObject go)
+		{
+			var decision = go.AddComponent<AIDecisionDistanceToTarget>();
+			decision.Label = label;
+			decision.Distance = distance;
+			return decision;
+		}
+
 	}
 }

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using MoreMountains.CorgiEngine;
 using UnityEngine;
 using MoreMountains.Tools;
-using UnityEngine.UIElements;
 
 namespace TheBitCave.CorgiExensions.AI
 {
@@ -19,6 +19,9 @@ namespace TheBitCave.CorgiExensions.AI
         public float actionsFrequency = 0;
         public float decisionFrequency = 0;
 
+        protected Dictionary<DecisionNode, AIDecision> _decisions;
+        protected Dictionary<ActionNode, AIAction> _actions;
+        
         private void Start()
         {
             Cleanup();
@@ -28,6 +31,9 @@ namespace TheBitCave.CorgiExensions.AI
         {
             Cleanup();
 
+            _decisions = new Dictionary<DecisionNode, AIDecision>();
+            _actions = new Dictionary<ActionNode, AIAction>();
+            
             GenerateActions();
             GenerateDecisions();
             GenerateBrain();
@@ -35,17 +41,23 @@ namespace TheBitCave.CorgiExensions.AI
 
         private void GenerateDecisions()
         {
-//            throw new NotImplementedException();
+            foreach (var decision in aiBrainGraph.nodes.OfType<DecisionNode>()
+                .Select(node => (node as DecisionNode).AddDecisionComponent(gameObject)))
+            {
+            }
         }
 
         private void GenerateActions()
         {
-//            throw new NotImplementedException();
+            foreach (var action in aiBrainGraph.nodes.OfType<ActionNode>()
+                .Select(node => (node as ActionNode).AddActionComponent(gameObject)))
+            {
+            }
         }
 
         private void GenerateBrain()
         {
-            AIBrain brain = gameObject.AddComponent<AIBrain>();
+            var brain = gameObject.AddComponent<AIBrain>();
             brain.BrainActive = brainActive;
             brain.ActionsFrequency = actionsFrequency;
             brain.DecisionFrequency = decisionFrequency;
@@ -53,8 +65,7 @@ namespace TheBitCave.CorgiExensions.AI
 
         private void Cleanup()
         {
-            AIBrain brain = GetComponent<AIBrain>();
-            Debug.Log(brain);
+            var brain = GetComponent<AIBrain>();
             DestroyImmediate(brain);
 
             foreach (var aiDecision in GetComponents<AIDecision>())

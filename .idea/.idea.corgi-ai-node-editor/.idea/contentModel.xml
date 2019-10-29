@@ -873,16 +873,16 @@
             </e>
             <e p="Nodes" t="Include">
               <e p="Actions" t="Include">
-                <e p="ActionDoNothing.cs" t="Include" />
-                <e p="ActionFlyTowardsTarget.cs" t="Include" />
+                <e p="ActionDoNothingNode.cs" t="Include" />
+                <e p="ActionFlyTowardsTargetNode.cs" t="Include" />
                 <e p="ActionNode.cs" t="Include" />
               </e>
               <e p="BrainNode.cs" t="Include" />
               <e p="BrainStateNode.cs" t="Include" />
               <e p="Decisions" t="Include">
-                <e p="DecisionDistanceToTarget.cs" t="Include" />
+                <e p="DecisionDistanceToTargetNode.cs" t="Include" />
                 <e p="DecisionNode.cs" t="Include" />
-                <e p="DecisionTargetFacingAI.cs" t="Include" />
+                <e p="DecisionTargetFacingAINode.cs" t="Include" />
               </e>
             </e>
           </e>

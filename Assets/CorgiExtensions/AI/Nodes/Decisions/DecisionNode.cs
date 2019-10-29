@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using MoreMountains.Tools;
+using UnityEngine;
 using XNode;
 
 namespace TheBitCave.CorgiExensions.AI
@@ -30,5 +31,11 @@ namespace TheBitCave.CorgiExensions.AI
 		{
 			return null; // Replace this
 		}
+		
+		public virtual AIDecision AddDecisionComponent(GameObject go)
+		{
+			throw new System.NotImplementedException();
+		}
+
 	}
 }

@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using MoreMountains.Tools;
+using MoreMountains.CorgiEngine;
+using UnityEngine;
 using XNode;
 
 namespace TheBitCave.CorgiExensions.AI
 {
 	[CreateNodeMenu("AI/Action/Do Nothing")]
-	public class ActionDoNothing : ActionNode
+	public class ActionDoNothingNode : ActionNode
 	{
 		
 		// Use this for initialization
@@ -18,6 +20,13 @@ namespace TheBitCave.CorgiExensions.AI
 		public override object GetValue(NodePort port)
 		{
 			return null; // Replace this
+		}
+
+		public override AIAction AddActionComponent(GameObject go)
+		{
+			var action = go.AddComponent<AIActionDoNothing>();
+			action.Label = label;
+			return action;
 		}
 
 	}

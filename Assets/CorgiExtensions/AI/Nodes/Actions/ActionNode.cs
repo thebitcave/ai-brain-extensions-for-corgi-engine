@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using MoreMountains.Tools;
+using UnityEngine;
 using XNode;
 
 namespace TheBitCave.CorgiExensions.AI
@@ -24,6 +25,11 @@ namespace TheBitCave.CorgiExensions.AI
 		public override object GetValue(NodePort port)
 		{
 			return null; // Replace this
+		}
+
+		public virtual AIAction AddActionComponent(GameObject go)
+		{
+			throw new System.NotImplementedException();
 		}
 	}
 }

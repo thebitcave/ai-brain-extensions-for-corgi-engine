@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using MoreMountains.CorgiEngine;
+using MoreMountains.Tools;
+using UnityEngine;
 using XNode;
 
 namespace TheBitCave.CorgiExensions.AI
 {
 	[CreateNodeMenu("AI/Decision/Target Facing AI")]
-	public class DecisionTargetFacingAI : DecisionNode
+	public class DecisionTargetFacingAINode : DecisionNode
 	{
 
 		// Use this for initialization
@@ -19,5 +21,13 @@ namespace TheBitCave.CorgiExensions.AI
 		{
 			return null; // Replace this
 		}
+		
+		public override AIDecision AddDecisionComponent(GameObject go)
+		{
+			var decision = go.AddComponent<AIDecisionTargetFacingAI>();
+			decision.Label = label;
+			return decision;
+		}
+
 	}
 }
