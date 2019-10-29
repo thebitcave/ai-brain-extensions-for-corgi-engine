@@ -9,7 +9,9 @@ namespace TheBitCave.CorgiExensions.AI
 	public class AIDecisionDistanceToTargetNode : AIDecisionNode
 	{
 
-		[Header("Settings")] public float distance;
+		[Header("Settings")]
+		
+		public float distance;
 
 		[NodeEnum]
 		public AIDecisionDistanceToTarget.ComparisonModes comparisonMode =

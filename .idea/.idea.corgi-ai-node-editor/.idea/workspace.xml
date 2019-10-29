@@ -5,14 +5,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/ActionDoNothingNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionDoNothingNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/ActionDoNothingNode.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AiActionDoNothingNode.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/ActionFlyTowardsTargetNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionFlyTowardsTargetNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/ActionFlyTowardsTargetNode.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AiActionFlyTowardsTargetNode.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/ActionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/ActionNode.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/BrainStateNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/BrainStateNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/DecisionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/DecisionNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AIBrainNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AIBrainNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AIBrainStateNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AIBrainStateNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDistanceToTargetNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDistanceToTargetNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/C.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/C.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,20 +29,21 @@
     <setting file="file://$PROJECT_DIR$/Assets/xNode/Scripts/Editor/NodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Agents/CorgiController/Editor/CorgiControllerInspector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/DecisionDistanceToTargetNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDistanceToTargetNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/C.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/DecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Agents/AI/Advanced/AIDecisionDistanceToTarget.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/DecisionTargetFacingAINode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionTargetFacingAiNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/xNode/Examples/StateMachine/Nodes/Editor/StateNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Agents/AI/Advanced/AIDecisionDetectTargetRadius.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/xNode/Examples/StateMachine/Nodes/StateNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/AI/Editor/AIBrainEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Agents/AI/Advanced/AIActionJump.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/BrainNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Editor/AIBrainGeneratorEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/BrainStateNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AIBrainStateNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/Connections.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDetectTargetRadiusNode.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -68,15 +68,21 @@
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/ActionFlyTowardsTargetNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/DecisionDistanceToTargetNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/BrainNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/DecisionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/Connections.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/ActionNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/C.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/BrainStateNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionDoNothingNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionFlyTowardsTargetNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionTargetFacingAiNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AIBrainNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDistanceToTargetNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDetectTargetRadiusNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AIBrainStateNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/C.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionNode.cs" />
       </list>
     </option>
   </component>
@@ -135,7 +141,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572338801969</updated>
       <workItem from="1572338805465" duration="9364000" />
-      <workItem from="1572351166995" duration="7650000" />
+      <workItem from="1572351166995" duration="11584000" />
     </task>
     <servers />
   </component>

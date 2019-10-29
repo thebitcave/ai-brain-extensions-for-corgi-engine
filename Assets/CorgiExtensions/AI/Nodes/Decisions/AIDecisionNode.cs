@@ -27,10 +27,22 @@ namespace TheBitCave.CorgiExensions.AI
 
 		}
 
+		public string GetTrueStateLabel()
+		{
+			if (GetOutputPort(C.PORT_TRUE_STATE).Connection == null) return "";
+			return GetOutputPort(C.PORT_TRUE_STATE).Connection.node.name;
+		}
+
+		public string GetFalseStateLabel()
+		{
+			if (GetOutputPort(C.PORT_FALSE_STATE).Connection == null) return "";
+			return GetOutputPort(C.PORT_FALSE_STATE).Connection.node.name;
+		}
+
 		// Return the correct value of an output port when requested
 		public override object GetValue(NodePort port)
 		{
-			return null; // Replace this
+			return null;
 		}
 		
 		public virtual AIDecision AddDecisionComponent(GameObject go)

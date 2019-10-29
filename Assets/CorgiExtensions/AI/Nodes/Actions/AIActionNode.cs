@@ -25,7 +25,7 @@ namespace TheBitCave.CorgiExensions.AI
 		// Return the correct value of an output port when requested
 		public override object GetValue(NodePort port)
 		{
-			return null; // Replace this
+			return null;
 		}
 
 		public virtual AIAction AddActionComponent(GameObject go)

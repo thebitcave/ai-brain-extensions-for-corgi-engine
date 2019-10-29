@@ -5,6 +5,7 @@ using System.Linq;
 using MoreMountains.CorgiEngine;
 using UnityEngine;
 using MoreMountains.Tools;
+using XNode;
 
 namespace TheBitCave.CorgiExensions.AI
 {
@@ -75,12 +76,32 @@ namespace TheBitCave.CorgiExensions.AI
                 _brainStates.Add(brainStateNode.name, brainStateNode);
                 var aiState = new AIState
                 {
-                    StateName = brainStateNode.name
+                    StateName = brainStateNode.name,
+                    Transitions = new AITransitionsList(),
+                    Actions = new AIActionsList()
                 };
-                brain.States.Add(aiState);
-                
-        //        Debug.Log("Actions: " + brainStateNode.GetInputValues());
-        //         Debug.Log("Transitions: " + brainStateNode.transitions.Length);
+                if (brainStateNode.defaultState)
+                {
+                    brain.States.Insert(0, aiState);                    
+                }
+                else
+                {
+                    brain.States.Add(aiState);
+                }
+
+                var decisionPort = brainStateNode.GetOutputPort(C.PORT_DECISIONS);
+                foreach (var decisionNode in decisionPort.GetConnections().Select(connection => connection.node).OfType<AIDecisionNode>())
+                {
+                    _decisions.TryGetValue(decisionNode, out var decisionComponent);
+                    var transition = new AITransition
+                    {
+                        Decision = decisionComponent,
+                        TrueState = decisionNode.GetTrueStateLabel(),
+                        FalseState = decisionNode.GetFalseStateLabel()
+                    };
+                    aiState.Transitions.Add(transition);
+                }
+
             }
         }
 
