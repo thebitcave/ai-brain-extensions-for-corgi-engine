@@ -21,6 +21,7 @@ namespace TheBitCave.CorgiExensions.AI
 
         private Dictionary<DecisionNode, AIDecision> _decisions;
         private Dictionary<ActionNode, AIAction> _actions;
+        private Dictionary<string, BrainStateNode> _brainStates;
         
         private void Start()
         {
@@ -33,6 +34,7 @@ namespace TheBitCave.CorgiExensions.AI
 
             _decisions = new Dictionary<DecisionNode, AIDecision>();
             _actions = new Dictionary<ActionNode, AIAction>();
+            _brainStates = new Dictionary<string, BrainStateNode>();
             
             GenerateActions();
             GenerateDecisions();
@@ -65,6 +67,18 @@ namespace TheBitCave.CorgiExensions.AI
             brain.BrainActive = brainActive;
             brain.ActionsFrequency = actionsFrequency;
             brain.DecisionFrequency = decisionFrequency;
+            brain.States = new List<AIState>();
+
+            foreach (var brainStateNode in aiBrainGraph.nodes.OfType<BrainStateNode>()
+                .Select(node => (node as BrainStateNode)))
+            {
+                _brainStates.Add(brainStateNode.name, brainStateNode);
+                var aiState = new AIState
+                {
+                    StateName = brainStateNode.name
+                };
+                brain.States.Add(aiState);
+            }
         }
 
         private void Cleanup()

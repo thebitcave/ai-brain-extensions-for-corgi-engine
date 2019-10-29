@@ -3,6 +3,7 @@ using XNode;
 
 namespace TheBitCave.CorgiExensions.AI
 {
+	[CreateNodeMenu("AI/Brain")]
 	[NodeTint("#aaaaff")]
 	public class BrainNode : Node
 	{

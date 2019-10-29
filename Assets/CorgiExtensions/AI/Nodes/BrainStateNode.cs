@@ -3,6 +3,7 @@ using XNode;
 
 namespace TheBitCave.CorgiExensions.AI
 {
+	[CreateNodeMenu("AI/Brain State")]
 	public class BrainStateNode : Node
 	{
 
@@ -25,12 +26,6 @@ namespace TheBitCave.CorgiExensions.AI
 		{
 			return null; // Replace this
 		}
-
-		[ContextMenu("Log Name")]
-		public void Execute()
-		{
-			Debug.Log(name);
-		}
-
+		
 	}
 }

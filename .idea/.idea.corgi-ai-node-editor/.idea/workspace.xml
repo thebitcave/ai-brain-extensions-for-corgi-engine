@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fd69eea-775c-497d-88e4-15c17fbc2bcf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/BrainNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/BrainNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/BrainStateNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/BrainStateNode.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +30,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/AI/Editor/AIBrainEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Agents/AI/Advanced/AIActionJump.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/BrainNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Editor/AIBrainGeneratorEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/BrainStateNode.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -49,10 +54,12 @@
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Editor/AIBrainGeneratorEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/ActionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/DecisionNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/DecisionDistanceToTargetNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/DecisionTargetFacingAINode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/ActionDoNothingNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/ActionFlyTowardsTargetNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/DecisionDistanceToTargetNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/BrainStateNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/BrainNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" />
       </list>
     </option>
@@ -112,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572338801969</updated>
       <workItem from="1572338805465" duration="9364000" />
-      <workItem from="1572351166995" duration="2021000" />
+      <workItem from="1572351166995" duration="3496000" />
     </task>
     <servers />
   </component>
