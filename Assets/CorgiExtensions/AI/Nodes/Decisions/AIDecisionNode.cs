@@ -15,30 +15,8 @@ namespace TheBitCave.CorgiExensions.AI
 
 		public string label;
 
-		[Input(connectionType = ConnectionType.Override, typeConstraint = TypeConstraint.Strict)] public DecisionConnection inputState;
-
-		[Output(connectionType = ConnectionType.Override)] public TransitionConnection trueState;
-		[Output(connectionType = ConnectionType.Override)] public TransitionConnection falseState;
-
-		// Use this for initialization
-		protected override void Init()
-		{
-			base.Init();
-
-		}
-
-		public string GetTrueStateLabel()
-		{
-			if (GetOutputPort(C.PORT_TRUE_STATE).Connection == null) return "";
-			return GetOutputPort(C.PORT_TRUE_STATE).Connection.node.name;
-		}
-
-		public string GetFalseStateLabel()
-		{
-			if (GetOutputPort(C.PORT_FALSE_STATE).Connection == null) return "";
-			return GetOutputPort(C.PORT_FALSE_STATE).Connection.node.name;
-		}
-
+		[Output(connectionType = ConnectionType.Multiple)] public DecisionConnection output;
+		
 		// Return the correct value of an output port when requested
 		public override object GetValue(NodePort port)
 		{

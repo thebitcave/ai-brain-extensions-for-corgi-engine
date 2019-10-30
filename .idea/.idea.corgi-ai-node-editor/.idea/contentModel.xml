@@ -878,6 +878,7 @@
                 <e p="AIActionNode.cs" t="Include" />
               </e>
               <e p="AIBrainStateNode.cs" t="Include" />
+              <e p="AITransitionNode.cs" t="Include" />
               <e p="Decisions" t="Include">
                 <e p="AIDecisionDetectTargetRadiusNode.cs" t="Include" />
                 <e p="AiDecisionDistanceToTargetNode.cs" t="Include" />

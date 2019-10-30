@@ -7,6 +7,6 @@ namespace TheBitCave.CorgiExensions.AI
 	[Serializable, CreateAssetMenu(fileName = "New Brain Graph", menuName = "Corgi AI/Brain Graph")]
 	public class AIBrainGraph : NodeGraph
 	{ 
-
+		public static AIBrainStateNode StartingNode;
 	}	
 }

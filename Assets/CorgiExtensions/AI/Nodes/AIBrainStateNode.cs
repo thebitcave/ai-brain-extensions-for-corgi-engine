@@ -11,17 +11,17 @@ namespace TheBitCave.CorgiExensions.AI
 	[CreateNodeMenu("AI/Brain State")]
 	public class AIBrainStateNode : Node
 	{
-		public static AIBrainStateNode StartingNode;
 		
-		[Input(connectionType = ConnectionType.Multiple, typeConstraint = TypeConstraint.Strict)] public TransitionConnection transitionsIn;
+		[Input(connectionType = ConnectionType.Multiple, typeConstraint = TypeConstraint.Strict)] public StateConnection statesIn;
 
 		[Input(connectionType = ConnectionType.Multiple, typeConstraint = TypeConstraint.Strict)] public ActionConnection actions;
 
-		[Output(connectionType = ConnectionType.Multiple)] public DecisionConnection decisions;
+		[Output(connectionType = ConnectionType.Multiple)] public TransitionConnection transitions;
 
 		protected override void Init()
 		{
-		//	if (!StartingNode) StartingNode = this;
+//			Debug.Log("test");
+//			if (AIBrainGraph.StartingNode) AIBrainGraph.StartingNode = this;
 		}
 
 		public override object GetValue(NodePort port)

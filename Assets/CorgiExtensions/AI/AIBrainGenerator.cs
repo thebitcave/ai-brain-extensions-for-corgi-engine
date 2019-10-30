@@ -31,6 +31,11 @@ namespace TheBitCave.CorgiExensions.AI
 
         public void Generate()
         {
+            if (aiBrainGraph == null)
+            {
+                Debug.LogError(C.ERROR_NO_AI_BRAIN);
+                return;
+            }
             Cleanup();
 
             _decisions = new Dictionary<AIDecisionNode, AIDecision>();
@@ -54,6 +59,7 @@ namespace TheBitCave.CorgiExensions.AI
 
         private void GenerateActions()
         {
+            Debug.Log(aiBrainGraph);
             foreach (var actionNode in aiBrainGraph.nodes.OfType<AIActionNode>()
                 .Select(node => (node as AIActionNode)))
             {
@@ -80,7 +86,7 @@ namespace TheBitCave.CorgiExensions.AI
                     Transitions = new AITransitionsList(),
                     Actions = new AIActionsList()
                 };
-                if (AIBrainStateNode.StartingNode == brainStateNode)
+                if (AIBrainGraph.StartingNode == brainStateNode)
                 {
                     brain.States.Insert(0, aiState);                    
                 }
@@ -89,15 +95,15 @@ namespace TheBitCave.CorgiExensions.AI
                     brain.States.Add(aiState);
                 }
 
-                var decisionPort = brainStateNode.GetOutputPort(C.PORT_DECISIONS);
-                foreach (var decisionNode in decisionPort.GetConnections().Select(connection => connection.node).OfType<AIDecisionNode>())
+                var transitionsPort = brainStateNode.GetOutputPort(C.PORT_TRANSITIONS);
+                foreach (var transitionNode in transitionsPort.GetConnections().Select(connection => connection.node).OfType<AITransitionNode>())
                 {
-                    _decisions.TryGetValue(decisionNode, out var decisionComponent);
+                    _decisions.TryGetValue(transitionNode.GetDecision(), out var decisionComponent);
                     var transition = new AITransition
                     {
                         Decision = decisionComponent,
-                        TrueState = decisionNode.GetTrueStateLabel(),
-                        FalseState = decisionNode.GetFalseStateLabel()
+                        TrueState = transitionNode.GetTrueStateLabel(),
+                        FalseState = transitionNode.GetFalseStateLabel()
                     };
                     aiState.Transitions.Add(transition);
                 }

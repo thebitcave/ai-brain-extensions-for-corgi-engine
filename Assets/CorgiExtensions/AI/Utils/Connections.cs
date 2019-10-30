@@ -14,4 +14,7 @@ namespace TheBitCave.CorgiExensions.AI
     [Serializable]
     public class ActionConnection { }
 
+    [Serializable]
+    public class StateConnection { }
+
 }
