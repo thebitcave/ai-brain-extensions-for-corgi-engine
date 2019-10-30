@@ -9,7 +9,7 @@ namespace TheBitCave.CorgiExensions.AI
     [NodeWidth(150)]
     [CreateNodeMenu("AI/Transition")]
     [NodeTint("#aaffff")]
-    public class AITransitionNode : Node
+    public class AITransitionNode : AINode
     {
         [Input(connectionType = ConnectionType.Override, typeConstraint = TypeConstraint.Strict)] public DecisionConnection decision;
         [Input(connectionType = ConnectionType.Override, typeConstraint = TypeConstraint.Strict)] public TransitionConnection input;
@@ -34,11 +34,5 @@ namespace TheBitCave.CorgiExensions.AI
             if (GetInputPort(C.PORT_DECISION).Connection == null) return null;
             return GetInputPort(C.PORT_DECISION).Connection.node as AIDecisionNode;
         }
-
-        public override object GetValue(NodePort port)
-        {
-            return null;
-        }
-
     }
 }

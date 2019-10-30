@@ -59,7 +59,6 @@ namespace TheBitCave.CorgiExensions.AI
 
         private void GenerateActions()
         {
-            Debug.Log(aiBrainGraph);
             foreach (var actionNode in aiBrainGraph.nodes.OfType<AIActionNode>()
                 .Select(node => (node as AIActionNode)))
             {

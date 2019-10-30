@@ -870,6 +870,7 @@
             <e p="AIBrainGraph.cs" t="Include" />
             <e p="Editor" t="Include">
               <e p="AIBrainGeneratorEditor.cs" t="Include" />
+              <e p="AIBrainGraphEditor.cs" t="Include" />
             </e>
             <e p="Nodes" t="Include">
               <e p="Actions" t="Include">
@@ -878,6 +879,7 @@
                 <e p="AIActionNode.cs" t="Include" />
               </e>
               <e p="AIBrainStateNode.cs" t="Include" />
+              <e p="AINode.cs" t="Include" />
               <e p="AITransitionNode.cs" t="Include" />
               <e p="Decisions" t="Include">
                 <e p="AIDecisionDetectTargetRadiusNode.cs" t="Include" />

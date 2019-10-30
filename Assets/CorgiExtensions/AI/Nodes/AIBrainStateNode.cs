@@ -9,7 +9,7 @@ namespace TheBitCave.CorgiExensions.AI
 	/// A node representing a single state in the Corgi <see cref="MoreMountains.Tools.AIBrain"/>.
 	/// </summary>
 	[CreateNodeMenu("AI/Brain State")]
-	public class AIBrainStateNode : Node
+	public class AIBrainStateNode : AINode
 	{
 		
 		[Input(connectionType = ConnectionType.Multiple, typeConstraint = TypeConstraint.Strict)] public StateConnection statesIn;
@@ -20,13 +20,7 @@ namespace TheBitCave.CorgiExensions.AI
 
 		protected override void Init()
 		{
-//			Debug.Log("test");
-//			if (AIBrainGraph.StartingNode) AIBrainGraph.StartingNode = this;
-		}
-
-		public override object GetValue(NodePort port)
-		{
-			return null;
+			if (AIBrainGraph.StartingNode) AIBrainGraph.StartingNode = this;
 		}
 	}
 }

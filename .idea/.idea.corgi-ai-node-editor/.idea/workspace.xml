@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fd69eea-775c-497d-88e4-15c17fbc2bcf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Editor/AIBrainStateNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Editor/AIBrainStateNodeEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/C.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/C.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AIBrainStateNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AIBrainStateNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AITransitionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AITransitionNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionNode.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +20,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionDoNothingNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/xNode/Examples/RuntimeMathGraph/Scripts/RuntimeMathGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionFlyTowardsTargetNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/xNode/Examples/MathGraph/Nodes/Editor/DisplayValueEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDistanceToTargetNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/C.cs" root0="FORCE_HIGHLIGHTING" />
@@ -25,13 +31,17 @@
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AITransitionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionTargetFacingAiNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/xNode/Scripts/Editor/NodeEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/xNode/Scripts/Editor/NodeGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Agents/AI/Advanced/AIActionFlyTowardsTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Editor/AIBrainGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/AI/Editor/AIBrainEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/xNode/Examples/MathGraph/MathGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/AI/AIState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/AI/AIDecision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Editor/AIBrainGeneratorEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/AI/AIAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/AI/AIBrain.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AINode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/xNode/Scripts/Editor/NodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Agents/CorgiController/Editor/CorgiControllerInspector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/xNode/Examples/StateMachine/Nodes/Editor/StateNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -40,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/xNode/Examples/StateMachine/Nodes/StateNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/xNode/Examples/RuntimeMathGraph/Scripts/Connection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/xNode/Examples/StateMachine/StateGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Agents/AI/Advanced/AIActionJump.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/xNode/Scripts/NodePort.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,6 +58,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/Connections.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Editor/AIBrainStateNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDetectTargetRadiusNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/xNode/Examples/MathGraph/Editor/MathGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -79,16 +91,18 @@
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AIBrainNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDistanceToTargetNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDetectTargetRadiusNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Editor/AIBrainGeneratorEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGraph.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/Connections.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Editor/AIBrainStateNodeEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/C.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Editor/AIBrainGeneratorEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AINode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AIBrainStateNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AITransitionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AITransitionNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/C.cs" />
-        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Editor/AIBrainStateNodeEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGraph.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Editor/AIBrainGraphEditor.cs" />
       </list>
     </option>
   </component>
@@ -148,7 +162,7 @@
       <updated>1572338801969</updated>
       <workItem from="1572338805465" duration="9364000" />
       <workItem from="1572351166995" duration="20160000" />
-      <workItem from="1572415104562" duration="6020000" />
+      <workItem from="1572415104562" duration="8289000" />
     </task>
     <servers />
   </component>

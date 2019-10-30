@@ -10,18 +10,12 @@ namespace TheBitCave.CorgiExensions.AI
 	[NodeWidth(250)]
 	[NodeTint("#aaffaa")]
 	[CreateNodeMenu("")]
-	public class AIDecisionNode : Node
+	public class AIDecisionNode : AINode
 	{
 
 		public string label;
 
 		[Output(connectionType = ConnectionType.Multiple)] public DecisionConnection output;
-		
-		// Return the correct value of an output port when requested
-		public override object GetValue(NodePort port)
-		{
-			return null;
-		}
 		
 		public virtual AIDecision AddDecisionComponent(GameObject go)
 		{
