@@ -5,6 +5,9 @@ using MoreMountains.Tools;
 
 namespace TheBitCave.CorgiExensions.AI
 {
+    /// <summary>
+    /// A node representing a Corgi <see cref="MoreMountains.CorgiEngine.AIDecisionDetectTargetRadius"/> decision.
+    /// </summary>
     [CreateNodeMenu("AI/Decision/Detect Target Radius")]
     public class AIDecisionDetectTargetRadiusNode : AIDecisionNode
     {
@@ -16,20 +19,7 @@ namespace TheBitCave.CorgiExensions.AI
         public Vector3 detectionOriginOffset = new Vector3(0, 0, 0);
         /// The layer(s) to search our target on
         public LayerMask targetLayer;
-
-        // Use this for initialization
-        protected override void Init()
-        {
-            base.Init();
-
-        }
-
-        // Return the correct value of an output port when requested
-        public override object GetValue(NodePort port)
-        {
-            return null; // Replace this
-        }
-		
+        
         public override AIDecision AddDecisionComponent(GameObject go)
         {
             var decision = go.AddComponent<AIDecisionDetectTargetRadius>();
