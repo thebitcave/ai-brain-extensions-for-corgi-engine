@@ -41,14 +41,14 @@ namespace TheBitCave.CorgiExensions.AI
             EditorGUILayout.PropertyField(_decisionFrequency);
             serializedObject.ApplyModifiedProperties();
 
-            EditorGUILayout.HelpBox("Generating the AI will remove all AI Brain, Action and Decision scripts present attached to this gameobject!", MessageType.Warning);
+            EditorGUILayout.HelpBox(C.WARNING_GENERATE_SCRIPTS, MessageType.Warning);
             
-            if(GUILayout.Button("Generate"))
+            if(GUILayout.Button(C.LABEL_GENERATE))
             {
                 _generator.Generate();
             }
             
-            if(GUILayout.Button("Remove AI Scripts"))
+            if(GUILayout.Button(C.LABEL_REMOVE_AI_SCRIPTS))
             {
                 _generator.Cleanup();
             }

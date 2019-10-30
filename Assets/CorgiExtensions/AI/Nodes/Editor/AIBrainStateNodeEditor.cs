@@ -33,7 +33,7 @@ namespace TheBitCave.CorgiExensions.AI
             if (node == null) return;
             var graph = node.graph as AIBrainGraph;
             if (graph == null) return;
-            if (GUILayout.Button("Set as starting state")) AIBrainGraph.StartingNode = node;
+            if (GUILayout.Button(C.LABEL_SET_AS_STARTING_STATE)) AIBrainGraph.StartingNode = node;
         }
 
     }

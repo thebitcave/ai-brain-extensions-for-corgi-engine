@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fd69eea-775c-497d-88e4-15c17fbc2bcf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGraph.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AIBrainStateNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AIBrainStateNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionNode.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Editor/AIBrainStateNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Editor/AIBrainStateNodeEditor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/C.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/C.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/Connections.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/Connections.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,15 +80,15 @@
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDistanceToTargetNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDetectTargetRadiusNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Editor/AIBrainGeneratorEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Editor/AIBrainStateNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGraph.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/Connections.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AIBrainStateNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AITransitionNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/C.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Utils/C.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Editor/AIBrainStateNodeEditor.cs" />
       </list>
     </option>
   </component>
@@ -155,7 +148,7 @@
       <updated>1572338801969</updated>
       <workItem from="1572338805465" duration="9364000" />
       <workItem from="1572351166995" duration="20160000" />
-      <workItem from="1572415104562" duration="5716000" />
+      <workItem from="1572415104562" duration="6020000" />
     </task>
     <servers />
   </component>
