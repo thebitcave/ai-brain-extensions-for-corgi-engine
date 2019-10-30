@@ -8,6 +8,7 @@ namespace TheBitCave.CorgiExensions.AI
 	/// <summary>
 	/// A node representing a single state in the Corgi <see cref="MoreMountains.Tools.AIBrain"/>.
 	/// </summary>
+	[NodeTint("#E63946")]
 	[CreateNodeMenu("AI/Brain State")]
 	public class AIBrainStateNode : AINode
 	{

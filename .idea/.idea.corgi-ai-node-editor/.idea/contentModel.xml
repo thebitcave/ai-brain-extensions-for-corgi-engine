@@ -950,6 +950,14 @@
             <e p="Editor" t="Include">
               <e p="Drawers" t="Include">
                 <e p="NodeEnumDrawer.cs" t="Include" />
+                <e p="Odin" t="Include">
+                  <e p="InNodeEditorAttributeProcessor.cs" t="Include" />
+                  <e p="InputAttributeDrawer.cs" t="Include" />
+                  <e p="OutputAttributeDrawer.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Internal" t="Include">
+                <e p="RerouteReference.cs" t="Include" />
               </e>
               <e p="NodeEditor.cs" t="Include" />
               <e p="NodeEditorAction.cs" t="Include" />
@@ -982,6 +990,8 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="XNode.csproj" t="IncludeRecursive" />
+      <e p="XNodeEditor.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>

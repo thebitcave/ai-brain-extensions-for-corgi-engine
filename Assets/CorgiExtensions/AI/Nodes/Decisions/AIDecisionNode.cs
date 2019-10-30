@@ -7,7 +7,7 @@ namespace TheBitCave.CorgiExensions.AI
 	/// A node representing a single Corgi <see cref="MoreMountains.Tools.AIDecision"/>.
 	/// </summary>
 	[NodeWidth(250)]
-	[NodeTint("#aaffaa")]
+	[NodeTint("#779FB7")]
 	[CreateNodeMenu("")]
 	public class AIDecisionNode : AINode
 	{

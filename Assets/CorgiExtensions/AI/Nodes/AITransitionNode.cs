@@ -5,7 +5,7 @@
     /// </summary>
     [NodeWidth(150)]
     [CreateNodeMenu("AI/Transition")]
-    [NodeTint("#aaffff")]
+    [NodeTint("#457B9D")]
     public class AITransitionNode : AINode
     {
         [Input(connectionType = ConnectionType.Override, typeConstraint = TypeConstraint.Strict)] public DecisionConnection decision;

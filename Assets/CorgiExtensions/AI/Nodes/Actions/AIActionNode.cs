@@ -6,7 +6,6 @@ namespace TheBitCave.CorgiExensions.AI
 	/// <summary>
 	/// A node representing a single Corgi <see cref="MoreMountains.Tools.AIAction"/>.
 	/// </summary>
-	[NodeTint("#ffaaaa")]
 	[NodeWidth(250)]
 	[CreateNodeMenu("")]
 	public class AIActionNode : AINode

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fd69eea-775c-497d-88e4-15c17fbc2bcf" name="Default Changelist" comment="" />
+    <list default="true" id="5fd69eea-775c-497d-88e4-15c17fbc2bcf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AITransitionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AITransitionNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionNode.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +38,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/xNode/Examples/MathGraph/Nodes/MathNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/xNode/Examples/MathGraph/MathGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/AI/AIState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionJumpNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/AI/AIDecision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Editor/AIBrainGeneratorEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/AI/AIAction.cs" root0="FORCE_HIGHLIGHTING" />
@@ -92,14 +99,15 @@
         <option value="$PROJECT_DIR$/Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/AI/AIBrain.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGraph.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AITransitionNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDistanceToTargetNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionTargetFacingAiNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDetectTargetRadiusNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionFlyTowardsTargetNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionDoNothingNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionJumpNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AITransitionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionNode.cs" />
       </list>
     </option>
   </component>
@@ -159,7 +167,7 @@
       <updated>1572338801969</updated>
       <workItem from="1572338805465" duration="9364000" />
       <workItem from="1572351166995" duration="20160000" />
-      <workItem from="1572415104562" duration="14387000" />
+      <workItem from="1572415104562" duration="15428000" />
     </task>
     <servers />
   </component>
