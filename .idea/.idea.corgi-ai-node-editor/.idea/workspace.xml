@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fd69eea-775c-497d-88e4-15c17fbc2bcf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionDoNothingNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionDoNothingNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionFlyTowardsTargetNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionFlyTowardsTargetNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDetectTargetRadiusNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDetectTargetRadiusNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDistanceToTargetNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionDistanceToTargetNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionTargetFacingAiNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Decisions/AIDecisionTargetFacingAiNode.cs" afterDir="false" />
-    </list>
+    <list default="true" id="5fd69eea-775c-497d-88e4-15c17fbc2bcf" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +159,7 @@
       <updated>1572338801969</updated>
       <workItem from="1572338805465" duration="9364000" />
       <workItem from="1572351166995" duration="20160000" />
-      <workItem from="1572415104562" duration="13760000" />
+      <workItem from="1572415104562" duration="14387000" />
     </task>
     <servers />
   </component>
