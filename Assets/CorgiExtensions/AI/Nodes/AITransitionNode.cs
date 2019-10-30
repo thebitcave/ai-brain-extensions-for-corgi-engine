@@ -1,10 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using MoreMountains.Tools;
-using UnityEngine;
-using XNode;
-
-namespace TheBitCave.CorgiExensions.AI
+﻿namespace TheBitCave.CorgiExensions.AI
 {
     [NodeWidth(150)]
     [CreateNodeMenu("AI/Transition")]
@@ -19,14 +13,12 @@ namespace TheBitCave.CorgiExensions.AI
 
         public string GetTrueStateLabel()
         {
-            if (GetOutputPort(C.PORT_TRUE_STATE).Connection == null) return "";
-            return GetOutputPort(C.PORT_TRUE_STATE).Connection.node.name;
+            return GetOutputPort(C.PORT_TRUE_STATE).Connection == null ? "" : GetOutputPort(C.PORT_TRUE_STATE).Connection.node.name;
         }
 
         public string GetFalseStateLabel()
         {
-            if (GetOutputPort(C.PORT_FALSE_STATE).Connection == null) return "";
-            return GetOutputPort(C.PORT_FALSE_STATE).Connection.node.name;
+            return GetOutputPort(C.PORT_FALSE_STATE).Connection == null ? "" : GetOutputPort(C.PORT_FALSE_STATE).Connection.node.name;
         }
 
         public AIDecisionNode GetDecision()

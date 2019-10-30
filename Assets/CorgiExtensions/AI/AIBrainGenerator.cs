@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using MoreMountains.CorgiEngine;
 using UnityEngine;
 using MoreMountains.Tools;
-using XNode;
 
 namespace TheBitCave.CorgiExensions.AI
 {
@@ -24,10 +20,6 @@ namespace TheBitCave.CorgiExensions.AI
         private Dictionary<AIDecisionNode, AIDecision> _decisions;
         private Dictionary<AIActionNode, AIAction> _actions;
         
-        private void Start()
-        {
-        }
-
         public void Generate()
         {
             if (aiBrainGraph == null)
@@ -110,7 +102,6 @@ namespace TheBitCave.CorgiExensions.AI
                     _actions.TryGetValue(actionNode, out var actionComponent);
                     aiState.Actions.Add(actionComponent);
                 }
-
             }
         }
 

@@ -1,7 +1,5 @@
 ﻿using MoreMountains.Tools;
 using UnityEngine;
-using XNode;
-using System;
 
 namespace TheBitCave.CorgiExensions.AI
 {
