@@ -15,7 +15,7 @@ namespace TheBitCave.CorgiExensions.AI
         /// The brain asset.
         /// </summary>
         [Header("Pluggable Brain")]
-        public AIBrainGraph aiBrainGraph;
+        public AIBrainGraph[] aiBrainGraphs;
 
         /// <summary>
         /// On awake we set our brain for all states
@@ -23,14 +23,15 @@ namespace TheBitCave.CorgiExensions.AI
         protected override void Awake()
         {
             // The brain graph is mandatory
-            if (aiBrainGraph == null)
+            if (aiBrainGraphs.Length == 0)
             {
                 Debug.LogError(C.ERROR_NO_AI_BRAIN);
                 return;
             }
 
             // Starts the generation process
-            var generator = new GraphToBrainGenerator(aiBrainGraph, gameObject);
+            AIBrainGraph graph = aiBrainGraphs[Random.Range(0, aiBrainGraphs.Length)];
+            var generator = new GraphToBrainGenerator(graph, gameObject);
             generator.GeneratePluggable(this);
 
             base.Awake();
