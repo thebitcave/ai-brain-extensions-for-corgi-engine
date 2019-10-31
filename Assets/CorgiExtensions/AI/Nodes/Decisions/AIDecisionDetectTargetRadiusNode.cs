@@ -12,11 +12,8 @@ namespace TheBitCave.CorgiExensions.AI
     {
         [Header("Settings")]
         
-        /// The radius to search our target in
         public float radius = 3f;
-        /// The center of the search circle
         public Vector3 detectionOriginOffset = new Vector3(0, 0, 0);
-        /// The layer(s) to search our target on
         public LayerMask targetLayer;
         
         public override AIDecision AddDecisionComponent(GameObject go)
