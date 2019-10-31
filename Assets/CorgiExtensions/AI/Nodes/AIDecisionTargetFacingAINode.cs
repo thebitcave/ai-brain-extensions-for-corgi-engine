@@ -9,7 +9,7 @@ namespace TheBitCave.CorgiExensions.AI
 	/// A node representing a Corgi <see cref="MoreMountains.CorgiEngine.AIDecisionTargetFacingAI"/> decision.
 	/// </summary>
 	[CreateNodeMenu("AI/Decision/Target Facing AI")]
-	public class AIDecisionTargetFacingAiNode : AIDecisionNode
+	public class AIDecisionTargetFacingAINode : AIDecisionNode
 	{
 
 		public override AIDecision AddDecisionComponent(GameObject go)
