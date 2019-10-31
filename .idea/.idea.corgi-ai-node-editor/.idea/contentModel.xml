@@ -888,8 +888,10 @@
               <e p="AINode.cs" t="Include" />
               <e p="AITransitionNode.cs" t="Include" />
               <e p="Decisions" t="Include">
+                <e p="AIDecisionDetectTargetLineNode.cs" t="Include" />
                 <e p="AIDecisionDetectTargetRadiusNode.cs" t="Include" />
                 <e p="AiDecisionDistanceToTargetNode.cs" t="Include" />
+                <e p="AIDecisionGroundedNode.cs" t="Include" />
                 <e p="AIDecisionNode.cs" t="Include" />
                 <e p="AiDecisionTargetFacingAiNode.cs" t="Include" />
               </e>
