@@ -896,8 +896,14 @@
                 <e p="AIDecisionHealthNode.cs" t="Include" />
                 <e p="AIDecisionHitNode.cs" t="Include" />
                 <e p="AIDecisionLineOfSightToTargetNode.cs" t="Include" />
+                <e p="AIDecisionNextFrameNode.cs" t="Include" />
                 <e p="AIDecisionNode.cs" t="Include" />
+                <e p="AIDecisionRandomNode.cs" t="Include" />
                 <e p="AiDecisionTargetFacingAiNode.cs" t="Include" />
+                <e p="AIDecisionTargetIsAliveNode.cs" t="Include" />
+                <e p="AIDecisionTargetIsNullNode.cs" t="Include" />
+                <e p="AIDecisionTimeInStateNode.cs" t="Include" />
+                <e p="AIDecisionTimeSinceStartNode.cs" t="Include" />
               </e>
               <e p="Editor" t="Include">
                 <e p="AIBrainStateNodeEditor.cs" t="Include" />
