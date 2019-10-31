@@ -19,6 +19,5 @@ namespace TheBitCave.CorgiExensions.AI
             action.NewWeapon = newWeapon;
             return action;
         }
-
     }
 }

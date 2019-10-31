@@ -4,8 +4,7 @@
     <list default="true" id="5fd69eea-775c-497d-88e4-15c17fbc2bcf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.corgi-ai-node-editor/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Editor/AIBrainGraphEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Editor/AIBrainGraphEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionJumpNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionJumpNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionChangeWeaponNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionChangeWeaponNode.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +17,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Editor/AIBrainStateNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionPatrolNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Agents/AI/Advanced/AIActionPatrolWithinBounds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionJumpNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Agents/AI/Advanced/AIActionPatrol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionDoNothingNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionFlyTowardsTargetNode.cs" root0="FORCE_HIGHLIGHTING" />
@@ -51,6 +53,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/AIBrainGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionMoveTowardsTargetNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionPatrolWithinBoundsNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Agents/AI/Advanced/AIDecisionDistanceToTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Agents/AI/Advanced/AIActionChangeWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/AIBrainStateNode.cs" root0="FORCE_HIGHLIGHTING" />
@@ -106,8 +109,10 @@
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionJumpNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionShootNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Editor/AIBrainGraphEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionChangeWeaponNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionMoveTowardsTargetNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionChangeWeaponNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionPatrolNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiExtensions/AI/Nodes/Actions/AIActionPatrolWithinBoundsNode.cs" />
       </list>
     </option>
   </component>
@@ -170,6 +175,7 @@
       <workItem from="1572415104562" duration="15428000" />
       <workItem from="1572468389364" duration="609000" />
       <workItem from="1572504482961" duration="776000" />
+      <workItem from="1572511680153" duration="637000" />
     </task>
     <servers />
   </component>
