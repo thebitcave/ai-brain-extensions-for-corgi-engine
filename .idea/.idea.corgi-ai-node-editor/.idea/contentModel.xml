@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Marco\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Marco\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_corgi-ai-node-editor.1429108145.00" t="ExcludeRecursive" />
-    <e p="D:\Workspaces\Unity\corgi-ai-node-editor" t="IncludeRecursive">
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_corgi-ai-node-editor.-1634303827.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -874,10 +874,13 @@
             </e>
             <e p="Nodes" t="Include">
               <e p="Actions" t="Include">
+                <e p="AIActionChangeWeaponNode.cs" t="Include" />
                 <e p="AiActionDoNothingNode.cs" t="Include" />
                 <e p="AiActionFlyTowardsTargetNode.cs" t="Include" />
                 <e p="AIActionJumpNode.cs" t="Include" />
+                <e p="AIActionMoveTowardsTargetNode.cs" t="Include" />
                 <e p="AIActionNode.cs" t="Include" />
+                <e p="AIActionShootNode.cs" t="Include" />
               </e>
               <e p="AIBrainStateNode.cs" t="Include" />
               <e p="AINode.cs" t="Include" />
@@ -899,50 +902,6 @@
           </e>
         </e>
         <e p="xNode" t="Include">
-          <e p="Examples" t="Include">
-            <e p="MathGraph" t="Include">
-              <e p="Editor" t="Include">
-                <e p="MathGraphEditor.cs" t="Include" />
-              </e>
-              <e p="MathGraph.cs" t="Include" />
-              <e p="Nodes" t="Include">
-                <e p="DisplayValue.cs" t="Include" />
-                <e p="Editor" t="Include">
-                  <e p="DisplayValueEditor.cs" t="Include" />
-                </e>
-                <e p="MathNode.cs" t="Include" />
-                <e p="Vector.cs" t="Include" />
-              </e>
-            </e>
-            <e p="RuntimeMathGraph" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="Connection.cs" t="Include" />
-                <e p="NodeDrag.cs" t="Include" />
-                <e p="RuntimeMathGraph.cs" t="Include" />
-                <e p="RuntimeNodes" t="Include">
-                  <e p="UGUIDisplayValue.cs" t="Include" />
-                  <e p="UGUIMathBaseNode.cs" t="Include" />
-                  <e p="UGUIMathNode.cs" t="Include" />
-                  <e p="UGUIVector.cs" t="Include" />
-                </e>
-                <e p="UGUIContextMenu.cs" t="Include" />
-                <e p="UGUIPort.cs" t="Include" />
-                <e p="UGUITooltip.cs" t="Include" />
-              </e>
-            </e>
-            <e p="StateMachine" t="Include">
-              <e p="Editor" t="Include">
-                <e p="StateGraphEditor.cs" t="Include" />
-              </e>
-              <e p="Nodes" t="Include">
-                <e p="Editor" t="Include">
-                  <e p="StateNodeEditor.cs" t="Include" />
-                </e>
-                <e p="StateNode.cs" t="Include" />
-              </e>
-              <e p="StateGraph.cs" t="Include" />
-            </e>
-          </e>
           <e p="Scripts" t="Include">
             <e p="Attributes" t="Include">
               <e p="NodeEnum.cs" t="Include" />
@@ -989,7 +948,7 @@
       <e p="corgi-ai-node-editor.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
       <e p="XNode.csproj" t="IncludeRecursive" />
       <e p="XNodeEditor.csproj" t="IncludeRecursive" />
     </e>

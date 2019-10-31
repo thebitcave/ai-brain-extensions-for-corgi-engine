@@ -19,7 +19,6 @@ namespace TheBitCave.CorgiExensions.AI
             action.NumberOfJumps = numberOfJumps;
             return action;
         }
-
     }
 
 }
