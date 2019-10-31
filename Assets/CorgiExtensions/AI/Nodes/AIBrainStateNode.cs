@@ -10,7 +10,7 @@ namespace TheBitCave.CorgiExensions.AI
 	/// </summary>
 	[NodeTint("#E63946")]
 	[CreateNodeMenu("AI/Brain State")]
-	[NodeWidth(150)]
+	[NodeWidth(180)]
 	public class AIBrainStateNode : AINode
 	{
 		

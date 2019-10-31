@@ -97,6 +97,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Jetbrain Rider Cache
+.idea/
+Assets/Plugins/Editor/JetBrains*
+
 # Project Related
 
 Assets/_Dev/
