@@ -895,6 +895,7 @@
                 <e p="AIDecisionGroundedNode.cs" t="Include" />
                 <e p="AIDecisionHealthNode.cs" t="Include" />
                 <e p="AIDecisionHitNode.cs" t="Include" />
+                <e p="AIDecisionLineOfSightToTargetNode.cs" t="Include" />
                 <e p="AIDecisionNode.cs" t="Include" />
                 <e p="AiDecisionTargetFacingAiNode.cs" t="Include" />
               </e>
