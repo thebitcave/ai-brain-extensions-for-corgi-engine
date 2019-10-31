@@ -867,7 +867,7 @@
         <e p="CorgiExtensions" t="Include">
           <e p="AI" t="Include">
             <e p="AIBrainGenerator.cs" t="Include" />
-            <e p="AIBrainGraph.cs" t="Include" />
+            <e p="AIBrainPluggable.cs" t="Include" />
             <e p="Editor" t="Include">
               <e p="AIBrainGeneratorEditor.cs" t="Include" />
               <e p="AIBrainGraphEditor.cs" t="Include" />
@@ -884,6 +884,7 @@
                 <e p="AIActionPatrolWithinBoundsNode.cs" t="Include" />
                 <e p="AIActionShootNode.cs" t="Include" />
               </e>
+              <e p="AIBrainGraph.cs" t="Include" />
               <e p="AIBrainStateNode.cs" t="Include" />
               <e p="AINode.cs" t="Include" />
               <e p="AITransitionNode.cs" t="Include" />
@@ -904,6 +905,7 @@
             <e p="Utils" t="Include">
               <e p="C.cs" t="Include" />
               <e p="Connections.cs" t="Include" />
+              <e p="GraphToBrainGenerator.cs" t="Include" />
             </e>
           </e>
         </e>

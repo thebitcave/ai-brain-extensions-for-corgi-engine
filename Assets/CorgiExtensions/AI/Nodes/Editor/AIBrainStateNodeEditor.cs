@@ -16,7 +16,7 @@ namespace TheBitCave.CorgiExensions.AI
             if (graph == null) return;
             
             var title = target.name;
-            if (AIBrainStateNode.StartingNode == node)
+            if (graph.startingNode == node)
             {
                 title = ">> " + target.name;
             }
@@ -34,12 +34,12 @@ namespace TheBitCave.CorgiExensions.AI
             
             var node = target as AIBrainStateNode;
             if (node == null) return;
-            if (AIBrainStateNode.StartingNode == null) AIBrainStateNode.StartingNode = node;
+//            if (AIBrainStateNode.StartingNode == null) AIBrainStateNode.StartingNode = node;
 
             var graph = node.graph as AIBrainGraph;
             if (graph == null) return;
             
-            if (AIBrainStateNode.StartingNode != node && GUILayout.Button(C.LABEL_SET_AS_STARTING_STATE)) AIBrainStateNode.StartingNode = node;
+            if (graph.startingNode != node && GUILayout.Button(C.LABEL_SET_AS_STARTING_STATE)) graph.startingNode = node;
         }
 
     }

@@ -29,9 +29,5 @@ namespace TheBitCave.CorgiExensions.AI
 		/// </summary>
 		[Output(connectionType = ConnectionType.Multiple)] public TransitionConnection transitions;
 
-		/// <summary>
-		/// Which state should be initialized as the starting one.
-		/// </summary>
-		public static AIBrainStateNode StartingNode;
 	}
 }

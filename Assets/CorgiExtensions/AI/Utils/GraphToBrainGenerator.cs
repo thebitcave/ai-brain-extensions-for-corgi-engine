@@ -37,6 +37,20 @@ namespace TheBitCave.CorgiExensions.AI
             GenerateBrain(brainActive, actionsFrequency, decisionFrequency);
         }
 
+        public void GeneratePluggable(AIBrain brain)
+        {
+            // Removes all Corgi Brain, Action and Decision components
+            Cleanup(_gameObject, true);
+
+            _decisions = new Dictionary<AIDecisionNode, AIDecision>();
+            _actions = new Dictionary<AIActionNode, AIAction>();
+            
+            // Starts the generation process
+            GenerateActions();
+            GenerateDecisions();
+            InitBrain(brain);
+        }
+
         /// <summary>
         /// Generates all <see cref="MoreMountains.Tools.AIDecision"/> components attaching them to the gameObject.
         /// </summary>
@@ -74,6 +88,12 @@ namespace TheBitCave.CorgiExensions.AI
             brain.BrainActive = brainActive;
             brain.ActionsFrequency = actionsFrequency;
             brain.DecisionFrequency = decisionFrequency;
+            
+            InitBrain(brain);
+        }
+        
+        private void InitBrain(AIBrain brain)
+        {
             brain.States = new List<AIState>();
 
             // Get all states and initialize them
@@ -86,7 +106,8 @@ namespace TheBitCave.CorgiExensions.AI
                     Transitions = new AITransitionsList(),
                     Actions = new AIActionsList()
                 };
-                if (AIBrainStateNode.StartingNode == brainStateNode)
+                var graph = brainStateNode.graph as AIBrainGraph;
+                if (graph != null && graph.startingNode == brainStateNode)
                 {
                     brain.States.Insert(0, aiState);                    
                 }
@@ -122,11 +143,8 @@ namespace TheBitCave.CorgiExensions.AI
         /// <summary>
         /// Removes all Corgi Brain, Actions and Decisions from the gameObject.
         /// </summary>
-        public static void Cleanup(GameObject go)
+        public static void Cleanup(GameObject go, bool excludeBrain = false)
         {
-            var brain = go.GetComponent<AIBrain>();
-            Object.DestroyImmediate(brain);
-
             foreach (var aiDecision in go.GetComponents<AIDecision>())
             {
                 Object.DestroyImmediate(aiDecision);
@@ -137,6 +155,10 @@ namespace TheBitCave.CorgiExensions.AI
                 Object.DestroyImmediate(aiAction);
             }
 
+            if (excludeBrain) return;
+            
+            var brain = go.GetComponent<AIBrain>();
+            Object.DestroyImmediate(brain);
         }
 
     }

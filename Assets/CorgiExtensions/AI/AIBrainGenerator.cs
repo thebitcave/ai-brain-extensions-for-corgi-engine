@@ -11,7 +11,6 @@ namespace TheBitCave.CorgiExensions.AI
     /// </summary>
     public class AIBrainGenerator : MonoBehaviour
     {
-
         /// <summary>
         /// The brain asset.
         /// </summary>
@@ -42,12 +41,8 @@ namespace TheBitCave.CorgiExensions.AI
                 return;
             }
 
-            _generator = new GraphToBrainGenerator(aiBrainGraph, gameObject);
-
-            // Removes all Corgi Brain, Action and Decision components
-            Cleanup();
-            
             // Starts the generation process
+            _generator = new GraphToBrainGenerator(aiBrainGraph, gameObject);
             _generator.Generate(brainActive, actionsFrequency, decisionFrequency);
         }
 
