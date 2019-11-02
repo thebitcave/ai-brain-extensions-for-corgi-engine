@@ -10,8 +10,8 @@ namespace TheBitCave.CorgiExensions.AI
     [CreateNodeMenu("AI/Decision/Detect Target Line")]
     public class AIDecisionDetectTargetLineNode : AIDecisionNode
     {
-        public AIDecisionDetectTargetLine.DetectMethods detectMethod = AIDecisionDetectTargetLine.DetectMethods.Ray;
-        public AIDecisionDetectTargetLine.DetectionDirections detectionDirection = AIDecisionDetectTargetLine.DetectionDirections.Front;
+        [NodeEnum] public AIDecisionDetectTargetLine.DetectMethods detectMethod = AIDecisionDetectTargetLine.DetectMethods.Ray;
+        [NodeEnum] public AIDecisionDetectTargetLine.DetectionDirections detectionDirection = AIDecisionDetectTargetLine.DetectionDirections.Front;
         public float rayWidth = 1f;
         public float detectionDistance = 10f;
         public Vector3 detectionOriginOffset = new Vector3(0,0,0);
