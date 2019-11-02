@@ -28,6 +28,5 @@ namespace TheBitCave.CorgiExensions.AI
 			decision.ComparisonMode = comparisonMode;
 			return decision;
 		}
-
 	}
 }
