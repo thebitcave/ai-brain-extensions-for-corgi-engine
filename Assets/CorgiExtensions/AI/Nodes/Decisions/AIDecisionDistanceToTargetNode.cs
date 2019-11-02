@@ -14,12 +14,12 @@ namespace TheBitCave.CorgiExensions.AI
 
 		[Header("Settings")]
 		
-		public float distance;
-
 		[NodeEnum]
 		public AIDecisionDistanceToTarget.ComparisonModes comparisonMode =
 			AIDecisionDistanceToTarget.ComparisonModes.GreatherThan;
-		
+
+		public float distance;
+
 		public override AIDecision AddDecisionComponent(GameObject go)
 		{
 			var decision = go.AddComponent<AIDecisionDistanceToTarget>();
