@@ -1,5 +1,61 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9080725269538321311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7644114ceede8c74ca6fd8d3b53d5a23, type: 3}
+  m_Name: Jump
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -408, y: -376}
+  ports:
+    keys:
+    - statesIn
+    - actions
+    - transitions
+    values:
+    - _fieldName: statesIn
+      _node: {fileID: -9080725269538321311}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: trueState
+        node: {fileID: 3194542870969250007}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: actions
+      _node: {fileID: -9080725269538321311}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.ActionConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: 4558111219117591749}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: transitions
+      _node: {fileID: -9080725269538321311}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.TransitionConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: -1082572516572249804}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
 --- !u!114 &-7491670183018675386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,7 +69,7 @@ MonoBehaviour:
   m_Name: AI Action Do Nothing
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -104, y: -392}
+  position: {x: -776, y: -584}
   ports:
     keys:
     - output
@@ -22,7 +78,10 @@ MonoBehaviour:
       _node: {fileID: -7491670183018675386}
       _typeQualifiedName: TheBitCave.CorgiExensions.AI.ActionConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: actions
+        node: {fileID: 3709942432219537487}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -41,7 +100,7 @@ MonoBehaviour:
   m_Name: AI Decision Time In State
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 312, y: -168}
+  position: {x: 24, y: -120}
   ports:
     keys:
     - output
@@ -50,7 +109,10 @@ MonoBehaviour:
       _node: {fileID: -5913243536225896235}
       _typeQualifiedName: TheBitCave.CorgiExensions.AI.DecisionConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: decision
+        node: {fileID: 8169345304429118052}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -71,7 +133,7 @@ MonoBehaviour:
   m_Name: AI Decision Time In State
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 296, y: -424}
+  position: {x: 24, y: -360}
   ports:
     keys:
     - output
@@ -80,7 +142,10 @@ MonoBehaviour:
       _node: {fileID: -4795456598378292034}
       _typeQualifiedName: TheBitCave.CorgiExensions.AI.DecisionConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: decision
+        node: {fileID: 3194542870969250007}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -101,7 +166,7 @@ MonoBehaviour:
   m_Name: AI Decision Grounded
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 280, y: -296}
+  position: {x: 24, y: -232}
   ports:
     keys:
     - output
@@ -110,13 +175,138 @@ MonoBehaviour:
       _node: {fileID: -2945842127481112362}
       _typeQualifiedName: TheBitCave.CorgiExensions.AI.DecisionConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: decision
+        node: {fileID: -1082572516572249804}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
   label: 
   groundedBufferDelay: 0.2
+--- !u!114 &-2389769898273572375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7644114ceede8c74ca6fd8d3b53d5a23, type: 3}
+  m_Name: Walk
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -408, y: -248}
+  ports:
+    keys:
+    - statesIn
+    - actions
+    - transitions
+    values:
+    - _fieldName: statesIn
+      _node: {fileID: -2389769898273572375}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: trueState
+        node: {fileID: -1082572516572249804}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: actions
+      _node: {fileID: -2389769898273572375}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.ActionConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: 7784012431352946716}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: transitions
+      _node: {fileID: -2389769898273572375}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.TransitionConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 8169345304429118052}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+--- !u!114 &-1082572516572249804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4813333ead4977a408f315682cbf3a7d, type: 3}
+  m_Name: AI Transition
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -184, y: -344}
+  ports:
+    keys:
+    - decision
+    - input
+    - trueState
+    - falseState
+    values:
+    - _fieldName: decision
+      _node: {fileID: -1082572516572249804}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.DecisionConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: -2945842127481112362}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: -1082572516572249804}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.TransitionConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: transitions
+        node: {fileID: -9080725269538321311}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: trueState
+      _node: {fileID: -1082572516572249804}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: statesIn
+        node: {fileID: -2389769898273572375}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: falseState
+      _node: {fileID: -1082572516572249804}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +326,135 @@ MonoBehaviour:
   - {fileID: -4795456598378292034}
   - {fileID: -2945842127481112362}
   - {fileID: -5913243536225896235}
-  startingNode: {fileID: 0}
+  - {fileID: 3194542870969250007}
+  - {fileID: -1082572516572249804}
+  - {fileID: 8169345304429118052}
+  - {fileID: 3709942432219537487}
+  - {fileID: -9080725269538321311}
+  - {fileID: -2389769898273572375}
+  startingNode: {fileID: 3709942432219537487}
+--- !u!114 &3194542870969250007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4813333ead4977a408f315682cbf3a7d, type: 3}
+  m_Name: AI Transition
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -184, y: -472}
+  ports:
+    keys:
+    - decision
+    - input
+    - trueState
+    - falseState
+    values:
+    - _fieldName: decision
+      _node: {fileID: 3194542870969250007}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.DecisionConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: -4795456598378292034}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: 3194542870969250007}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.TransitionConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: transitions
+        node: {fileID: 3709942432219537487}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: trueState
+      _node: {fileID: 3194542870969250007}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: statesIn
+        node: {fileID: -9080725269538321311}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: falseState
+      _node: {fileID: 3194542870969250007}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+--- !u!114 &3709942432219537487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7644114ceede8c74ca6fd8d3b53d5a23, type: 3}
+  m_Name: Wait
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -408, y: -488}
+  ports:
+    keys:
+    - statesIn
+    - actions
+    - transitions
+    values:
+    - _fieldName: statesIn
+      _node: {fileID: 3709942432219537487}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: trueState
+        node: {fileID: 8169345304429118052}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: actions
+      _node: {fileID: 3709942432219537487}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.ActionConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: -7491670183018675386}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: transitions
+      _node: {fileID: 3709942432219537487}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.TransitionConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 3194542870969250007}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
 --- !u!114 &4558111219117591749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +468,7 @@ MonoBehaviour:
   m_Name: AI Action Jump
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -104, y: -296}
+  position: {x: -776, y: -488}
   ports:
     keys:
     - output
@@ -159,7 +477,10 @@ MonoBehaviour:
       _node: {fileID: 4558111219117591749}
       _typeQualifiedName: TheBitCave.CorgiExensions.AI.ActionConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: actions
+        node: {fileID: -9080725269538321311}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -179,7 +500,7 @@ MonoBehaviour:
   m_Name: AI Action Patrol
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -104, y: -168}
+  position: {x: -776, y: -360}
   ports:
     keys:
     - output
@@ -188,7 +509,10 @@ MonoBehaviour:
       _node: {fileID: 7784012431352946716}
       _typeQualifiedName: TheBitCave.CorgiExensions.AI.ActionConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: actions
+        node: {fileID: -2389769898273572375}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -198,3 +522,69 @@ MonoBehaviour:
   avoidFalling: 1
   holeDetectionOffset: {x: 1, y: 0, z: 0}
   holeDetectionRaycastLength: 1
+--- !u!114 &8169345304429118052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4813333ead4977a408f315682cbf3a7d, type: 3}
+  m_Name: AI Transition
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -184, y: -216}
+  ports:
+    keys:
+    - decision
+    - input
+    - trueState
+    - falseState
+    values:
+    - _fieldName: decision
+      _node: {fileID: 8169345304429118052}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.DecisionConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: -5913243536225896235}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: 8169345304429118052}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.TransitionConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: transitions
+        node: {fileID: -2389769898273572375}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: trueState
+      _node: {fileID: 8169345304429118052}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: statesIn
+        node: {fileID: 3709942432219537487}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: falseState
+      _node: {fileID: 8169345304429118052}
+      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
