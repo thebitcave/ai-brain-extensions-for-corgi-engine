@@ -12,7 +12,8 @@ namespace TheBitCave.CorgiExensions.AI
 	public class AIActionFlyTowardsTargetNode : AIActionNode
 	{
 
-		[Header("Settings")] public float minimumDistance;
+		[Header("Settings")]
+		public float minimumDistance;
 		
 		public override AIAction AddActionComponent(GameObject go)
 		{

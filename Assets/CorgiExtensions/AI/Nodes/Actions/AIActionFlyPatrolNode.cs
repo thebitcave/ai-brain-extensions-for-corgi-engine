@@ -12,7 +12,8 @@ namespace TheBitCave.CorgiExensions.AI
     public class AIActionFlyPatrolNode : AIActionNode
     {
 
-        [Header("Obstacle Detection")] public bool changeDirectionOnObstacle = true;
+        [Header("Obstacle Detection")]
+        public bool changeDirectionOnObstacle = true;
 
         public override AIAction AddActionComponent(GameObject go)
         {

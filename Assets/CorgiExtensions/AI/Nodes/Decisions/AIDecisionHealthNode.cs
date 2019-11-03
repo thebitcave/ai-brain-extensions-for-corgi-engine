@@ -10,7 +10,7 @@ namespace TheBitCave.CorgiExensions.AI
     [CreateNodeMenu("AI/Decision/Health")]
     public class AIDecisionHealthNode : AIDecisionNode
     {
-        public AIDecisionHealth.ComparisonModes trueIfHealthIs;
+        [NodeEnum] public AIDecisionHealth.ComparisonModes trueIfHealthIs;
         public int healthValue;
         public bool onlyOnce = true;
 

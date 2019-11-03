@@ -12,7 +12,7 @@ namespace TheBitCave.CorgiExensions.AI
     {
         [Header("Bounds")]
 
-        public AIActionPatrolWithinBounds.BoundsMethods boundsMethod = AIActionPatrolWithinBounds.BoundsMethods.BasedOnOriginPosition;
+        [NodeEnum] public AIActionPatrolWithinBounds.BoundsMethods boundsMethod = AIActionPatrolWithinBounds.BoundsMethods.BasedOnOriginPosition;
         public float boundsExtentsLeft;
         public float boundsExtentsRight;
 
