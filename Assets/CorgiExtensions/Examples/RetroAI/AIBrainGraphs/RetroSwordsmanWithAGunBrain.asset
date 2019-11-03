@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AI Action Patrol
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -568, y: -536}
+  position: {x: -24, y: -808}
   ports:
     keys:
     - output
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: Patrol
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -280, y: -376}
+  position: {x: 264, y: -648}
   ports:
     keys:
     - statesIn
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Name: Shooting
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -248, y: -152}
+  position: {x: 296, y: -424}
   ports:
     keys:
     - statesIn
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: AI Decision Distance To Target
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -296, y: 24}
+  position: {x: 248, y: -248}
   ports:
     keys:
     - output
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 72, y: -392}
+  position: {x: 616, y: -664}
   ports:
     keys:
     - decision
@@ -267,7 +267,7 @@ MonoBehaviour:
   - {fileID: 5670214012608775103}
   - {fileID: 6131103617895931109}
   - {fileID: -3268985524202989767}
-  startingNode: {fileID: 0}
+  startingNode: {fileID: -8654166837088512186}
 --- !u!114 &5670214012608775103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Name: AI Action Shoot
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -568, y: -104}
+  position: {x: -24, y: -376}
   ports:
     keys:
     - output
@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Name: AI Decision Detect Target Radius
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -248, y: -600}
+  position: {x: 296, y: -872}
   ports:
     keys:
     - output
@@ -351,7 +351,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 72, y: -168}
+  position: {x: 616, y: -440}
   ports:
     keys:
     - decision
