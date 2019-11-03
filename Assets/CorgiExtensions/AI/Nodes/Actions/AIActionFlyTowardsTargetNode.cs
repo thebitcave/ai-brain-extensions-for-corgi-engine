@@ -22,7 +22,5 @@ namespace TheBitCave.CorgiExensions.AI
 			action.MinimumDistance = minimumDistance;
 			return action;
 		}
-		
-
 	}
 }

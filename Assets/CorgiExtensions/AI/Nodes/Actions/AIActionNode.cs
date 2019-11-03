@@ -27,16 +27,6 @@ namespace TheBitCave.CorgiExensions.AI
 		{
 			throw new System.NotImplementedException();
 		}
-
-		/// <summary>
-		/// Checks if abilities used by the <see cref="MoreMountains.Tools.AIAction"/> is
-		/// attached to the gameObject.
-		/// </summary>
-		/// <returns></returns>
-		public virtual bool ValidateAbilityDependencies()
-		{
-			return true;
-		}
 	}
 }
 
