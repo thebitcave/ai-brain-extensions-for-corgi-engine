@@ -19,7 +19,7 @@
         
         // Error Messages
         public const string ERROR_NO_AI_BRAIN = "No AI Brain has been set in Brain Generator.";
-        public const string ERROR_DUPLICATE_STATE_KEYS = "Duplicate AI brain state keys. Generation aborted.";
+        public const string ERROR_DUPLICATE_STATE_NAMES = "Duplicate AI brain state names. Generation aborted.";
 
         // Warning Messages
         public const string WARNING_GENERATE_SCRIPTS = "Generating the AI will remove all AI Brain, Action and Decision scripts present attached to this gameobject!";

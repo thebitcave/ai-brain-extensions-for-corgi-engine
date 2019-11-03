@@ -103,7 +103,7 @@ namespace TheBitCave.CorgiExensions.AI
             {
                 if (stateNames.IndexOf(brainStateNode.name) >= 0)
                 {
-                    Debug.LogError(C.ERROR_DUPLICATE_STATE_KEYS);
+                    Debug.LogError(C.ERROR_DUPLICATE_STATE_NAMES);
                     return;
                 }
                 stateNames.Add(brainStateNode.name);
