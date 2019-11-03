@@ -23,14 +23,14 @@ GameObject:
   - component: {fileID: 3183830733779232521}
   - component: {fileID: 3179929890213256091}
   - component: {fileID: 3292710510235930776}
-  - component: {fileID: 3922940710038531572}
-  - component: {fileID: 1932352392190613342}
-  - component: {fileID: 217380583091714980}
-  - component: {fileID: 486013141603467982}
-  - component: {fileID: 3784331830372588048}
-  - component: {fileID: 3319582197311259989}
-  - component: {fileID: 4092123451424650954}
-  - component: {fileID: 4122703618221669127}
+  - component: {fileID: 7704050887969537936}
+  - component: {fileID: 2381416081561968768}
+  - component: {fileID: 3170035457348950243}
+  - component: {fileID: 3641624001018732557}
+  - component: {fileID: 4626793947518570033}
+  - component: {fileID: 2674703393453730422}
+  - component: {fileID: 4894042961130133614}
+  - component: {fileID: 7153335513851888251}
   m_Layer: 13
   m_Name: RetroBlobWithAGun_Generated
   m_TagString: Untagged
@@ -45,7 +45,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3292710510235930769}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.775654, y: 17.082176, z: 10.172434}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -623,7 +623,7 @@ MonoBehaviour:
   brainActive: 1
   actionsFrequency: 0
   decisionFrequency: 0
---- !u!114 &3922940710038531572
+--- !u!114 &7704050887969537936
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -637,10 +637,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: 
   ChangeDirectionOnWall: 1
-  AvoidFalling: 0
+  AvoidFalling: 1
   HoleDetectionOffset: {x: 1, y: 0, z: 0}
   HoleDetectionRaycastLength: 1
---- !u!114 &1932352392190613342
+--- !u!114 &2381416081561968768
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -656,7 +656,7 @@ MonoBehaviour:
   FaceTarget: 1
   AimAtTarget: 1
   TargetOffset: {x: 0, y: 0, z: 0}
---- !u!114 &217380583091714980
+--- !u!114 &3170035457348950243
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -669,7 +669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
---- !u!114 &486013141603467982
+--- !u!114 &3641624001018732557
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -687,7 +687,7 @@ MonoBehaviour:
   TargetLayer:
     serializedVersion: 2
     m_Bits: 512
---- !u!114 &3784331830372588048
+--- !u!114 &4626793947518570033
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -704,7 +704,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   LineOfSightOffset: {x: 0, y: 0, z: 0}
---- !u!114 &3319582197311259989
+--- !u!114 &2674703393453730422
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -717,7 +717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
---- !u!114 &4092123451424650954
+--- !u!114 &4894042961130133614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -732,7 +732,7 @@ MonoBehaviour:
   Label: 
   ComparisonMode: 0
   Distance: 13
---- !u!114 &4122703618221669127
+--- !u!114 &7153335513851888251
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -748,31 +748,31 @@ MonoBehaviour:
   - StateName: Patrol
     Actions:
       array:
-      - {fileID: 3922940710038531572}
+      - {fileID: 7704050887969537936}
     Transitions:
       array:
-      - Decision: {fileID: 486013141603467982}
+      - Decision: {fileID: 3641624001018732557}
         TrueState: Aim
         FalseState: 
   - StateName: Aim
     Actions:
       array:
-      - {fileID: 217380583091714980}
+      - {fileID: 3170035457348950243}
     Transitions:
       array:
-      - Decision: {fileID: 3784331830372588048}
+      - Decision: {fileID: 4626793947518570033}
         TrueState: Shooting
         FalseState: 
   - StateName: Shooting
     Actions:
       array:
-      - {fileID: 1932352392190613342}
+      - {fileID: 2381416081561968768}
     Transitions:
       array:
-      - Decision: {fileID: 4092123451424650954}
+      - Decision: {fileID: 4894042961130133614}
         TrueState: Patrol
         FalseState: 
-      - Decision: {fileID: 3319582197311259989}
+      - Decision: {fileID: 2674703393453730422}
         TrueState: 
         FalseState: Patrol
   BrainActive: 1

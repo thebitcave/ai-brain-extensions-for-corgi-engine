@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AI Action Shoot
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -984, y: -360}
+  position: {x: -392, y: -664}
   ports:
     keys:
     - output
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: Detect
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -632, y: -632}
+  position: {x: -40, y: -936}
   ports:
     keys:
     - statesIn
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: AI Decision Time In State
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -168, y: -344}
+  position: {x: 424, y: -648}
   ports:
     keys:
     - output
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -360, y: -440}
+  position: {x: 232, y: -744}
   ports:
     keys:
     - decision
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Name: AI Action Do Nothing
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -984, y: -600}
+  position: {x: -392, y: -904}
   ports:
     keys:
     - output
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -360, y: -632}
+  position: {x: 232, y: -936}
   ports:
     keys:
     - decision
@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Name: AI Decision Time In State
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -168, y: -568}
+  position: {x: 424, y: -872}
   ports:
     keys:
     - output
@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -344, y: -280}
+  position: {x: 248, y: -584}
   ports:
     keys:
     - decision
@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Name: Wait
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -632, y: -296}
+  position: {x: -40, y: -600}
   ports:
     keys:
     - statesIn
@@ -482,7 +482,7 @@ MonoBehaviour:
   m_Name: AI Decision Detect Target Line
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -520, y: -872}
+  position: {x: 72, y: -1176}
   ports:
     keys:
     - output
@@ -524,7 +524,7 @@ MonoBehaviour:
   m_Name: Shoot
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -632, y: -456}
+  position: {x: -40, y: -760}
   ports:
     keys:
     - statesIn

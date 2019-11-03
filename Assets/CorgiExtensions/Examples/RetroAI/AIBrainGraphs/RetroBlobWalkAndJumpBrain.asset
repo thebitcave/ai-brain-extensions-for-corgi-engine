@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AI Action Jump
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -648, y: -424}
+  position: {x: -216, y: -760}
   ports:
     keys:
     - output
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -56, y: -600}
+  position: {x: 376, y: -936}
   ports:
     keys:
     - decision
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Name: AI Action Patrol
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -648, y: -648}
+  position: {x: -216, y: -984}
   ports:
     keys:
     - output
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: AI Decision Next Frame
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -424, y: -248}
+  position: {x: 8, y: -584}
   ports:
     keys:
     - output
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Name: Jump
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -328, y: -424}
+  position: {x: 104, y: -760}
   ports:
     keys:
     - statesIn
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Name: AI Decision Time In State
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -392, y: -808}
+  position: {x: 40, y: -1144}
   ports:
     keys:
     - output
@@ -251,7 +251,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   label: 
-  afterTimeMin: 2
+  afterTimeMin: 1
   afterTimeMax: 2
 --- !u!114 &-675928346475691842
 MonoBehaviour:
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -56, y: -424}
+  position: {x: 376, y: -760}
   ports:
     keys:
     - decision
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Name: Walk
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -328, y: -600}
+  position: {x: 104, y: -936}
   ports:
     keys:
     - statesIn

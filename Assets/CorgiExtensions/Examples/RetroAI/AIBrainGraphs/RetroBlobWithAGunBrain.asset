@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Shooting
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -376, y: 104}
+  position: {x: 56, y: -632}
   ports:
     keys:
     - statesIn
@@ -72,7 +72,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -40, y: 424}
+  position: {x: 392, y: -312}
   ports:
     keys:
     - decision
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Name: AI Decision Target Is Alive
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -120, y: 328}
+  position: {x: 312, y: -408}
   ports:
     keys:
     - output
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: AI Decision Distance To Target
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -72, y: 24}
+  position: {x: 360, y: -712}
   ports:
     keys:
     - output
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Name: Patrol
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -376, y: -456}
+  position: {x: 56, y: -1192}
   ports:
     keys:
     - statesIn
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Name: AI Action Do Nothing
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -680, y: -104}
+  position: {x: -248, y: -840}
   ports:
     keys:
     - output
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Name: AI Action Patrol
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -712, y: -584}
+  position: {x: -280, y: -1320}
   ports:
     keys:
     - output
@@ -339,7 +339,7 @@ MonoBehaviour:
       _dynamic: 0
   label: 
   changeDirectionOnWall: 1
-  avoidFalling: 0
+  avoidFalling: 1
   holeDetectionOffset: {x: 1, y: 0, z: 0}
   holeDetectionRaycastLength: 1
 --- !u!114 &3145588942436554335
@@ -355,7 +355,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -88, y: -488}
+  position: {x: 344, y: -1224}
   ports:
     keys:
     - decision
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_Name: AI Action Shoot
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -728, y: 88}
+  position: {x: -296, y: -648}
   ports:
     keys:
     - output
@@ -455,7 +455,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -8, y: 184}
+  position: {x: 424, y: -552}
   ports:
     keys:
     - decision
@@ -521,7 +521,7 @@ MonoBehaviour:
   m_Name: AI Decision Detect Target Radius
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -152, y: -696}
+  position: {x: 280, y: -1432}
   ports:
     keys:
     - output
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -88, y: -152}
+  position: {x: 344, y: -888}
   ports:
     keys:
     - decision
@@ -623,7 +623,7 @@ MonoBehaviour:
   m_Name: Aim
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -360, y: -120}
+  position: {x: 72, y: -856}
   ports:
     keys:
     - statesIn
@@ -679,7 +679,7 @@ MonoBehaviour:
   m_Name: AI Decision Line Of Sight To Target
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -152, y: -312}
+  position: {x: 280, y: -1048}
   ports:
     keys:
     - output
