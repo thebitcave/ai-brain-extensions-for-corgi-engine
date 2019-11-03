@@ -95,11 +95,18 @@ namespace TheBitCave.CorgiExensions.AI
         private void InitBrain(AIBrain brain)
         {
             brain.States = new List<AIState>();
+            List<string> stateNames = new List<string>();
 
             // Get all states and initialize them
             foreach (var brainStateNode in _aiBrainGraph.nodes.OfType<AIBrainStateNode>()
                 .Select(node => (node as AIBrainStateNode)))
             {
+                if (stateNames.IndexOf(brainStateNode.name) >= 0)
+                {
+                    Debug.LogError(C.ERROR_DUPLICATE_STATE_KEYS);
+                    return;
+                }
+                stateNames.Add(brainStateNode.name);
                 var aiState = new AIState
                 {
                     StateName = brainStateNode.name,
