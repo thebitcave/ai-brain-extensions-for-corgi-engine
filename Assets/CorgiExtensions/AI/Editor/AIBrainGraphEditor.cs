@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 using XNodeEditor;
 using Object = UnityEngine.Object;
 
@@ -9,7 +10,7 @@ namespace TheBitCave.CorgiExensions.AI
     {
         public override string GetNodeMenuName(Type type)
         {
-            return type.Namespace != "TheBitCave.CorgiExensions.AI" ? null : base.GetNodeMenuName(type);
+            return type.IsSubclassOf(typeof(AINode)) ? base.GetNodeMenuName(type) : null;
         }
 
         public override void OnDropObjects(Object[] objects)
