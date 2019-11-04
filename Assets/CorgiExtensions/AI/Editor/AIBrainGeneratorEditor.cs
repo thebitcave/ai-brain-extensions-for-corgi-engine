@@ -33,7 +33,6 @@ namespace TheBitCave.CorgiExensions.AI
         public override void OnInspectorGUI()
         {
             serializedObject.Update();
-
             EditorGUILayout.PropertyField(_aiBrainGraph);
             EditorGUILayout.Space();
             EditorGUILayout.PropertyField(_brainActive);
