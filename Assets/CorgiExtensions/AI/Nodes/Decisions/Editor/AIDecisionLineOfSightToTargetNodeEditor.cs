@@ -17,7 +17,7 @@ namespace TheBitCave.CorgiExensions.AI
             _lineOfSightOffset = serializedObject.FindProperty("lineOfSightOffset");
 
             serializedObject.Update();
-            EditorGUIUtility.labelWidth = 120;
+            EditorGUIUtility.labelWidth = 140;
             NodeEditorGUILayout.PropertyField(_obstacleLayerMask);
             NodeEditorGUILayout.PropertyField(_lineOfSightOffset);
             serializedObject.ApplyModifiedProperties();
