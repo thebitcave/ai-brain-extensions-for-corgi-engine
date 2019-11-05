@@ -7,7 +7,7 @@ namespace TheBitCave.CorgiExensions.AI
 	/// <summary>
 	/// A Graph to create AI Brains for the Corgi <see cref="MoreMountains.Tools.AIBrain"/>.
 	/// </summary>
-	[Serializable, CreateAssetMenu(fileName = "New Brain Graph", menuName = "The Bit Cave/Corgi Brain Graph")]
+	[Serializable, CreateAssetMenu(fileName = "New Brain Graph", menuName = "The Bit Cave/AI Brain Graph for Corgi")]
 	public class AIBrainGraph : NodeGraph
 	{
 		/// <summary>

@@ -1,10 +1,10 @@
-using UnityEditor;
+﻿using UnityEditor;
 using XNodeEditor;
 
 namespace TheBitCave.CorgiExensions.AI
 {
-    [CustomNodeEditorAttribute(typeof(AIActionFlyTowardsTargetNode))]
-    public class AIActionFlyTowardsTargetNodeEditor: NodeEditor
+    [CustomNodeEditorAttribute(typeof(AIActionMoveTowardsTargetNode))]
+    public class AIActionMoveTowardsTargetNodeEditor : NodeEditor
     {
         protected SerializedProperty _label;
         protected SerializedProperty _output;
