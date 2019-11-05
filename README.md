@@ -4,6 +4,8 @@ This is an extension for the Unity3D [Corgi Engine ](https://assetstore.unity.co
 
 For a tour of [Corgi Engine ](https://assetstore.unity.com/packages/templates/systems/corgi-engine-2d-2-5d-platformer-26617?aid=1011lHJn) features, please check this video: [https://www.youtube.com/watch?v=b8bAt1i9gfo](https://www.youtube.com/watch?v=b8bAt1i9gfo).
 
+![Image of AI Brain Graph](images/aibrain_graph.png)
+
 # Features
 
 * AI Brain Graph including:
@@ -14,4 +16,3 @@ For a tour of [Corgi Engine ](https://assetstore.unity.com/packages/templates/sy
 * _AI Brain Generator_: to create Corgi AIBrain systems (with AIDecisions and AIActions)
 * _AI pluggable brain_: to generate AI systems at runtime
  
-![Image of AI Brain Graph](images/aibrain_graph.png)
