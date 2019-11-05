@@ -7,10 +7,10 @@ For a tour of [Corgi Engine ](https://assetstore.unity.com/packages/templates/sy
 # Features
 
 * AI Brain Graph including:
-* * States
-* * Transitions
-* * Actions
-* * Decisions
+  * States
+  * Transitions
+  * Actions
+  * Decisions
 * _AI Brain Generator_: to create Corgi AIBrain systems (with AIDecisions and AIActions)
 * _AI pluggable brain_: to generate AI systems at runtime
  
