@@ -14,3 +14,4 @@ For a tour of [Corgi Engine ](https://assetstore.unity.com/packages/templates/sy
 * _AI Brain Generator_: to create Corgi AIBrain systems (with AIDecisions and AIActions)
 * _AI pluggable brain_: to generate AI systems at runtime
  
+![Image of AI Brain Graph](images/aibrain_graph.png)
