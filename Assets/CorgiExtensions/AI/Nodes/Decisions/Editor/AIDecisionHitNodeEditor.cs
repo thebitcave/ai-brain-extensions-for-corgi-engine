@@ -3,20 +3,20 @@ using XNodeEditor;
 
 namespace TheBitCave.CorgiExensions.AI
 {
-    [CustomNodeEditorAttribute(typeof(AIActionJumpNode))]
-    public class AIActionJumpNodeEditor : AIActionNodeEditor
+    [CustomNodeEditorAttribute(typeof(AIDecisionHitNode))]
+    public class AIDecisionHitNodeEditor : AIDecisionNodeEditor
     {
-        private SerializedProperty _numberOfJumps;
-
+        private SerializedProperty _numberOfHits;
+        
         public override void OnBodyGUI()
         {
             base.OnBodyGUI();
             
-            _numberOfJumps = serializedObject.FindProperty("numberOfJumps");
+            _numberOfHits = serializedObject.FindProperty("numberOfHits");
 
             serializedObject.Update();
             EditorGUIUtility.labelWidth = 120;
-            NodeEditorGUILayout.PropertyField(_numberOfJumps);
+            NodeEditorGUILayout.PropertyField(_numberOfHits);
             serializedObject.ApplyModifiedProperties();
         }
     }

@@ -6,9 +6,9 @@ namespace TheBitCave.CorgiExensions.AI
     [CustomNodeEditorAttribute(typeof(AIActionPatrolWithinBoundsNode))]
     public class AIActionPatrolWithinBoundsNodeEditor : AIActionPatrolNodeEditor
     {
-        protected SerializedProperty _boundsMethod;
-        protected SerializedProperty _boundsExtentsLeft;
-        protected SerializedProperty _boundsExtentsRight;
+        private SerializedProperty _boundsMethod;
+        private SerializedProperty _boundsExtentsLeft;
+        private SerializedProperty _boundsExtentsRight;
 
         public override void OnBodyGUI()
         {
