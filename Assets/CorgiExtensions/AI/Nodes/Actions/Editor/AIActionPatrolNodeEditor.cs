@@ -18,12 +18,12 @@ namespace TheBitCave.CorgiExensions.AI
         public override void OnBodyGUI()
         {
             base.OnBodyGUI();
-            /*
+
             _changeDirectionOnWall = serializedObject.FindProperty("changeDirectionOnWall");
             _avoidFalling = serializedObject.FindProperty("avoidFalling");
             _holeDetectionOffset = serializedObject.FindProperty("holeDetectionOffset");
             _holeDetectionRaycastLength = serializedObject.FindProperty("holeDetectionRaycastLength");
-*/
+
 /*            serializedObject.Update();
             NodeEditorGUILayout.PropertyField(_label);
             NodeEditorGUILayout.PropertyField(_output);
