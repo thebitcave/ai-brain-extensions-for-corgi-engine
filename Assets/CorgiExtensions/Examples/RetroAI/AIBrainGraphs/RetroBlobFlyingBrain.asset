@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AI Action Fly Patrol
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -680, y: -616}
+  position: {x: -264, y: -136}
   ports:
     keys:
     - output
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: FlyPatrol
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -344, y: -472}
+  position: {x: 72, y: 8}
   ports:
     keys:
     - statesIn

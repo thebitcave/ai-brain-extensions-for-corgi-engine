@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AI Action Patrol Within Bounds
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -760, y: -392}
+  position: {x: -568, y: -216}
   ports:
     keys:
     - output
@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 200, y: -408}
+  position: {x: 392, y: -232}
   ports:
     keys:
     - decision
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Name: Track
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -424, y: -152}
+  position: {x: -232, y: 24}
   ports:
     keys:
     - statesIn
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Name: Patrol
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -424, y: -312}
+  position: {x: -232, y: -136}
   ports:
     keys:
     - statesIn
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Name: AI Decision Detect Target Line
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -168, y: -248}
+  position: {x: 24, y: -72}
   ports:
     keys:
     - output
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Name: AI Action Move Towards Target
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -760, y: -88}
+  position: {x: -568, y: 88}
   ports:
     keys:
     - output
@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 200, y: 24}
+  position: {x: 392, y: 200}
   ports:
     keys:
     - decision
