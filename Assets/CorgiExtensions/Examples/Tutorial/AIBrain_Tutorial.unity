@@ -4033,7 +4033,7 @@ GameObject:
   - component: {fileID: 1521996819}
   - component: {fileID: 1521996818}
   m_Layer: 13
-  m_Name: RetroSwordsman_Pluggable
+  m_Name: RetroSwordsmanPluggable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14697,7 +14697,7 @@ GameObject:
   - component: {fileID: 114817423294187084}
   - component: {fileID: 114845531073336282}
   m_Layer: 13
-  m_Name: RetroSwordsman_Generated
+  m_Name: RetroSwordsmanGenerated
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
