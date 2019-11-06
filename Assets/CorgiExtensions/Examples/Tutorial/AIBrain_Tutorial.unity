@@ -4032,13 +4032,14 @@ GameObject:
   - component: {fileID: 1521996820}
   - component: {fileID: 1521996819}
   - component: {fileID: 1521996818}
+  - component: {fileID: 1521996829}
   m_Layer: 13
   m_Name: RetroSwordsmanPluggable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1521996817
 Transform:
   m_ObjectHideFlags: 0
@@ -4541,6 +4542,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1521996829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521996816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca57f5e3f3ae78d4693554d409d3b0c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  States: []
+  BrainActive: 1
+  TimeInThisState: 0
+  Target: {fileID: 0}
+  ActionsFrequency: 0
+  DecisionFrequency: 0
+  aiBrainGraphs:
+  - {fileID: 11400000, guid: a383f0033cbad7e4ea3fe6158d797460, type: 2}
 --- !u!1001 &1530252149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14696,6 +14717,7 @@ GameObject:
   - component: {fileID: 114120593415747932}
   - component: {fileID: 114817423294187084}
   - component: {fileID: 114845531073336282}
+  - component: {fileID: 1675361928058317}
   m_Layer: 13
   m_Name: RetroSwordsmanGenerated
   m_TagString: Untagged
@@ -14703,6 +14725,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &1675361928058317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675361928058316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ec7461de2ec4542af5cecbeacbe763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aiBrainGraph: {fileID: 11400000, guid: a383f0033cbad7e4ea3fe6158d797460, type: 2}
+  brainActive: 1
+  actionsFrequency: 0
+  decisionFrequency: 0
 --- !u!1 &1731964199122322
 GameObject:
   m_ObjectHideFlags: 0
