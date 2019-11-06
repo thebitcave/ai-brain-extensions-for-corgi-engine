@@ -20,5 +20,4 @@ namespace TheBitCave.CorgiExensions.AI
             return action;
         }
     }
-
 }
