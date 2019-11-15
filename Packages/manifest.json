@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.github.siccity.xnode": "https://github.com/siccity/xNode.git",
     "com.unity.2d.pixel-perfect": "1.0.1-preview",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
@@ -48,11 +47,5 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  },
-  "lock": {
-    "com.github.siccity.xnode": {
-      "hash": "63c3ae2f7d532d253bb9d7515845a83788f37249",
-      "revision": "HEAD"
-    }
   }
 }
