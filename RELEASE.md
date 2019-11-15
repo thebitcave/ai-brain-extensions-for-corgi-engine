@@ -12,4 +12,4 @@
 
 ### beta 1.1
 
-* Refactor namespaces for MM Top Down Engine compatibility
+* Refactor namespaces for MM TopDown Engine compatibility
