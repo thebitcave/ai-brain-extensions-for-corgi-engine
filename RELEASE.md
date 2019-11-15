@@ -9,3 +9,7 @@
 * Corgi _AIDecisions_ support
 * Retro AI scene created using generator system
 * Retro AI scene created using pluggable system
+
+### beta 1.1
+
+* Refactor namespaces for MM Top Down Engine compatibility
