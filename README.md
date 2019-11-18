@@ -4,6 +4,8 @@ This is an extension for the Unity3D [Corgi Engine ](https://assetstore.unity.co
 
 For a tour of [Corgi Engine](https://assetstore.unity.com/packages/templates/systems/corgi-engine-2d-2-5d-platformer-26617?aid=1011lHJn) features, please check this video: [https://www.youtube.com/watch?v=b8bAt1i9gfo](https://www.youtube.com/watch?v=b8bAt1i9gfo).
 
+_Note: this package depends on [AI Brain Graph for MMTools](https://github.com/thebitcave/ai-brain-graph-for-mmtools)_
+
 ![Image of AI Brain Graph](images/aibrain_graph.png)
 
 ## Features
