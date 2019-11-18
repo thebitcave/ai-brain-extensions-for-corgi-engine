@@ -2,6 +2,10 @@
 
 ## Release List
 
+### beta 1.3
+
+* Remove MMTools extensions (moved to their own repository)
+
 ### beta 1.2
 
 * Remove Unity project to keep the project as a simple library
