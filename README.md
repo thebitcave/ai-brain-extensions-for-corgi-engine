@@ -6,7 +6,7 @@ For a tour of [Corgi Engine](https://assetstore.unity.com/packages/templates/sys
 
 _Note: this package depends on [AI Brain Graph for MMTools](https://github.com/thebitcave/ai-brain-graph-for-mmtools)_
 
-![Image of AI Brain Graph](images/aibrain_graph.png)
+[[https://github.com/thebitcave/ai-brain-graph-for-corgi-engine/blob/docs/doc-images/tutorial_006.png|alt=transition_connections]]
 
 ## Features
 
