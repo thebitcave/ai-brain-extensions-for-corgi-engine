@@ -28,6 +28,8 @@ This tool uses [xNode](https://github.com/Siccity/xNode) to create AI Brain grap
 
 The debugger tool is still experimentan and a work in progress, but will let you check some inner workings of an AI Brain.
 
+![AI Brain Debugger](https://github.com/thebitcave/ai-brain-estensions-for-mmtools/blob/docs/doc-images/aibrain_debugger.png)
+
 ### Features
 
 * _AIBrainDebuggable_ component
