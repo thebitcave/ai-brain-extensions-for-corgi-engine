@@ -2,6 +2,11 @@
 
 ## Release List
 
+### beta 1.4
+
+* _Added_: _AIBrain Debugger_ window
+* _Added_: _AIBrainDebuggable_ component
+
 ### beta 1.3
 
 * Remove MMTools extensions (moved to their own repository)
