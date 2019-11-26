@@ -22,7 +22,7 @@ This tool uses [xNode](https://github.com/Siccity/xNode) to create AI Brain grap
   * Actions
   * Decisions
 * _AI Brain Generator_: to create Corgi AIBrain systems (with AIDecisions and AIActions)
-* _AI pluggable brain_: to generate AI systems at runtime
+* _AI Pluggable Brain_: to generate AI systems at runtime
 
 ## 2. AI Brain Debugger (Experimental)
 
