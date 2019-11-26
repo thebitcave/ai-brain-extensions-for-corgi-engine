@@ -2,16 +2,13 @@
 
 ## Release List
 
-### beta 1.4.1
-
-* _Fixed_: [Bug #1](https://github.com/thebitcave/ai-brain-graph-for-mmtools/issues/1)
-* _Fixed_: [Bug #3](https://github.com/thebitcave/ai-brain-estensions-for-mmtools/issues/3)
-* _Fixed_: [Bug #4](https://github.com/thebitcave/ai-brain-estensions-for-mmtools/issues/4)
-
 ### beta 1.4
 
 * _Added_: _AIBrain Debugger_ window
 * _Added_: _AIBrainDebuggable_ component
+* _Fixed_: [MMTools Bug #1](https://github.com/thebitcave/ai-brain-graph-for-mmtools/issues/1)
+* _Fixed_: [MMTools Bug #3](https://github.com/thebitcave/ai-brain-estensions-for-mmtools/issues/3)
+* _Fixed_: [MMTools Bug #4](https://github.com/thebitcave/ai-brain-estensions-for-mmtools/issues/4)
 
 ### beta 1.3
 
