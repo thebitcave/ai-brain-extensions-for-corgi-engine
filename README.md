@@ -30,7 +30,7 @@ The debugger tool is still experimental and a work in progress, but will let you
 
 ![AI Brain Debugger](https://github.com/thebitcave/ai-brain-estensions-for-mmtools/blob/docs/doc-images/aibrain_debugger.png)
 
-### Features
+### Debugger Features
 
 * _AIBrainDebuggable_ component
 * _AIBrain_ current/previous states tracking
@@ -44,3 +44,7 @@ See the [dedicated page](https://github.com/marcosecchi/ai-brain-graph-for-corgi
 ## Documentation
 
 Tool documentation can be found on the [project Wiki](https://github.com/marcosecchi/ai-brain-graph-for-corgi/wiki).
+
+## Credits
+
+Logo icons by [fjstudio](https://www.flaticon.com/free-icon/binary_2214519) and [Freepik](https://www.flaticon.com/free-icon/centralized-structure_66069).
