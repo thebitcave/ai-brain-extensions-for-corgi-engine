@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AI Action Jump
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -216, y: -760}
+  position: {x: -392, y: 72}
   ports:
     keys:
     - output
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 376, y: -936}
+  position: {x: 200, y: -104}
   ports:
     keys:
     - decision
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Name: AI Action Patrol
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -216, y: -984}
+  position: {x: -392, y: -152}
   ports:
     keys:
     - output
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: AI Decision Next Frame
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 8, y: -584}
+  position: {x: -168, y: 248}
   ports:
     keys:
     - output
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Name: Jump
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 104, y: -760}
+  position: {x: -72, y: 72}
   ports:
     keys:
     - statesIn
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Name: AI Decision Time In State
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 40, y: -1144}
+  position: {x: -136, y: -312}
   ports:
     keys:
     - output
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Name: Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 376, y: -760}
+  position: {x: 200, y: 72}
   ports:
     keys:
     - decision
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Name: Walk
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 104, y: -936}
+  position: {x: -72, y: -104}
   ports:
     keys:
     - statesIn

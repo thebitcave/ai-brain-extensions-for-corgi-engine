@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450fa66e8c40ce742892574fb84cf35c, type: 3}
+  m_Name: RetroBlobWalkAndJumpWithSubgraph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 8193839581481957784}
+  startingNode: {fileID: 8193839581481957784}
+--- !u!114 &8193839581481957784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcc0be44fd330b43b3687674c138aaf, type: 3}
+  m_Name: WalkAndJump
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -104, y: -72}
+  ports:
+    keys:
+    - Walk-in
+    - Walk-out
+    values:
+    - _fieldName: Walk-in
+      _node: {fileID: 8193839581481957784}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 1
+    - _fieldName: Walk-out
+      _node: {fileID: 8193839581481957784}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 1
+  subgraph: {fileID: 11400000, guid: 43ce427c1833d44a9b3b035f69a15e51, type: 2}
+  inputStates:
+  - _fieldName: Walk-in
+    _node: {fileID: 8193839581481957784}
+    _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 2
+    _dynamic: 1
+  outputStates:
+  - _fieldName: Walk-out
+    _node: {fileID: 8193839581481957784}
+    _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    connections: []
+    _direction: 1
+    _connectionType: 1
+    _typeConstraint: 2
+    _dynamic: 1

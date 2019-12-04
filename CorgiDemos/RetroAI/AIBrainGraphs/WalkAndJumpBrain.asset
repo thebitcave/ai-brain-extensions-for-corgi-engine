@@ -374,7 +374,7 @@ MonoBehaviour:
       _dynamic: 0
   label: 
   changeDirectionOnWall: 1
-  avoidFalling: 0
+  avoidFalling: 1
   holeDetectionOffset: {x: 1, y: 0, z: 0}
   holeDetectionRaycastLength: 1
 --- !u!114 &7577509894642055444
