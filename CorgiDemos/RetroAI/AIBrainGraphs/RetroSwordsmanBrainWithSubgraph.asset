@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 440, y: -632}
+  position: {x: 264, y: -200}
   ports:
     keys:
     - decision
@@ -39,7 +39,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Walk-out
-        node: {fileID: 1543768752668150024}
+        node: {fileID: 8193839581481957784}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Name: AI Action Shoot
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -216, y: -568}
+  position: {x: -408, y: -40}
   ports:
     keys:
     - output
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: Shooting
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 104, y: -520}
+  position: {x: -88, y: 24}
   ports:
     keys:
     - statesIn
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: AI Decision Time In State
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 312, y: -328}
+  position: {x: 120, y: 216}
   ports:
     keys:
     - output
@@ -208,8 +208,8 @@ MonoBehaviour:
   - {fileID: -4069106526521780160}
   - {fileID: 4468333907550140219}
   - {fileID: -38429429932230015}
-  - {fileID: 1543768752668150024}
-  startingNode: {fileID: 0}
+  - {fileID: 8193839581481957784}
+  startingNode: {fileID: 8193839581481957784}
 --- !u!114 &1061422471966972926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 456, y: -488}
+  position: {x: 264, y: 56}
   ports:
     keys:
     - decision
@@ -261,7 +261,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Walk-in
-        node: {fileID: 1543768752668150024}
+        node: {fileID: 8193839581481957784}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -276,76 +276,6 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
---- !u!114 &1543768752668150024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dcc0be44fd330b43b3687674c138aaf, type: 3}
-  m_Name: AI Brain Subgraph
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 88, y: -680}
-  ports:
-    keys:
-    - Walk-in
-    - Walk-out
-    values:
-    - _fieldName: Walk-in
-      _node: {fileID: 1543768752668150024}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: trueState
-        node: {fileID: 1061422471966972926}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 2
-      _dynamic: 1
-    - _fieldName: Walk-out
-      _node: {fileID: 1543768752668150024}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: -5759341942878714258}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 1
-  subgraph: {fileID: 11400000, guid: 43ce427c1833d44a9b3b035f69a15e51, type: 2}
-  inputStates:
-  - _fieldName: Walk-in
-    _node: {fileID: 1543768752668150024}
-    _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    connections:
-    - fieldName: trueState
-      node: {fileID: 1061422471966972926}
-      reroutePoints: []
-    _direction: 0
-    _connectionType: 0
-    _typeConstraint: 2
-    _dynamic: 1
-  outputStates:
-  - _fieldName: Walk-out
-    _node: {fileID: 1543768752668150024}
-    _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    connections:
-    - fieldName: input
-      node: {fileID: -5759341942878714258}
-      reroutePoints: []
-    _direction: 1
-    _connectionType: 1
-    _typeConstraint: 2
-    _dynamic: 1
 --- !u!114 &4468333907550140219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,7 +289,7 @@ MonoBehaviour:
   m_Name: AI Decision Detect Target Radius
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 56, y: -904}
+  position: {x: -136, y: -360}
   ports:
     keys:
     - output
@@ -382,3 +312,73 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 512
+--- !u!114 &8193839581481957784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcc0be44fd330b43b3687674c138aaf, type: 3}
+  m_Name: WalkAndJump
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -104, y: -120}
+  ports:
+    keys:
+    - Walk-in
+    - Walk-out
+    values:
+    - _fieldName: Walk-in
+      _node: {fileID: 8193839581481957784}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: trueState
+        node: {fileID: 1061422471966972926}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 1
+    - _fieldName: Walk-out
+      _node: {fileID: 8193839581481957784}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: -5759341942878714258}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 1
+  subgraph: {fileID: 11400000, guid: 43ce427c1833d44a9b3b035f69a15e51, type: 2}
+  inputStates:
+  - _fieldName: Walk-in
+    _node: {fileID: 8193839581481957784}
+    _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    connections:
+    - fieldName: trueState
+      node: {fileID: 1061422471966972926}
+      reroutePoints: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 2
+    _dynamic: 1
+  outputStates:
+  - _fieldName: Walk-out
+    _node: {fileID: 8193839581481957784}
+    _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    connections:
+    - fieldName: input
+      node: {fileID: -5759341942878714258}
+      reroutePoints: []
+    _direction: 1
+    _connectionType: 1
+    _typeConstraint: 2
+    _dynamic: 1

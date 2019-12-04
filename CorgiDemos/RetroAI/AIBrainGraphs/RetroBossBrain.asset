@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4813333ead4977a408f315682cbf3a7d, type: 3}
-  m_Name: AI Transition
+  m_Name: Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: 520, y: -1064}
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4813333ead4977a408f315682cbf3a7d, type: 3}
-  m_Name: AI Transition
+  m_Name: Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: 520, y: -600}
@@ -506,7 +506,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4813333ead4977a408f315682cbf3a7d, type: 3}
-  m_Name: AI Transition
+  m_Name: Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: 536, y: -184}
@@ -572,7 +572,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4813333ead4977a408f315682cbf3a7d, type: 3}
-  m_Name: AI Transition
+  m_Name: Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: 536, y: -440}
@@ -715,7 +715,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4813333ead4977a408f315682cbf3a7d, type: 3}
-  m_Name: AI Transition
+  m_Name: Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: 520, y: -760}
