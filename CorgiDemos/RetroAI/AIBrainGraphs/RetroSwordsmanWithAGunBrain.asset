@@ -267,6 +267,7 @@ MonoBehaviour:
   - {fileID: 5670214012608775103}
   - {fileID: 6131103617895931109}
   - {fileID: -3268985524202989767}
+  startingNode: {fileID: -8654166837088512186}
 --- !u!114 &5670214012608775103
 MonoBehaviour:
   m_ObjectHideFlags: 0
