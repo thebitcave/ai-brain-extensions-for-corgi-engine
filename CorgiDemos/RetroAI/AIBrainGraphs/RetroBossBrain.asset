@@ -23,8 +23,8 @@ MonoBehaviour:
     values:
     - _fieldName: decision
       _node: {fileID: -9027623475869246370}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.DecisionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
         node: {fileID: 7161685330631959267}
@@ -35,8 +35,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: input
       _node: {fileID: -9027623475869246370}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.TransitionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: transitions
         node: {fileID: 1801439191910248540}
@@ -47,7 +47,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: trueState
       _node: {fileID: -9027623475869246370}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
@@ -59,7 +59,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: falseState
       _node: {fileID: -9027623475869246370}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 1
@@ -86,8 +86,8 @@ MonoBehaviour:
     values:
     - _fieldName: output
       _node: {fileID: -8557163714554302537}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.ActionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: actions
         node: {fileID: 1801439191910248540}
@@ -117,8 +117,8 @@ MonoBehaviour:
     values:
     - _fieldName: output
       _node: {fileID: -8379406173937171460}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.ActionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: actions
         node: {fileID: -4184980476302669778}
@@ -152,8 +152,8 @@ MonoBehaviour:
     values:
     - _fieldName: decision
       _node: {fileID: -8113463503445308490}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.DecisionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
         node: {fileID: 7161685330631959267}
@@ -164,8 +164,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: input
       _node: {fileID: -8113463503445308490}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.TransitionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: transitions
         node: {fileID: 2188855116346625710}
@@ -176,7 +176,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: trueState
       _node: {fileID: -8113463503445308490}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
@@ -188,7 +188,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: falseState
       _node: {fileID: -8113463503445308490}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 1
@@ -215,8 +215,8 @@ MonoBehaviour:
     values:
     - _fieldName: output
       _node: {fileID: -4930739649229635520}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.DecisionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: decision
         node: {fileID: 8358477574993609890}
@@ -251,7 +251,7 @@ MonoBehaviour:
     values:
     - _fieldName: statesIn
       _node: {fileID: -4184980476302669778}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: trueState
@@ -263,8 +263,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: actions
       _node: {fileID: -4184980476302669778}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.ActionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
         node: {fileID: -8379406173937171460}
@@ -275,8 +275,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: transitions
       _node: {fileID: -4184980476302669778}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.TransitionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
         node: {fileID: 5450877052831460232}
@@ -305,8 +305,8 @@ MonoBehaviour:
     values:
     - _fieldName: output
       _node: {fileID: -2989639293525445010}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.DecisionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: decision
         node: {fileID: 5450877052831460232}
@@ -345,7 +345,6 @@ MonoBehaviour:
   - {fileID: 7161685330631959267}
   - {fileID: -4930739649229635520}
   - {fileID: -2989639293525445010}
-  startingNode: {fileID: 1801439191910248540}
 --- !u!114 &1801439191910248540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,7 +367,7 @@ MonoBehaviour:
     values:
     - _fieldName: statesIn
       _node: {fileID: 1801439191910248540}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: trueState
@@ -380,8 +379,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: actions
       _node: {fileID: 1801439191910248540}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.ActionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
         node: {fileID: -8557163714554302537}
@@ -392,8 +391,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: transitions
       _node: {fileID: 1801439191910248540}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.TransitionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
         node: {fileID: -9027623475869246370}
@@ -427,7 +426,7 @@ MonoBehaviour:
     values:
     - _fieldName: statesIn
       _node: {fileID: 2188855116346625710}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: trueState
@@ -439,8 +438,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: actions
       _node: {fileID: 2188855116346625710}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.ActionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
         node: {fileID: 7800376844022379443}
@@ -451,8 +450,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: transitions
       _node: {fileID: 2188855116346625710}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.TransitionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
         node: {fileID: -8113463503445308490}
@@ -481,8 +480,8 @@ MonoBehaviour:
     values:
     - _fieldName: output
       _node: {fileID: 3564103159154635619}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.ActionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: actions
         node: {fileID: 8467444180703209814}
@@ -519,8 +518,8 @@ MonoBehaviour:
     values:
     - _fieldName: decision
       _node: {fileID: 5450877052831460232}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.DecisionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
         node: {fileID: -2989639293525445010}
@@ -531,8 +530,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: input
       _node: {fileID: 5450877052831460232}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.TransitionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: transitions
         node: {fileID: -4184980476302669778}
@@ -543,7 +542,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: trueState
       _node: {fileID: 5450877052831460232}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
@@ -555,7 +554,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: falseState
       _node: {fileID: 5450877052831460232}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 1
@@ -585,8 +584,8 @@ MonoBehaviour:
     values:
     - _fieldName: decision
       _node: {fileID: 5798996970391496397}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.DecisionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
         node: {fileID: 7161685330631959267}
@@ -597,8 +596,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: input
       _node: {fileID: 5798996970391496397}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.TransitionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: transitions
         node: {fileID: 8467444180703209814}
@@ -609,7 +608,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: trueState
       _node: {fileID: 5798996970391496397}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
@@ -621,7 +620,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: falseState
       _node: {fileID: 5798996970391496397}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 1
@@ -648,8 +647,8 @@ MonoBehaviour:
     values:
     - _fieldName: output
       _node: {fileID: 7161685330631959267}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.DecisionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: decision
         node: {fileID: -9027623475869246370}
@@ -687,8 +686,8 @@ MonoBehaviour:
     values:
     - _fieldName: output
       _node: {fileID: 7800376844022379443}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.ActionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: actions
         node: {fileID: 2188855116346625710}
@@ -728,8 +727,8 @@ MonoBehaviour:
     values:
     - _fieldName: decision
       _node: {fileID: 8358477574993609890}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.DecisionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
         node: {fileID: -4930739649229635520}
@@ -740,8 +739,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: input
       _node: {fileID: 8358477574993609890}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.TransitionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: transitions
         node: {fileID: 1801439191910248540}
@@ -752,7 +751,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: trueState
       _node: {fileID: 8358477574993609890}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
@@ -764,7 +763,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: falseState
       _node: {fileID: 8358477574993609890}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 1
@@ -793,7 +792,7 @@ MonoBehaviour:
     values:
     - _fieldName: statesIn
       _node: {fileID: 8467444180703209814}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.StateConnection, Assembly-CSharp,
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: trueState
@@ -808,8 +807,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: actions
       _node: {fileID: 8467444180703209814}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.ActionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
         node: {fileID: 3564103159154635619}
@@ -820,8 +819,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: transitions
       _node: {fileID: 8467444180703209814}
-      _typeQualifiedName: TheBitCave.CorgiExensions.AI.TransitionConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
         node: {fileID: 5798996970391496397}
