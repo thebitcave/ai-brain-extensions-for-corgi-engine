@@ -15097,6 +15097,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RetroBlobWithAGun_Pluggable
       objectReference: {fileID: 0}
+    - target: {fileID: 5793788904449213475, guid: b73eb1e93e2fc4121a9fd1aeba4c5fa9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5795177872911488649, guid: b73eb1e93e2fc4121a9fd1aeba4c5fa9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15309,6 +15314,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RetroBlobPatrolWithinBoundsUntilDetected_Pluggable
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939810959832723401, guid: 21801834de2c64c0da688703ec1e54dc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4939810959832723398, guid: 21801834de2c64c0da688703ec1e54dc,
         type: 3}
