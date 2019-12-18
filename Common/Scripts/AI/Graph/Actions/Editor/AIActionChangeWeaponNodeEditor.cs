@@ -19,6 +19,5 @@ namespace TheBitCave.CorgiExensions.AI.Graph
             NodeEditorGUILayout.PropertyField(_newWeapon);
             serializedObject.ApplyModifiedProperties();
         }
-
     }
 }
