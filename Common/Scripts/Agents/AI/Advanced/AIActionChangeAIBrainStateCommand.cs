@@ -17,13 +17,20 @@ namespace TheBitCave.CorgiExensions.AI
         // The state the slave should enter in.
         public string StateName;
 
+        protected CharacterCommandAIBrain _ability;
+
+        protected override void Start()
+        {
+            base.Start();
+            _ability = GetComponent<CharacterCommandAIBrain>();
+        }
+
         /// <summary>
         /// On PerformAction we send a command to all brain slaves
         /// </summary>
         public override void PerformAction()
         {
-            var evt = new ChangeAIBrainStateCommandEvent(ChannelName, StateName, _brain.Target);
-            MMEventManager.TriggerEvent(evt);
+            _ability.SendCommand(ChannelName, StateName, _brain.Target);
         }
     }
 }

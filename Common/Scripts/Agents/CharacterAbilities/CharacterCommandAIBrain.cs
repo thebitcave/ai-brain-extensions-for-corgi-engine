@@ -22,7 +22,7 @@ namespace TheBitCave.CorgiExensions
         {
             var evt = new ChangeAIBrainStateCommandEvent(channelName, stateName, target);
             MMEventManager.TriggerEvent(evt);
+            PlayAbilityStartFeedbacks();
         }
-
     }
 }
