@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4475844525131867252}
   - component: {fileID: 8939524949474493499}
   - component: {fileID: 2829400707678888811}
+  - component: {fileID: 290644011009676531}
   m_Layer: 13
   m_Name: Rectangle_Slave
   m_TagString: Player
@@ -895,6 +896,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChannelName: channel_1
+--- !u!114 &290644011009676531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9029035652660693056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ec7461de2ec4542af5cecbeacbe763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aiBrainGraph: {fileID: 11400000, guid: 98f3855e872b8994db845feffe30debc, type: 2}
+  brainActive: 1
+  actionsFrequency: 0
+  decisionFrequency: 0
+  generateDebugBrain: 0
+  generateSlaveBrain: 0
+  slaveChannelName: 
 --- !u!1 &9029035652764405195
 GameObject:
   m_ObjectHideFlags: 0

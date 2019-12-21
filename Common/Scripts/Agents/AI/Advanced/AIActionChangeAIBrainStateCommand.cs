@@ -7,6 +7,7 @@ namespace TheBitCave.CorgiExensions.AI
     /// <summary>
     /// This action sends a change state command to all registered slave brains
     /// </summary>
+    [RequireComponent(typeof(CharacterCommandAIBrain))]
     public class AIActionChangeAIBrainStateCommand : AIAction
     {
         [Header("Master Brain Settings")]

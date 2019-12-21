@@ -4697,15 +4697,16 @@ GameObject:
   - component: {fileID: 6270861596347291496}
   - component: {fileID: 6270861596347291511}
   - component: {fileID: 6270861596347291510}
+  - component: {fileID: 59079000191963772}
   - component: {fileID: 9066455254378914674}
-  - component: {fileID: 4391598665493398978}
-  - component: {fileID: 5478011045582246564}
-  - component: {fileID: 250907795228183735}
-  - component: {fileID: 1685562230235659280}
-  - component: {fileID: 2637910642574908304}
-  - component: {fileID: 8843003168560331196}
-  - component: {fileID: 7511410406036475835}
-  - component: {fileID: 3078616147556159777}
+  - component: {fileID: 9001056887376338841}
+  - component: {fileID: 2943127473602937549}
+  - component: {fileID: 2693161466410779063}
+  - component: {fileID: 6352872342508700638}
+  - component: {fileID: 3145503477922258053}
+  - component: {fileID: 8542355560298338915}
+  - component: {fileID: 9154568601573773107}
+  - component: {fileID: 8284780843398742326}
   m_Layer: 13
   m_Name: Rectangle_HiveMind
   m_TagString: Player
@@ -5493,6 +5494,21 @@ MonoBehaviour:
   WaterEntryEffect: {fileID: 143758, guid: 14f27396ac5b4d84cb17d403de44b8a1, type: 3}
   WaterExitEffect: {fileID: 143758, guid: 14f27396ac5b4d84cb17d403de44b8a1, type: 3}
   WaterExitForce: {x: 0, y: 12}
+--- !u!114 &59079000191963772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6270861596347291519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8683a6e51cd8fea48b072908d28b3421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
 --- !u!114 &9066455254378914674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5512,7 +5528,7 @@ MonoBehaviour:
   generateDebugBrain: 0
   generateSlaveBrain: 1
   slaveChannelName: channel_2
---- !u!114 &4391598665493398978
+--- !u!114 &9001056887376338841
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5526,7 +5542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: 
   MinimumDistance: 1
---- !u!114 &5478011045582246564
+--- !u!114 &2943127473602937549
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5543,7 +5559,7 @@ MonoBehaviour:
   AvoidFalling: 1
   HoleDetectionOffset: {x: 0, y: 0, z: 0}
   HoleDetectionRaycastLength: 1
---- !u!114 &250907795228183735
+--- !u!114 &2693161466410779063
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5563,7 +5579,7 @@ MonoBehaviour:
   BoundsMethod: 0
   BoundsExtentsLeft: 0
   BoundsExtentsRight: 3
---- !u!114 &1685562230235659280
+--- !u!114 &6352872342508700638
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5578,7 +5594,7 @@ MonoBehaviour:
   Label: 
   ChannelName: channel_2
   StateName: Seeking
---- !u!114 &2637910642574908304
+--- !u!114 &3145503477922258053
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5592,7 +5608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: 
   NumberOfJumps: 1
---- !u!114 &8843003168560331196
+--- !u!114 &8542355560298338915
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5610,7 +5626,7 @@ MonoBehaviour:
   TargetLayer:
     serializedVersion: 2
     m_Bits: 512
---- !u!114 &7511410406036475835
+--- !u!114 &9154568601573773107
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5626,23 +5642,23 @@ MonoBehaviour:
   - StateName: Patrolling
     Actions:
       array:
-      - {fileID: 250907795228183735}
+      - {fileID: 2693161466410779063}
     Transitions:
       array:
-      - Decision: {fileID: 8843003168560331196}
+      - Decision: {fileID: 8542355560298338915}
         TrueState: Alerted
         FalseState: 
   - StateName: Seeking
     Actions:
       array:
-      - {fileID: 2637910642574908304}
-      - {fileID: 4391598665493398978}
+      - {fileID: 3145503477922258053}
+      - {fileID: 9001056887376338841}
     Transitions:
       array: []
   - StateName: Alerted
     Actions:
       array:
-      - {fileID: 1685562230235659280}
+      - {fileID: 6352872342508700638}
     Transitions:
       array: []
   BrainActive: 1
@@ -5650,7 +5666,7 @@ MonoBehaviour:
   Target: {fileID: 0}
   ActionsFrequency: 0
   DecisionFrequency: 0
---- !u!114 &3078616147556159777
+--- !u!114 &8284780843398742326
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

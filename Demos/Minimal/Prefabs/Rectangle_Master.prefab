@@ -34,13 +34,14 @@ GameObject:
   - component: {fileID: 1209314078328601390}
   - component: {fileID: 1209631732022755426}
   - component: {fileID: 1209759758508325474}
+  - component: {fileID: 7550714349284914651}
   - component: {fileID: 1124398474578768828}
-  - component: {fileID: 5948234863674324484}
-  - component: {fileID: 2414292834044792115}
-  - component: {fileID: 3764878845672886025}
-  - component: {fileID: 4704535168280558464}
-  - component: {fileID: 1877136707284989676}
-  - component: {fileID: 5168282532391285528}
+  - component: {fileID: 3785159407655479982}
+  - component: {fileID: 8479892146152241659}
+  - component: {fileID: 2729070756423868073}
+  - component: {fileID: 5450725896851209852}
+  - component: {fileID: 2921463525460157559}
+  - component: {fileID: 7380059489452051182}
   m_Layer: 13
   m_Name: Rectangle_Master
   m_TagString: Player
@@ -421,7 +422,7 @@ MonoBehaviour:
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
   NumberOfJumps: 3
-  JumpHeight: 3
+  JumpHeight: 1
   JumpRestrictions: 2
   JumpTimeWindow: 0
   ResetCameraOffsetOnJump: 0
@@ -828,6 +829,21 @@ MonoBehaviour:
   WaterEntryEffect: {fileID: 143758, guid: 14f27396ac5b4d84cb17d403de44b8a1, type: 3}
   WaterExitEffect: {fileID: 143758, guid: 14f27396ac5b4d84cb17d403de44b8a1, type: 3}
   WaterExitForce: {x: 0, y: 12}
+--- !u!114 &7550714349284914651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251584956437653084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8683a6e51cd8fea48b072908d28b3421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
 --- !u!114 &1124398474578768828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -847,7 +863,7 @@ MonoBehaviour:
   generateDebugBrain: 0
   generateSlaveBrain: 0
   slaveChannelName: 
---- !u!114 &5948234863674324484
+--- !u!114 &3785159407655479982
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -860,7 +876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
---- !u!114 &2414292834044792115
+--- !u!114 &8479892146152241659
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -875,7 +891,7 @@ MonoBehaviour:
   Label: 
   ChannelName: channel_1
   StateName: Seeking
---- !u!114 &3764878845672886025
+--- !u!114 &2729070756423868073
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -889,7 +905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: 
   NumberOfJumps: 1
---- !u!114 &4704535168280558464
+--- !u!114 &5450725896851209852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -902,7 +918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
---- !u!114 &1877136707284989676
+--- !u!114 &2921463525460157559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -926,7 +942,7 @@ MonoBehaviour:
   ObstaclesLayer:
     serializedVersion: 2
     m_Bits: 0
---- !u!114 &5168282532391285528
+--- !u!114 &7380059489452051182
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -942,26 +958,26 @@ MonoBehaviour:
   - StateName: Waiting
     Actions:
       array:
-      - {fileID: 5948234863674324484}
+      - {fileID: 3785159407655479982}
     Transitions:
       array:
-      - Decision: {fileID: 1877136707284989676}
+      - Decision: {fileID: 2921463525460157559}
         TrueState: SendingAlert
         FalseState: 
   - StateName: SendingAlert
     Actions:
       array:
-      - {fileID: 2414292834044792115}
-      - {fileID: 3764878845672886025}
+      - {fileID: 8479892146152241659}
+      - {fileID: 2729070756423868073}
     Transitions:
       array:
-      - Decision: {fileID: 4704535168280558464}
+      - Decision: {fileID: 5450725896851209852}
         TrueState: Idle
         FalseState: 
   - StateName: Idle
     Actions:
       array:
-      - {fileID: 5948234863674324484}
+      - {fileID: 3785159407655479982}
     Transitions:
       array: []
   BrainActive: 1
