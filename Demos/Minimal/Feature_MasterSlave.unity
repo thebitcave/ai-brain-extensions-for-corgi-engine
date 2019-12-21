@@ -1366,7 +1366,7 @@ PrefabInstance:
     - target: {fileID: 6270861596347291504, guid: 6a9a54d004076004d869f54daffb5f24,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -78.44
+      value: -80.03
       objectReference: {fileID: 0}
     - target: {fileID: 6270861596347291504, guid: 6a9a54d004076004d869f54daffb5f24,
         type: 3}
@@ -1417,16 +1417,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6270861596347291422, guid: 6a9a54d004076004d869f54daffb5f24,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.8503309
-      objectReference: {fileID: 0}
-    - target: {fileID: 6270861596347291495, guid: 6a9a54d004076004d869f54daffb5f24,
-        type: 3}
-      propertyPath: WalkSpeed
-      value: 4.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a9a54d004076004d869f54daffb5f24, type: 3}

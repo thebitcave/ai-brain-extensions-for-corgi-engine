@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8398834964331558042}
   - component: {fileID: 4567110879981776275}
   m_Layer: 13
-  m_Name: BrainSlaveFeedback
+  m_Name: BrainMasterFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4805,6 +4805,7 @@ Transform:
   m_Children:
   - {fileID: 6270861596174242549}
   - {fileID: 4598255571098267354}
+  - {fileID: 4573193452408385806}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4847,7 +4848,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 435a2d27a31b7e942bf80841ed053ca1, type: 3}
-  m_Color: {r: 1, g: 0.8527724, b: 0.0141509175, a: 1}
+  m_Color: {r: 1, g: 0.8503309, b: 0.0141509175, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5061,7 +5062,7 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
-  WalkSpeed: 5
+  WalkSpeed: 4.8
   MovementSpeedMultiplier: 1
   PushSpeedMultiplier: 1
   InstantAcceleration: 0
@@ -5585,9 +5586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8683a6e51cd8fea48b072908d28b3421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 8398834964331558042}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
+  AbilityFeedbacks: {fileID: 8398834964331558042}
 --- !u!114 &9066455254378914674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5757,4 +5756,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1cda239ed2a15942a0a7e2994c226e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AbilityFeedbacks: {fileID: 8273031717109033}
   ChannelName: channel_2
+--- !u!1 &7890253907527837267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4573193452408385806}
+  - component: {fileID: 8273031717109033}
+  - component: {fileID: 5349921283055881351}
+  m_Layer: 13
+  m_Name: BrainSlaveFeedback
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4573193452408385806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7890253907527837267}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6270861596347291504}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8273031717109033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7890253907527837267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b72de2996c5c40bfb394f3d0e0a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Feedbacks:
+  - {fileID: 5349921283055881351}
+  InitializationMode: 2
+  DebugActive: 0
+--- !u!114 &5349921283055881351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7890253907527837267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83ae645c92af634f89036dd5302f84a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Label: Flicker
+  Chance: 100
+  Timing:
+    InitialDelay: 0
+    CooldownDuration: 0
+    NumberOfRepeats: 0
+    RepeatForever: 0
+    DelayBetweenRepeats: 1
+    Sequence: {fileID: 0}
+    TrackID: 0
+    Quantized: 0
+    TargetBPM: 120
+  DebugActive: 0
+  BoundRenderer: {fileID: 6270861596347291422}
+  FlickerDuration: 0.6
+  FlickerOctave: 0.04
+  FlickerColor: {r: 0, g: 1, b: 0.011921406, a: 1}
