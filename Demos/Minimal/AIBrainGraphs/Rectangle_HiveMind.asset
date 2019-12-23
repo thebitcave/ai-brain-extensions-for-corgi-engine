@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: AI Action Move Towards Target
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -744, y: 328}
+  position: {x: -712, y: 296}
   ports:
     keys:
     - output
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Name: Patrolling
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -216, y: -232}
+  position: {x: -216, y: -312}
   ports:
     keys:
     - actions
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 176.97798, y: 71.237495}
+  position: {x: 168, y: -88}
   ports:
     keys:
     - decision
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Name: Disabled
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -216, y: 120}
+  position: {x: -216, y: 104}
   ports:
     keys:
     - statesIn
@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Name: AI Decision Next Frame
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 59.571793, y: -47.236015}
+  position: {x: -280, y: -168}
   ports:
     keys:
     - output
@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Name: Seeking
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -232, y: 296}
+  position: {x: -216, y: 264}
   ports:
     keys:
     - statesIn
@@ -496,7 +496,7 @@ MonoBehaviour:
   m_Name: Alerted
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -216, y: -40}
+  position: {x: -216, y: -72}
   ports:
     keys:
     - statesIn
@@ -588,7 +588,7 @@ MonoBehaviour:
   m_Name: AI Action Jump
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -744, y: 216}
+  position: {x: -712, y: 184}
   ports:
     keys:
     - output
