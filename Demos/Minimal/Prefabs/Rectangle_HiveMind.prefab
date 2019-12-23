@@ -4776,15 +4776,15 @@ GameObject:
   - component: {fileID: 6270861596347291511}
   - component: {fileID: 6270861596347291510}
   - component: {fileID: 59079000191963772}
-  - component: {fileID: 9066455254378914674}
-  - component: {fileID: 9001056887376338841}
-  - component: {fileID: 2943127473602937549}
-  - component: {fileID: 2693161466410779063}
-  - component: {fileID: 6352872342508700638}
-  - component: {fileID: 3145503477922258053}
-  - component: {fileID: 8542355560298338915}
-  - component: {fileID: 9154568601573773107}
   - component: {fileID: 8284780843398742326}
+  - component: {fileID: 9066455254378914674}
+  - component: {fileID: 4162311444384471781}
+  - component: {fileID: 8700581961461958043}
+  - component: {fileID: 7348589865819558564}
+  - component: {fileID: 7345148537656267990}
+  - component: {fileID: 9170107822650988996}
+  - component: {fileID: 2700630427667577997}
+  - component: {fileID: 6319920493281646527}
   m_Layer: 13
   m_Name: Rectangle_HiveMind
   m_TagString: Player
@@ -4848,7 +4848,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 435a2d27a31b7e942bf80841ed053ca1, type: 3}
-  m_Color: {r: 1, g: 0.8503309, b: 0.0141509175, a: 1}
+  m_Color: {r: 1, g: 0.85647917, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5062,7 +5062,7 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
-  WalkSpeed: 4.8
+  WalkSpeed: 4.5
   MovementSpeedMultiplier: 1
   PushSpeedMultiplier: 1
   InstantAcceleration: 0
@@ -5587,6 +5587,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AbilityFeedbacks: {fileID: 8398834964331558042}
+--- !u!114 &8284780843398742326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6270861596347291519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1cda239ed2a15942a0a7e2994c226e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityFeedbacks: {fileID: 8273031717109033}
+  ChannelNames:
+  - channel_2
 --- !u!114 &9066455254378914674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5604,9 +5619,7 @@ MonoBehaviour:
   actionsFrequency: 0
   decisionFrequency: 0
   generateDebugBrain: 0
-  generateSlaveBrain: 1
-  slaveChannelName: channel_2
---- !u!114 &9001056887376338841
+--- !u!114 &4162311444384471781
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5620,7 +5633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: 
   MinimumDistance: 1
---- !u!114 &2943127473602937549
+--- !u!114 &8700581961461958043
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5637,7 +5650,7 @@ MonoBehaviour:
   AvoidFalling: 1
   HoleDetectionOffset: {x: 0, y: 0, z: 0}
   HoleDetectionRaycastLength: 1
---- !u!114 &2693161466410779063
+--- !u!114 &7348589865819558564
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5657,7 +5670,7 @@ MonoBehaviour:
   BoundsMethod: 0
   BoundsExtentsLeft: 0
   BoundsExtentsRight: 3
---- !u!114 &6352872342508700638
+--- !u!114 &7345148537656267990
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5672,7 +5685,7 @@ MonoBehaviour:
   Label: 
   ChannelName: channel_2
   StateName: Seeking
---- !u!114 &3145503477922258053
+--- !u!114 &9170107822650988996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5686,7 +5699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: 
   NumberOfJumps: 1
---- !u!114 &8542355560298338915
+--- !u!114 &2700630427667577997
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5704,7 +5717,7 @@ MonoBehaviour:
   TargetLayer:
     serializedVersion: 2
     m_Bits: 512
---- !u!114 &9154568601573773107
+--- !u!114 &6319920493281646527
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5720,23 +5733,23 @@ MonoBehaviour:
   - StateName: Patrolling
     Actions:
       array:
-      - {fileID: 2693161466410779063}
+      - {fileID: 7348589865819558564}
     Transitions:
       array:
-      - Decision: {fileID: 8542355560298338915}
+      - Decision: {fileID: 2700630427667577997}
         TrueState: Alerted
         FalseState: 
   - StateName: Seeking
     Actions:
       array:
-      - {fileID: 3145503477922258053}
-      - {fileID: 9001056887376338841}
+      - {fileID: 9170107822650988996}
+      - {fileID: 4162311444384471781}
     Transitions:
       array: []
   - StateName: Alerted
     Actions:
       array:
-      - {fileID: 6352872342508700638}
+      - {fileID: 7345148537656267990}
     Transitions:
       array: []
   BrainActive: 1
@@ -5744,20 +5757,6 @@ MonoBehaviour:
   Target: {fileID: 0}
   ActionsFrequency: 0
   DecisionFrequency: 0
---- !u!114 &8284780843398742326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6270861596347291519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1cda239ed2a15942a0a7e2994c226e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityFeedbacks: {fileID: 8273031717109033}
-  ChannelName: channel_2
 --- !u!1 &7890253907527837267
 GameObject:
   m_ObjectHideFlags: 0

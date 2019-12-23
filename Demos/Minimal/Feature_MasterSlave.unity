@@ -492,6 +492,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rectangle_HiveMind (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6270861596347291519, guid: 6a9a54d004076004d869f54daffb5f24,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6270861596347291504, guid: 6a9a54d004076004d869f54daffb5f24,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -546,26 +551,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6270861596347291422, guid: 6a9a54d004076004d869f54daffb5f24,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6270861596347291422, guid: 6a9a54d004076004d869f54daffb5f24,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.85647917
-      objectReference: {fileID: 0}
-    - target: {fileID: 6270861596347291422, guid: 6a9a54d004076004d869f54daffb5f24,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6270861596347291495, guid: 6a9a54d004076004d869f54daffb5f24,
-        type: 3}
-      propertyPath: WalkSpeed
-      value: 4.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a9a54d004076004d869f54daffb5f24, type: 3}
@@ -1362,6 +1347,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rectangle_HiveMind (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270861596347291519, guid: 6a9a54d004076004d869f54daffb5f24,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6270861596347291504, guid: 6a9a54d004076004d869f54daffb5f24,
         type: 3}
@@ -2658,6 +2648,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rectangle_HiveMind (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6270861596347291519, guid: 6a9a54d004076004d869f54daffb5f24,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6270861596347291504, guid: 6a9a54d004076004d869f54daffb5f24,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3568,6 +3563,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rectangle_HiveMind (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6270861596347291519, guid: 6a9a54d004076004d869f54daffb5f24,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6270861596347291504, guid: 6a9a54d004076004d869f54daffb5f24,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3693,6 +3693,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rectangle_HiveMind (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270861596347291519, guid: 6a9a54d004076004d869f54daffb5f24,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6270861596347291504, guid: 6a9a54d004076004d869f54daffb5f24,
         type: 3}
@@ -3891,6 +3896,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rectangle_HiveMind (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270861596347291519, guid: 6a9a54d004076004d869f54daffb5f24,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6270861596347291504, guid: 6a9a54d004076004d869f54daffb5f24,
         type: 3}

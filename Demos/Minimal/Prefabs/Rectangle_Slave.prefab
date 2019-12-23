@@ -112,11 +112,11 @@ GameObject:
   - component: {fileID: 9029035652660693079}
   - component: {fileID: 9029035652660693064}
   - component: {fileID: 9029035652660693065}
-  - component: {fileID: 6381972369924469706}
-  - component: {fileID: 4475844525131867252}
-  - component: {fileID: 8939524949474493499}
-  - component: {fileID: 2829400707678888811}
-  - component: {fileID: 290644011009676531}
+  - component: {fileID: 5898321995420538845}
+  - component: {fileID: 1300276446067796219}
+  - component: {fileID: 8082043785717421000}
+  - component: {fileID: 5609965824837626084}
+  - component: {fileID: 7356535592027204733}
   m_Layer: 13
   m_Name: Rectangle_Slave
   m_TagString: Player
@@ -905,64 +905,7 @@ MonoBehaviour:
   WaterEntryEffect: {fileID: 143758, guid: 14f27396ac5b4d84cb17d403de44b8a1, type: 3}
   WaterExitEffect: {fileID: 143758, guid: 14f27396ac5b4d84cb17d403de44b8a1, type: 3}
   WaterExitForce: {x: 0, y: 12}
---- !u!114 &6381972369924469706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9029035652660693056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fce3bcf6da4a2d46a0a02c021b5bb0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Label: 
-  MinimumDistance: 1
---- !u!114 &4475844525131867252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9029035652660693056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ce6650aa70b5cb49836740df729c5be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Label: 
---- !u!114 &8939524949474493499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9029035652660693056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eec89e4158bf96841b9bc830fc5385ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  States:
-  - StateName: Idle
-    Actions:
-      array:
-      - {fileID: 4475844525131867252}
-    Transitions:
-      array: []
-  - StateName: Seeking
-    Actions:
-      array:
-      - {fileID: 6381972369924469706}
-    Transitions:
-      array: []
-  BrainActive: 1
-  TimeInThisState: 0
-  Target: {fileID: 0}
-  ActionsFrequency: 0
-  DecisionFrequency: 0
---- !u!114 &2829400707678888811
+--- !u!114 &5898321995420538845
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -975,8 +918,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AbilityFeedbacks: {fileID: 7355118128094205198}
-  ChannelName: channel_1
---- !u!114 &290644011009676531
+  ChannelNames:
+  - channel_1
+--- !u!114 &1300276446067796219
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -993,8 +937,63 @@ MonoBehaviour:
   actionsFrequency: 0
   decisionFrequency: 0
   generateDebugBrain: 0
-  generateSlaveBrain: 0
-  slaveChannelName: 
+--- !u!114 &8082043785717421000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9029035652660693056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fce3bcf6da4a2d46a0a02c021b5bb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Label: 
+  MinimumDistance: 1
+--- !u!114 &5609965824837626084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9029035652660693056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce6650aa70b5cb49836740df729c5be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Label: 
+--- !u!114 &7356535592027204733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9029035652660693056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec89e4158bf96841b9bc830fc5385ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  States:
+  - StateName: Patrolling
+    Actions:
+      array:
+      - {fileID: 5609965824837626084}
+    Transitions:
+      array: []
+  - StateName: Seeking
+    Actions:
+      array:
+      - {fileID: 8082043785717421000}
+    Transitions:
+      array: []
+  BrainActive: 1
+  TimeInThisState: 0
+  Target: {fileID: 0}
+  ActionsFrequency: 0
+  DecisionFrequency: 0
 --- !u!1 &9029035652764405195
 GameObject:
   m_ObjectHideFlags: 0
