@@ -6,10 +6,6 @@ For an introducton to the tool, please visit the [documentation website](https:/
 
 See the [dedicated page](https://github.com/marcosecchi/ai-brain-graph-for-corgi/blob/master/RELEASE.md).
 
-## Documentation
-
-Tool documentation can be found on the [project Wiki](https://github.com/marcosecchi/ai-brain-graph-for-corgi/wiki).
-
 ## Credits
 
 Logo icons by [fjstudio](https://www.flaticon.com/free-icon/binary_2214519) and [Freepik](https://www.flaticon.com/free-icon/centralized-structure_66069).
