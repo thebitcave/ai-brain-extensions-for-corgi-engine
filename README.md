@@ -4,7 +4,7 @@ For an introducton to the tool, please visit the [documentation website](https:/
 
 ## Release Notes
 
-See the [dedicated page](https://github.com/marcosecchi/ai-brain-graph-for-corgi/blob/master/RELEASE.md).
+See the [dedicated page](https://github.com/thebitcave/ai-brain-extensions-for-corgi-engine/releases).
 
 ## Credits
 
