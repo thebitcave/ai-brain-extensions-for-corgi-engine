@@ -1742,9 +1742,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'AIBrain Extensions lets you control AIBrains use random
+  m_Text: 'AIBrain Extensions lets you generate random AIBrains
 
-    AIBrains through a list of brain graphs.
+    through a list of brain graphs.
 
     <color=black>In the following demo level you''ll
 
