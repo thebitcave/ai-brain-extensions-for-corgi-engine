@@ -1,0 +1,404 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5936801067899876798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4813333ead4977a408f315682cbf3a7d, type: 3}
+  m_Name: AI Transition
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 136, y: -56}
+  ports:
+    keys:
+    - decision
+    - input
+    - trueState
+    - falseState
+    values:
+    - _fieldName: decision
+      _node: {fileID: -5936801067899876798}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: 8372730075835475393}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: -5936801067899876798}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: transitions
+        node: {fileID: -1430710823647015978}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: trueState
+      _node: {fileID: -5936801067899876798}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: statesIn
+        node: {fileID: 2959366092925816356}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: falseState
+      _node: {fileID: -5936801067899876798}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+--- !u!114 &-4657480142949341605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4813333ead4977a408f315682cbf3a7d, type: 3}
+  m_Name: AI Transition
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 136, y: 168}
+  ports:
+    keys:
+    - decision
+    - input
+    - trueState
+    - falseState
+    values:
+    - _fieldName: decision
+      _node: {fileID: -4657480142949341605}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: 4443917875146861207}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: -4657480142949341605}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: transitions
+        node: {fileID: 2959366092925816356}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: trueState
+      _node: {fileID: -4657480142949341605}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: statesIn
+        node: {fileID: -1430710823647015978}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: falseState
+      _node: {fileID: -4657480142949341605}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+--- !u!114 &-4296823718039325798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37299c4dce9d31c45b855f087ce31701, type: 3}
+  m_Name: AI Action Jump
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -584, y: 152}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -4296823718039325798}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: 2959366092925816356}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+  numberOfJumps: 1
+--- !u!114 &-1430710823647015978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7644114ceede8c74ca6fd8d3b53d5a23, type: 3}
+  m_Name: Idle
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -136, y: -88}
+  ports:
+    keys:
+    - statesIn
+    - actions
+    - transitions
+    values:
+    - _fieldName: statesIn
+      _node: {fileID: -1430710823647015978}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: trueState
+        node: {fileID: -4657480142949341605}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: actions
+      _node: {fileID: -1430710823647015978}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: 8489240596164278179}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: transitions
+      _node: {fileID: -1430710823647015978}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: -5936801067899876798}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450fa66e8c40ce742892574fb84cf35c, type: 3}
+  m_Name: Rectangle_JumpOnSight
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 8489240596164278179}
+  - {fileID: -1430710823647015978}
+  - {fileID: -5936801067899876798}
+  - {fileID: -4657480142949341605}
+  - {fileID: 8372730075835475393}
+  - {fileID: 2959366092925816356}
+  - {fileID: -4296823718039325798}
+  - {fileID: 4443917875146861207}
+  startingNode: {fileID: 0}
+--- !u!114 &2959366092925816356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7644114ceede8c74ca6fd8d3b53d5a23, type: 3}
+  m_Name: Jump
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -136, y: 184}
+  ports:
+    keys:
+    - statesIn
+    - actions
+    - transitions
+    values:
+    - _fieldName: statesIn
+      _node: {fileID: 2959366092925816356}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: trueState
+        node: {fileID: -5936801067899876798}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: actions
+      _node: {fileID: 2959366092925816356}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: -4296823718039325798}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: transitions
+      _node: {fileID: 2959366092925816356}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: -4657480142949341605}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+--- !u!114 &4443917875146861207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ce06c6410c90814c9cf9cea696aee53, type: 3}
+  m_Name: AI Decision Next Frame
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -248, y: 72}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: 4443917875146861207}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: decision
+        node: {fileID: -4657480142949341605}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+--- !u!114 &8372730075835475393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6860c802acf2f45938fc1f450ed092cd, type: 3}
+  m_Name: AI Decision Detect Target Line
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -232, y: -360}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: 8372730075835475393}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: decision
+        node: {fileID: -5936801067899876798}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+  detectMethod: 1
+  detectionDirection: 0
+  rayWidth: 0.5
+  detectionDistance: 5
+  detectionOriginOffset: {x: 0, y: 0, z: 0}
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  obstaclesLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!114 &8489240596164278179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70eb93fbdc775024a93e22c0c8ea2f07, type: 3}
+  m_Name: AI Action Do Nothing
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -568, y: -168}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: 8489240596164278179}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: -1430710823647015978}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
