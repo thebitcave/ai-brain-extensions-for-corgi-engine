@@ -36,12 +36,12 @@ GameObject:
   - component: {fileID: 1209759758508325474}
   - component: {fileID: 7550714349284914651}
   - component: {fileID: 1124398474578768828}
-  - component: {fileID: 3785159407655479982}
-  - component: {fileID: 8479892146152241659}
-  - component: {fileID: 2729070756423868073}
-  - component: {fileID: 5450725896851209852}
-  - component: {fileID: 2921463525460157559}
-  - component: {fileID: 7380059489452051182}
+  - component: {fileID: 4473349708766550202}
+  - component: {fileID: 4613010660875749250}
+  - component: {fileID: 4622585839031684258}
+  - component: {fileID: 6519828216721273634}
+  - component: {fileID: 4838133359226051954}
+  - component: {fileID: 2194054613023006084}
   m_Layer: 13
   m_Name: Rectangle_Master
   m_TagString: Player
@@ -860,9 +860,7 @@ MonoBehaviour:
   actionsFrequency: 0
   decisionFrequency: 0
   generateDebugBrain: 0
-  generateSlaveBrain: 0
-  slaveChannelName: 
---- !u!114 &3785159407655479982
+--- !u!114 &4473349708766550202
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -875,7 +873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
---- !u!114 &8479892146152241659
+--- !u!114 &4613010660875749250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -888,9 +886,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
-  ChannelName: channel_1
+  Channel: {fileID: 11400000, guid: 501867208ccdca34485127f1382809aa, type: 2}
   StateName: Seeking
---- !u!114 &2729070756423868073
+--- !u!114 &4622585839031684258
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -904,7 +902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: 
   NumberOfJumps: 1
---- !u!114 &5450725896851209852
+--- !u!114 &6519828216721273634
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -917,7 +915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
---- !u!114 &2921463525460157559
+--- !u!114 &4838133359226051954
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -941,7 +939,7 @@ MonoBehaviour:
   ObstaclesLayer:
     serializedVersion: 2
     m_Bits: 0
---- !u!114 &7380059489452051182
+--- !u!114 &2194054613023006084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -957,26 +955,26 @@ MonoBehaviour:
   - StateName: Waiting
     Actions:
       array:
-      - {fileID: 3785159407655479982}
+      - {fileID: 4473349708766550202}
     Transitions:
       array:
-      - Decision: {fileID: 2921463525460157559}
+      - Decision: {fileID: 4838133359226051954}
         TrueState: SendingAlert
         FalseState: 
   - StateName: SendingAlert
     Actions:
       array:
-      - {fileID: 8479892146152241659}
-      - {fileID: 2729070756423868073}
+      - {fileID: 4613010660875749250}
+      - {fileID: 4622585839031684258}
     Transitions:
       array:
-      - Decision: {fileID: 5450725896851209852}
+      - Decision: {fileID: 6519828216721273634}
         TrueState: Idle
         FalseState: 
   - StateName: Idle
     Actions:
       array:
-      - {fileID: 3785159407655479982}
+      - {fileID: 4473349708766550202}
     Transitions:
       array: []
   BrainActive: 1

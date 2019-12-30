@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AI Action Do Nothing
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -760, y: -232}
+  position: {x: -536, y: -280}
   ports:
     keys:
     - output
@@ -324,7 +324,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   label: 
-  channelName: channel_1
+  channel: {fileID: 11400000, guid: 501867208ccdca34485127f1382809aa, type: 2}
   stateName: Seeking
 --- !u!114 &6510494111079311769
 MonoBehaviour:

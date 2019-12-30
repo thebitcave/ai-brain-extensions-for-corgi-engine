@@ -4778,15 +4778,15 @@ GameObject:
   - component: {fileID: 59079000191963772}
   - component: {fileID: 8284780843398742326}
   - component: {fileID: 9066455254378914674}
-  - component: {fileID: 4362347936607600517}
-  - component: {fileID: 2964280901833762920}
-  - component: {fileID: 3838139668215322059}
-  - component: {fileID: 5922965001967660687}
-  - component: {fileID: 1499417828207816397}
-  - component: {fileID: 5370761165830551323}
-  - component: {fileID: 5363128277908481990}
-  - component: {fileID: 9017501101224090601}
-  - component: {fileID: 3110660257374905329}
+  - component: {fileID: 3839086513725947901}
+  - component: {fileID: 8957186074928358129}
+  - component: {fileID: 3135608291050256122}
+  - component: {fileID: 2926019306585381190}
+  - component: {fileID: 5375863452710846172}
+  - component: {fileID: 1280287384459717376}
+  - component: {fileID: 6097712304209660441}
+  - component: {fileID: 2950120635647798179}
+  - component: {fileID: 6597490932510528678}
   m_Layer: 13
   m_Name: Rectangle_HiveMind
   m_TagString: Player
@@ -5602,9 +5602,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AbilityFeedbacks: {fileID: 8273031717109033}
-  ChannelNames:
-  - channel_2
-  executeSelfSentCommands: 0
+  Channels:
+  - {fileID: 11400000, guid: 45faf52e2c579f2479ad05cda48d043d, type: 2}
+  ExecuteSelfSentCommands: 0
 --- !u!114 &9066455254378914674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5622,7 +5622,7 @@ MonoBehaviour:
   actionsFrequency: 0
   decisionFrequency: 0
   generateDebugBrain: 0
---- !u!114 &4362347936607600517
+--- !u!114 &3839086513725947901
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5636,7 +5636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: 
   MinimumDistance: 1
---- !u!114 &2964280901833762920
+--- !u!114 &8957186074928358129
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5653,7 +5653,7 @@ MonoBehaviour:
   AvoidFalling: 1
   HoleDetectionOffset: {x: 0, y: 0, z: 0}
   HoleDetectionRaycastLength: 1
---- !u!114 &3838139668215322059
+--- !u!114 &3135608291050256122
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5673,7 +5673,7 @@ MonoBehaviour:
   BoundsMethod: 0
   BoundsExtentsLeft: 0
   BoundsExtentsRight: 3
---- !u!114 &5922965001967660687
+--- !u!114 &2926019306585381190
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5686,9 +5686,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
-  ChannelName: channel_2
+  Channel: {fileID: 11400000, guid: 45faf52e2c579f2479ad05cda48d043d, type: 2}
   StateName: Seeking
---- !u!114 &1499417828207816397
+--- !u!114 &5375863452710846172
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5702,7 +5702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: 
   NumberOfJumps: 1
---- !u!114 &5370761165830551323
+--- !u!114 &1280287384459717376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5715,7 +5715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
---- !u!114 &5363128277908481990
+--- !u!114 &6097712304209660441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5733,7 +5733,7 @@ MonoBehaviour:
   TargetLayer:
     serializedVersion: 2
     m_Bits: 512
---- !u!114 &9017501101224090601
+--- !u!114 &2950120635647798179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5746,7 +5746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
---- !u!114 &3110660257374905329
+--- !u!114 &6597490932510528678
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5762,32 +5762,32 @@ MonoBehaviour:
   - StateName: Patrolling
     Actions:
       array:
-      - {fileID: 3838139668215322059}
+      - {fileID: 3135608291050256122}
     Transitions:
       array:
-      - Decision: {fileID: 5363128277908481990}
+      - Decision: {fileID: 6097712304209660441}
         TrueState: Alerted
         FalseState: 
   - StateName: Seeking
     Actions:
       array:
-      - {fileID: 1499417828207816397}
-      - {fileID: 4362347936607600517}
+      - {fileID: 5375863452710846172}
+      - {fileID: 3839086513725947901}
     Transitions:
       array: []
   - StateName: Alerted
     Actions:
       array:
-      - {fileID: 5922965001967660687}
+      - {fileID: 2926019306585381190}
     Transitions:
       array:
-      - Decision: {fileID: 9017501101224090601}
+      - Decision: {fileID: 2950120635647798179}
         TrueState: Disabled
         FalseState: 
   - StateName: Disabled
     Actions:
       array:
-      - {fileID: 5370761165830551323}
+      - {fileID: 1280287384459717376}
     Transitions:
       array: []
   BrainActive: 1

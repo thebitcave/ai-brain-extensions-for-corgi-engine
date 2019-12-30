@@ -31,7 +31,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   label: 
-  channelName: channel_2
+  channel: {fileID: 11400000, guid: 45faf52e2c579f2479ad05cda48d043d, type: 2}
   stateName: Seeking
 --- !u!114 &-6377309558421130708
 MonoBehaviour:

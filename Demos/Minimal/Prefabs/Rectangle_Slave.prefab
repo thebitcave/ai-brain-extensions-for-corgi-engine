@@ -918,8 +918,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AbilityFeedbacks: {fileID: 7355118128094205198}
-  ChannelNames:
-  - channel_1
+  Channels:
+  - {fileID: 11400000, guid: 501867208ccdca34485127f1382809aa, type: 2}
+  ExecuteSelfSentCommands: 0
 --- !u!114 &1300276446067796219
 MonoBehaviour:
   m_ObjectHideFlags: 0
