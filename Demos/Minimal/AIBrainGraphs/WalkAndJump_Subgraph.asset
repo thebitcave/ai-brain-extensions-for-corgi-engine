@@ -62,6 +62,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  canTransitionToSelf: 1
 --- !u!114 &-7263882574273819775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,3 +466,4 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  canTransitionToSelf: 1
