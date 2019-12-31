@@ -10,12 +10,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         private SerializedProperty _totalChance;
         private SerializedProperty _odds;
         
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-            
-            if (CollapseNodeOn) return;
-
             _totalChance = serializedObject.FindProperty("totalChance");
             _odds = serializedObject.FindProperty("odds");
 

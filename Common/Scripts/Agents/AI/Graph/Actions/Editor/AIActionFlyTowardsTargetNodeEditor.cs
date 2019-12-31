@@ -11,12 +11,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
 
         private AIActionFlyTowardsTargetNode _node;
         
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-
-            if (CollapseNodeOn) return;
-
             _minimumDistance = serializedObject.FindProperty("minimumDistance");
 
             serializedObject.Update();

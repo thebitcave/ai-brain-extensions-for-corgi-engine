@@ -16,12 +16,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         private SerializedProperty _targetLayer;
         private SerializedProperty _obstaclesLayer;
 
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-            
-            if (CollapseNodeOn) return;
-
             _detectMethod = serializedObject.FindProperty("detectMethod");
             _detectionDirection = serializedObject.FindProperty("detectionDirection");
             _rayWidth = serializedObject.FindProperty("rayWidth");

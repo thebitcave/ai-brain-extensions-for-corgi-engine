@@ -9,12 +9,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
     {
         private SerializedProperty _numberOfJumps;
 
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-            
-            if (CollapseNodeOn) return;
-
             _numberOfJumps = serializedObject.FindProperty("numberOfJumps");
 
             serializedObject.Update();

@@ -12,12 +12,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         private SerializedProperty _holeDetectionOffset;
         private SerializedProperty _holeDetectionRaycastLength;
         
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-
-            if (CollapseNodeOn) return;
-
             _changeDirectionOnWall = serializedObject.FindProperty("changeDirectionOnWall");
             _avoidFalling = serializedObject.FindProperty("avoidFalling");
             _holeDetectionOffset = serializedObject.FindProperty("holeDetectionOffset");

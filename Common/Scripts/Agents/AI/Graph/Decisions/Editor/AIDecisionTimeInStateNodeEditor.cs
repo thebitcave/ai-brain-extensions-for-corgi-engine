@@ -10,12 +10,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         private SerializedProperty _afterTimeMin;
         private SerializedProperty _afterTimeMax;
         
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-            
-            if (CollapseNodeOn) return;
-
             _afterTimeMin = serializedObject.FindProperty("afterTimeMin");
             _afterTimeMax = serializedObject.FindProperty("afterTimeMax");
 

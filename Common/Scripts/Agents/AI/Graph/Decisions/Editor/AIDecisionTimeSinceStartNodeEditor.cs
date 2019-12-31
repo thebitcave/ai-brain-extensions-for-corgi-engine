@@ -9,12 +9,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
     {
         private SerializedProperty _afterTime;
         
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-            
-            if (CollapseNodeOn) return;
-
             _afterTime = serializedObject.FindProperty("afterTime");
 
             serializedObject.Update();

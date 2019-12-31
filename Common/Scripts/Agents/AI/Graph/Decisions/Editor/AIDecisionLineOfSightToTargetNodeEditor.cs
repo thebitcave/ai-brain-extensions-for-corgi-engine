@@ -10,12 +10,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         private SerializedProperty _obstacleLayerMask;
         private SerializedProperty _lineOfSightOffset;
         
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-            
-            if (CollapseNodeOn) return;
-
             _obstacleLayerMask = serializedObject.FindProperty("obstacleLayerMask");
             _lineOfSightOffset = serializedObject.FindProperty("lineOfSightOffset");
 

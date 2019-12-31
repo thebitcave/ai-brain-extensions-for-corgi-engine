@@ -9,12 +9,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
     {
         private SerializedProperty _numberOfHits;
         
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-            
-            if (CollapseNodeOn) return;
-
             _numberOfHits = serializedObject.FindProperty("numberOfHits");
 
             serializedObject.Update();

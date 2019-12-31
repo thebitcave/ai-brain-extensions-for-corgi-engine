@@ -10,12 +10,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         private SerializedProperty _comparisonMode;
         private SerializedProperty _distance;
         
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-            
-            if (CollapseNodeOn) return;
-
             _comparisonMode = serializedObject.FindProperty("comparisonMode");
             _distance = serializedObject.FindProperty("distance");
 

@@ -10,12 +10,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         private SerializedProperty _boundsExtentsLeft;
         private SerializedProperty _boundsExtentsRight;
 
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-
-            if (CollapseNodeOn) return;
-            
             _boundsMethod = serializedObject.FindProperty("boundsMethod");
             _boundsExtentsLeft = serializedObject.FindProperty("boundsExtentsLeft");
             _boundsExtentsRight = serializedObject.FindProperty("boundsExtentsRight");
