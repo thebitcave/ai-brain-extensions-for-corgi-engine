@@ -1,5 +1,6 @@
 ﻿using TheBitCave.MMToolsExtensions.AI.Graph;
 using UnityEditor;
+using UnityEngine;
 using XNodeEditor;
 
 namespace TheBitCave.CorgiExensions.AI.Graph
