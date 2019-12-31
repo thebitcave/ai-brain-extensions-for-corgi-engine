@@ -15,6 +15,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         {
             base.OnBodyGUI();
             
+            if (CollapseNodeOn) return;
+
             _minimumDistance = serializedObject.FindProperty("minimumDistance");
 
             serializedObject.Update();

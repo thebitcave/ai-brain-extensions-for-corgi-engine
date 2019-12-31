@@ -14,6 +14,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         {
             base.OnBodyGUI();
             
+            if (CollapseNodeOn) return;
+
             _obstacleLayerMask = serializedObject.FindProperty("obstacleLayerMask");
             _lineOfSightOffset = serializedObject.FindProperty("lineOfSightOffset");
 

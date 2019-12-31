@@ -19,6 +19,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         {
             base.OnBodyGUI();
             
+            if (CollapseNodeOn) return;
+
             _detectMethod = serializedObject.FindProperty("detectMethod");
             _detectionDirection = serializedObject.FindProperty("detectionDirection");
             _rayWidth = serializedObject.FindProperty("rayWidth");

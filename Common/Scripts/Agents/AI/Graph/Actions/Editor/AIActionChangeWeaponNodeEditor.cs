@@ -13,6 +13,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         {
             base.OnBodyGUI();
             
+            if (CollapseNodeOn) return;
+
             _newWeapon = serializedObject.FindProperty("newWeapon");
 
             serializedObject.Update();

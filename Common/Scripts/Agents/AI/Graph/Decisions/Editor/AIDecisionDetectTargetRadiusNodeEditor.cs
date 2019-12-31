@@ -15,6 +15,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         {
             base.OnBodyGUI();
             
+            if (CollapseNodeOn) return;
+
             _radius = serializedObject.FindProperty("radius");
             _detectionOriginOffset = serializedObject.FindProperty("detectionOriginOffset");
             _targetLayer = serializedObject.FindProperty("targetLayer");

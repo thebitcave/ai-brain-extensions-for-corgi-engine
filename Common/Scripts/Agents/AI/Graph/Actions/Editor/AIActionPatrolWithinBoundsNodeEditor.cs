@@ -14,19 +14,18 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         {
             base.OnBodyGUI();
 
+            if (CollapseNodeOn) return;
+            
             _boundsMethod = serializedObject.FindProperty("boundsMethod");
             _boundsExtentsLeft = serializedObject.FindProperty("boundsExtentsLeft");
             _boundsExtentsRight = serializedObject.FindProperty("boundsExtentsRight");
 
             serializedObject.Update();
-
             EditorGUIUtility.labelWidth = 130;
             NodeEditorGUILayout.PropertyField(_boundsMethod);
             NodeEditorGUILayout.PropertyField(_boundsExtentsLeft);
             NodeEditorGUILayout.PropertyField(_boundsExtentsRight);
             serializedObject.ApplyModifiedProperties();
-            
         }
-
     }
 }

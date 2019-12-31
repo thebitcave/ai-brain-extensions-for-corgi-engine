@@ -15,6 +15,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         {
             base.OnBodyGUI();
             
+            if (CollapseNodeOn) return;
+
             _faceTarget = serializedObject.FindProperty("faceTarget");
             _aimAtTarget = serializedObject.FindProperty("aimAtTarget");
             _targetOffset = serializedObject.FindProperty("targetOffset");

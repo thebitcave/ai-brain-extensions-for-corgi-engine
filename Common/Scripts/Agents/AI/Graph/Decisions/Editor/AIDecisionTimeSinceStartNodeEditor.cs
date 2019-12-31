@@ -13,6 +13,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         {
             base.OnBodyGUI();
             
+            if (CollapseNodeOn) return;
+
             _afterTime = serializedObject.FindProperty("afterTime");
 
             serializedObject.Update();

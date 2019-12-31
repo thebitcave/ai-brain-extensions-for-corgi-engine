@@ -14,6 +14,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         {
             base.OnBodyGUI();
             
+            if (CollapseNodeOn) return;
+
             _afterTimeMin = serializedObject.FindProperty("afterTimeMin");
             _afterTimeMax = serializedObject.FindProperty("afterTimeMax");
 

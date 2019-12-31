@@ -14,6 +14,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         {
             base.OnBodyGUI();
             
+            if (CollapseNodeOn) return;
+
             _totalChance = serializedObject.FindProperty("totalChance");
             _odds = serializedObject.FindProperty("odds");
 

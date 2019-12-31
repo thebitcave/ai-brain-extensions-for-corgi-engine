@@ -15,7 +15,9 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         public override void OnBodyGUI()
         {
             base.OnBodyGUI();
-            
+
+            if (CollapseNodeOn) return;
+
             _changeDirectionOnWall = serializedObject.FindProperty("changeDirectionOnWall");
             _avoidFalling = serializedObject.FindProperty("avoidFalling");
             _holeDetectionOffset = serializedObject.FindProperty("holeDetectionOffset");
