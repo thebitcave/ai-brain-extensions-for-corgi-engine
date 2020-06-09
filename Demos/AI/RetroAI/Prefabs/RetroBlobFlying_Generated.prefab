@@ -61,6 +61,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -295,6 +296,9 @@ MonoBehaviour:
   MidHeightOneWayPlatformMask:
     serializedVersion: 2
     m_Bits: 0
+  StairsMask:
+    serializedVersion: 2
+    m_Bits: 0
   DetachmentMethod: 0
   SafeSetTransform: 0
   StandingOn: {fileID: 0}
@@ -333,6 +337,7 @@ MonoBehaviour:
   DestroyOnDeath: 0
   DelayBeforeDestruction: 0
   CollisionsOffOnDeath: 0
+  GravityOffOnDeath: 0
   PointsWhenDestroyed: 20
   VibrateOnDeath: 0
   RespawnAtInitialLocation: 0
@@ -579,6 +584,7 @@ MonoBehaviour:
   brainActive: 1
   actionsFrequency: 0
   decisionFrequency: 0
+  generateDebugBrain: 0
 --- !u!114 &526697309728444824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -666,6 +672,8 @@ MonoBehaviour:
   - {fileID: 613701493111724084}
   - {fileID: 186912565386241619}
   InitializationMode: 2
+  SafeMode: 3
+  AutoPlayOnStart: 0
   DebugActive: 0
 --- !u!114 &613701493111724084
 MonoBehaviour:
@@ -683,6 +691,7 @@ MonoBehaviour:
   Label: Sound
   Chance: 100
   Timing:
+    TimescaleMode: 0
     InitialDelay: 0
     CooldownDuration: 0
     NumberOfRepeats: 0
@@ -695,6 +704,8 @@ MonoBehaviour:
   DebugActive: 0
   Sfx: {fileID: 8300000, guid: fc6a8ed8f767ee7449dc2f51593060a7, type: 3}
   RandomSfx: []
+  TestButton: 0
+  TestStopButton: 0
   PlayMethod: 0
   PoolSize: 10
   MinVolume: 1
@@ -718,6 +729,7 @@ MonoBehaviour:
   Label: Particles Instantiation
   Chance: 100
   Timing:
+    TimescaleMode: 0
     InitialDelay: 0
     CooldownDuration: 0
     NumberOfRepeats: 0
@@ -732,7 +744,11 @@ MonoBehaviour:
   CachedRecycle: 1
   ParticlesPrefab: {fileID: 1943100569875918647, guid: dc68fd5bceccc3c41b664794951b0871,
     type: 3}
+  RandomParticlePrefabs: []
+  PositionMode: 0
   InstantiateParticlesPosition: {fileID: 0}
+  TargetWorldPosition: {x: 0, y: 0, z: 0}
+  Offset: {x: 0, y: 0, z: 0}
   NestParticles: 0
 --- !u!1 &6964059535302560320
 GameObject:
@@ -781,6 +797,8 @@ MonoBehaviour:
   Feedbacks:
   - {fileID: 6805314206960373027}
   InitializationMode: 2
+  SafeMode: 3
+  AutoPlayOnStart: 0
   DebugActive: 0
 --- !u!114 &6805314206960373027
 MonoBehaviour:
@@ -798,6 +816,7 @@ MonoBehaviour:
   Label: Particles Instantiation
   Chance: 100
   Timing:
+    TimescaleMode: 0
     InitialDelay: 0
     CooldownDuration: 0
     NumberOfRepeats: 0
@@ -812,5 +831,9 @@ MonoBehaviour:
   CachedRecycle: 1
   ParticlesPrefab: {fileID: 56417129436140594, guid: 5145d411f6c901b4886c1eca0d48e855,
     type: 3}
+  RandomParticlePrefabs: []
+  PositionMode: 0
   InstantiateParticlesPosition: {fileID: 0}
+  TargetWorldPosition: {x: 0, y: 0, z: 0}
+  Offset: {x: 0, y: 0, z: 0}
   NestParticles: 0

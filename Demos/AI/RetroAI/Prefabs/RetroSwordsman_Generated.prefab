@@ -47,6 +47,8 @@ MonoBehaviour:
   Feedbacks:
   - {fileID: 692544010976374096}
   InitializationMode: 2
+  SafeMode: 3
+  AutoPlayOnStart: 0
   DebugActive: 0
 --- !u!114 &692544010976374096
 MonoBehaviour:
@@ -64,6 +66,7 @@ MonoBehaviour:
   Label: Particles Instantiation
   Chance: 100
   Timing:
+    TimescaleMode: 0
     InitialDelay: 0
     CooldownDuration: 0
     NumberOfRepeats: 0
@@ -78,7 +81,11 @@ MonoBehaviour:
   CachedRecycle: 1
   ParticlesPrefab: {fileID: 4593960309232490048, guid: b79fb00a22e3d2d4b8d056ce0b2395ea,
     type: 3}
+  RandomParticlePrefabs: []
+  PositionMode: 0
   InstantiateParticlesPosition: {fileID: 0}
+  TargetWorldPosition: {x: 0, y: 0, z: 0}
+  Offset: {x: 0, y: 0, z: 0}
   NestParticles: 0
 --- !u!1 &3167958855903574966
 GameObject:
@@ -129,6 +136,8 @@ MonoBehaviour:
   - {fileID: 6495559156050518895}
   - {fileID: 431040498848781313}
   InitializationMode: 2
+  SafeMode: 3
+  AutoPlayOnStart: 0
   DebugActive: 0
 --- !u!114 &6495559156050518895
 MonoBehaviour:
@@ -146,6 +155,7 @@ MonoBehaviour:
   Label: Sound
   Chance: 100
   Timing:
+    TimescaleMode: 0
     InitialDelay: 0
     CooldownDuration: 0
     NumberOfRepeats: 0
@@ -158,6 +168,8 @@ MonoBehaviour:
   DebugActive: 0
   Sfx: {fileID: 8300000, guid: fc6a8ed8f767ee7449dc2f51593060a7, type: 3}
   RandomSfx: []
+  TestButton: 0
+  TestStopButton: 0
   PlayMethod: 0
   PoolSize: 10
   MinVolume: 1
@@ -181,6 +193,7 @@ MonoBehaviour:
   Label: Particles Instantiation
   Chance: 100
   Timing:
+    TimescaleMode: 0
     InitialDelay: 0
     CooldownDuration: 0
     NumberOfRepeats: 0
@@ -195,7 +208,11 @@ MonoBehaviour:
   CachedRecycle: 1
   ParticlesPrefab: {fileID: 1943100569875918647, guid: dc68fd5bceccc3c41b664794951b0871,
     type: 3}
+  RandomParticlePrefabs: []
+  PositionMode: 0
   InstantiateParticlesPosition: {fileID: 0}
+  TargetWorldPosition: {x: 0, y: 0, z: 0}
+  Offset: {x: 0, y: 0, z: 0}
   NestParticles: 0
 --- !u!1 &3702341567685818393
 GameObject:
@@ -427,6 +444,9 @@ MonoBehaviour:
   MidHeightOneWayPlatformMask:
     serializedVersion: 2
     m_Bits: 0
+  StairsMask:
+    serializedVersion: 2
+    m_Bits: 0
   DetachmentMethod: 0
   SafeSetTransform: 0
   StandingOn: {fileID: 0}
@@ -465,6 +485,7 @@ MonoBehaviour:
   DestroyOnDeath: 1
   DelayBeforeDestruction: 0
   CollisionsOffOnDeath: 0
+  GravityOffOnDeath: 0
   PointsWhenDestroyed: 20
   VibrateOnDeath: 0
   RespawnAtInitialLocation: 0
@@ -676,9 +697,15 @@ MonoBehaviour:
   WalkSpeed: 6
   MovementSpeedMultiplier: 1
   PushSpeedMultiplier: 1
+  StateSpeedMultiplier: 1
+  ReadInput: 1
   InstantAcceleration: 0
   InputThreshold: 0.1
+  AirControl: 1
+  AllowFlipInTheAir: 1
   TouchTheGroundFeedback: {fileID: 0}
+  MinimumAirTimeBeforeFeedback: 0.2
+  StopWalkingWhenCollidingWithAWall: 0
 --- !u!114 &3671355530288114585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,6 +726,7 @@ MonoBehaviour:
   JumpRestrictions: 1
   JumpTimeWindow: 0
   ResetCameraOffsetOnJump: 0
+  CanJumpDownOneWayPlatforms: 1
   JumpIsProportionalToThePressTime: 1
   JumpMinimumAirTime: 0.1
   JumpReleaseForceFactor: 2
@@ -725,9 +753,12 @@ MonoBehaviour:
     type: 3}
   CanPickupWeapons: 1
   WeaponAttachment: {fileID: 0}
+  ForceWeaponScaleResetOnEquip: 0
   AutomaticallyBindAnimator: 1
+  AmmoDisplayID: 0
   ContinuousPress: 0
   GettingHitInterruptsAttack: 0
+  CanShootFromLadders: 0
   BufferInput: 0
   NewInputExtendsBuffer: 0
   MaximumBufferDuration: 0.25
@@ -748,6 +779,7 @@ MonoBehaviour:
   brainActive: 1
   actionsFrequency: 0
   decisionFrequency: 0
+  generateDebugBrain: 0
 --- !u!114 &3702341567685818850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -896,6 +928,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
