@@ -20,6 +20,5 @@ namespace TheBitCave.CorgiExensions.AI.Graph
             action.NewAIBrain = newAIBrain;
             return action;
         }
-
     }
 }
