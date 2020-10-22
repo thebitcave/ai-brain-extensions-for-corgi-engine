@@ -79,6 +79,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -108,7 +109,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.56, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -151,7 +152,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.56, y: 2.56}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 2.56, y: 2.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -244,6 +245,9 @@ MonoBehaviour:
   MidHeightOneWayPlatformMask:
     serializedVersion: 2
     m_Bits: 67108864
+  StairsMask:
+    serializedVersion: 2
+    m_Bits: 0
   DetachmentMethod: 1
   SafeSetTransform: 0
   StandingOn: {fileID: 0}
@@ -295,6 +299,7 @@ MonoBehaviour:
   CharacterModel: {fileID: 0}
   CameraTarget: {fileID: 0}
   CameraTargetSpeed: 5
+  AdditionalAbilityNodes: []
   FlipModelOnDirectionChange: 1
   ModelFlipValue: {x: -1, y: 1, z: 1}
   RotateModelOnDirectionChange: 0
@@ -303,6 +308,7 @@ MonoBehaviour:
   SendStateChangeEvents: 1
   SendStateUpdateEvents: 1
   AirborneDistance: 0.5
+  CharacterBrain: {fileID: 0}
 --- !u!114 &1251584956428156190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,12 +324,22 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
   WalkSpeed: 6
   MovementSpeedMultiplier: 1
   PushSpeedMultiplier: 1
+  StateSpeedMultiplier: 1
+  FlipCharacterToFaceDirection: 1
+  ReadInput: 1
   InstantAcceleration: 0
   InputThreshold: 0.1
+  AirControl: 1
+  AllowFlipInTheAir: 1
+  ActiveAfterDeath: 0
   TouchTheGroundFeedback: {fileID: 0}
+  MinimumAirTimeBeforeFeedback: 0.2
+  StopWalkingWhenCollidingWithAWall: 0
 --- !u!114 &1251584956428125284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,10 +355,13 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
   CrawlAuthorized: 1
   CrawlSpeed: 4
   ResizeColliderWhenCrouched: 1
   CrouchedBoxColliderSize: {x: 1, y: 1}
+  CanCrouchWhileMoving: 1
   InATunnel: 0
   MoveCameraTarget: 1
   CameraTargetOffset: {x: 0, y: -3, z: 0}
@@ -361,6 +380,8 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
   DashDistance: 5
   DashForce: 35
   ResetForcesOnExit: 0
@@ -369,10 +390,16 @@ MonoBehaviour:
     RotationMode: 0
     MinimumAngle: -180
     MaximumAngle: 180
+    CurrentAngle: 0
   MinimumInputThreshold: 0.1
   FlipCharacterIfNeeded: 1
   AutoCorrectTrajectory: 1
   DashCooldown: 1
+  LimitedDashes: 0
+  SuccessiveDashAmount: 1
+  SuccessiveDashesLeft: 1
+  SuccessiveDashResetMethod: 0
+  SuccessiveDashResetDuration: 2
 --- !u!114 &1251584956428142872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,6 +415,8 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
   ShakeParameters: {x: 1.5, y: 0.5, z: 1}
   DiveAcceleration: 2
 --- !u!114 &1251584956428186346
@@ -405,6 +434,8 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
   DanglingRaycastOrigin: {x: 0.7, y: 0.2, z: 0}
   DanglingRaycastLength: 2
 --- !u!114 &1251584956428179990
@@ -422,11 +453,14 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
   NumberOfJumps: 3
   JumpHeight: 1
   JumpRestrictions: 2
   JumpTimeWindow: 0
   ResetCameraOffsetOnJump: 0
+  CanJumpDownOneWayPlatforms: 1
   JumpIsProportionalToThePressTime: 1
   JumpMinimumAirTime: 0.2
   JumpReleaseForceFactor: 2
@@ -449,7 +483,10 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
   RunSpeed: 12
+  ReadInput: 1
 --- !u!114 &1251584956428147526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,6 +502,8 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
   MovingPlatformsJumpCollisionOffDuration: 0.05
   ParticleEmitter: {fileID: 1251584956453293392}
   JetpackForce: 2.5
@@ -489,6 +528,8 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
   HorizontalInputThreshold: 0.5
   MoveCameraTarget: 1
   CameraTargetOffset: {x: 0, y: 6, z: 0}
@@ -507,6 +548,8 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
   BufferDurationAfterGrip: 0.3
 --- !u!114 &1251584956428103358
 MonoBehaviour:
@@ -523,6 +566,8 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
   WallClingingSlowFactor: 0.6
   RaycastVerticalOffset: 0
   WallClingingTolerance: 0.3
@@ -542,8 +587,11 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
   WallJumpForce: {x: 10, y: 4}
   ShouldReduceNumberOfJumpsLeft: 1
+  ForceMode: 0
 --- !u!114 &1251584956428134602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -559,6 +607,8 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
   LadderClimbingSpeed: 2
   ForceRightFacing: 0
 --- !u!114 &1210209930388113522
@@ -576,6 +626,8 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
   ButtonBased: 0
   CanPush: 1
   CanPull: 1
@@ -601,14 +653,17 @@ MonoBehaviour:
   Invulnerable: 0
   DamageFeedbacks: {fileID: 0}
   FlickerSpriteOnHit: 1
+  FlickerColor: {r: 1, g: 0.078431375, b: 0.078431375, a: 1}
   ImmuneToKnockback: 0
   DeathFeedbacks: {fileID: 0}
   DestroyOnDeath: 1
   DelayBeforeDestruction: 0
   CollisionsOffOnDeath: 0
+  GravityOffOnDeath: 0
   PointsWhenDestroyed: 0
   VibrateOnDeath: 1
   RespawnAtInitialLocation: 0
+  ApplyDeathForce: 1
   DeathForce: {x: 0, y: 0}
   ResetForcesOnDeath: 0
 --- !u!114 &1209314078328601390
@@ -786,6 +841,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   FollowTargetMode: 2
+  NestDrawnHealthBar: 0
   InstantiatedOnDeath: {fileID: 0}
   HealthBarOffset: {x: 0, y: 0.5, z: 0}
   AlwaysVisible: 0
@@ -824,6 +880,8 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
   InWater: 0
   SwimHeight: 3.025
   SwimAnimationDuration: 0.8
@@ -980,6 +1038,7 @@ MonoBehaviour:
   BrainActive: 1
   TimeInThisState: 0
   Target: {fileID: 0}
+  _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
   ActionsFrequency: 0
   DecisionFrequency: 0
 --- !u!1 &1251584956437879546
@@ -5597,6 +5656,7 @@ ParticleSystemRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5692,6 +5752,8 @@ MonoBehaviour:
   Feedbacks:
   - {fileID: 8520463786888325912}
   InitializationMode: 2
+  SafeMode: 3
+  AutoPlayOnStart: 0
   DebugActive: 0
 --- !u!114 &8520463786888325912
 MonoBehaviour:
@@ -5709,6 +5771,7 @@ MonoBehaviour:
   Label: Flicker
   Chance: 100
   Timing:
+    TimescaleMode: 0
     InitialDelay: 0
     CooldownDuration: 0
     NumberOfRepeats: 0
@@ -5720,6 +5783,8 @@ MonoBehaviour:
     TargetBPM: 120
   DebugActive: 0
   BoundRenderer: {fileID: 1251584956458974112}
+  Mode: 0
+  PropertyName: _Tint
   FlickerDuration: 0.2
   FlickerOctave: 0.04
   FlickerColor: {r: 0, g: 0.4599332, b: 0.7924528, a: 1}

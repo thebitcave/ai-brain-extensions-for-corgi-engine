@@ -23,6 +23,5 @@ namespace TheBitCave.CorgiExensions.AI.Graph
             NodeEditorGUILayout.PropertyField(_targetOffset);
             serializedObject.ApplyModifiedProperties();
         }
-
     }
 }
