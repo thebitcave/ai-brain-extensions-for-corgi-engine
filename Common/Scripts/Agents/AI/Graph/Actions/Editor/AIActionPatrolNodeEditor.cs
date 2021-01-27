@@ -12,6 +12,11 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         private SerializedProperty _holeDetectionOffset;
         private SerializedProperty _holeDetectionRaycastLength;
         
+        private SerializedProperty _useCustomLayermask;
+        private SerializedProperty _obstaclesLayermask;
+        private SerializedProperty _obstaclesDetectionRaycastLength;
+        private SerializedProperty _obstaclesDetectionRaycastOrigin;
+        
         protected override void SerializeAdditionalProperties()
         {
             _changeDirectionOnWall = serializedObject.FindProperty("changeDirectionOnWall");
@@ -19,12 +24,27 @@ namespace TheBitCave.CorgiExensions.AI.Graph
             _holeDetectionOffset = serializedObject.FindProperty("holeDetectionOffset");
             _holeDetectionRaycastLength = serializedObject.FindProperty("holeDetectionRaycastLength");
 
+            _useCustomLayermask = serializedObject.FindProperty("useCustomLayermask");
+            _obstaclesLayermask = serializedObject.FindProperty("obstaclesLayermask");
+            _obstaclesDetectionRaycastLength = serializedObject.FindProperty("obstaclesDetectionRaycastLength");
+            _obstaclesDetectionRaycastOrigin = serializedObject.FindProperty("obstaclesDetectionRaycastOrigin");
+
             serializedObject.Update();
             EditorGUIUtility.labelWidth = 180;
             NodeEditorGUILayout.PropertyField(_changeDirectionOnWall);
             NodeEditorGUILayout.PropertyField(_avoidFalling);
             NodeEditorGUILayout.PropertyField(_holeDetectionOffset);
             NodeEditorGUILayout.PropertyField(_holeDetectionRaycastLength);
+            NodeEditorGUILayout.PropertyField(_useCustomLayermask);
+
+            if (_useCustomLayermask.boolValue)
+            {
+                EditorGUIUtility.labelWidth = 130;
+                NodeEditorGUILayout.PropertyField(_obstaclesLayermask);
+                EditorGUIUtility.labelWidth = 170;
+                NodeEditorGUILayout.PropertyField(_obstaclesDetectionRaycastLength);
+                NodeEditorGUILayout.PropertyField(_obstaclesDetectionRaycastOrigin);
+            }
             serializedObject.ApplyModifiedProperties();
             
         }

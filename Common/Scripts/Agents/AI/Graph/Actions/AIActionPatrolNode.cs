@@ -18,6 +18,12 @@ namespace TheBitCave.CorgiExensions.AI.Graph
 		public Vector3 holeDetectionOffset = new Vector3(0, 0, 0);
 		public float holeDetectionRaycastLength = 1f;
 
+		public bool useCustomLayermask = false;
+		
+		public LayerMask obstaclesLayermask = LayerManager.ObstaclesLayerMask;
+		public float obstaclesDetectionRaycastLength = 0.5f;
+		public Vector2 obstaclesDetectionRaycastOrigin = new Vector2(0.5f, 0f);
+
 		public override AIAction AddActionComponent(GameObject go)
 		{
 			var action = go.AddComponent<AIActionPatrol>();
@@ -26,6 +32,11 @@ namespace TheBitCave.CorgiExensions.AI.Graph
 			action.AvoidFalling = avoidFalling;
 			action.HoleDetectionOffset = holeDetectionOffset;
 			action.HoleDetectionRaycastLength = holeDetectionRaycastLength;
+
+			action.UseCustomLayermask = useCustomLayermask;
+			action.ObstaclesLayermask = obstaclesLayermask;
+			action.ObstaclesDetectionRaycastLength = obstaclesDetectionRaycastLength;
+			action.ObstaclesDetectionRaycastOrigin = obstaclesDetectionRaycastOrigin;
 			return action;
 		}
 	}

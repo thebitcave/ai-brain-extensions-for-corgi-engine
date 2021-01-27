@@ -12,7 +12,6 @@ namespace TheBitCave.CorgiExensions.AI.Graph
 	[CreateNodeMenu("AI/Action/Do Nothing")]
 	public class AIActionDoNothingNode : AIActionNode
 	{
-
 		public override AIAction AddActionComponent(GameObject go)
 		{
 			var action = go.AddComponent<AIActionDoNothing>();
@@ -21,5 +20,4 @@ namespace TheBitCave.CorgiExensions.AI.Graph
 		}
 
 	}
-	
 }
