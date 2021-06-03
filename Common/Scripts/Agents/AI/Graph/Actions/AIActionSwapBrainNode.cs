@@ -12,12 +12,14 @@ namespace TheBitCave.CorgiExensions.AI.Graph
     public class AIActionSwapBrainNode : AIActionNode
     {
         public AIBrain newAIBrain;
-        
+        public bool keepTarget = false;
+
         public override AIAction AddActionComponent(GameObject go)
         {
             var action = go.AddComponent<AIActionSwapBrain>();
             action.Label = label;
             action.NewAIBrain = newAIBrain;
+            action.KeepTarget = keepTarget;
             return action;
         }
     }
