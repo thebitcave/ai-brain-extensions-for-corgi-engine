@@ -23,6 +23,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
 		public LayerMask obstaclesLayermask = LayerManager.ObstaclesLayerMask;
 		public float obstaclesDetectionRaycastLength = 0.5f;
 		public Vector2 obstaclesDetectionRaycastOrigin = new Vector2(0.5f, 0f);
+		
+		public bool resetPositionOnDeath = true;
 
 		public override AIAction AddActionComponent(GameObject go)
 		{
@@ -37,6 +39,9 @@ namespace TheBitCave.CorgiExensions.AI.Graph
 			action.ObstaclesLayermask = obstaclesLayermask;
 			action.ObstaclesDetectionRaycastLength = obstaclesDetectionRaycastLength;
 			action.ObstaclesDetectionRaycastOrigin = obstaclesDetectionRaycastOrigin;
+
+			action.ResetPositionOnDeath = resetPositionOnDeath;
+			
 			return action;
 		}
 	}

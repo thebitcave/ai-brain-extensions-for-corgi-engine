@@ -17,6 +17,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         private SerializedProperty _obstaclesDetectionRaycastLength;
         private SerializedProperty _obstaclesDetectionRaycastOrigin;
         
+        private SerializedProperty _resetPositionOnDeath;
+
         protected override void SerializeAdditionalProperties()
         {
             _changeDirectionOnWall = serializedObject.FindProperty("changeDirectionOnWall");
@@ -28,6 +30,8 @@ namespace TheBitCave.CorgiExensions.AI.Graph
             _obstaclesLayermask = serializedObject.FindProperty("obstaclesLayermask");
             _obstaclesDetectionRaycastLength = serializedObject.FindProperty("obstaclesDetectionRaycastLength");
             _obstaclesDetectionRaycastOrigin = serializedObject.FindProperty("obstaclesDetectionRaycastOrigin");
+            
+            _resetPositionOnDeath = serializedObject.FindProperty("resetPositionOnDeath");
 
             serializedObject.Update();
             EditorGUIUtility.labelWidth = 180;
@@ -45,6 +49,9 @@ namespace TheBitCave.CorgiExensions.AI.Graph
                 NodeEditorGUILayout.PropertyField(_obstaclesDetectionRaycastLength);
                 NodeEditorGUILayout.PropertyField(_obstaclesDetectionRaycastOrigin);
             }
+            
+            NodeEditorGUILayout.PropertyField(_resetPositionOnDeath);
+
             serializedObject.ApplyModifiedProperties();
             
         }

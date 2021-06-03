@@ -16,10 +16,14 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         [Header("Obstacle Detection")]
         public bool changeDirectionOnObstacle = true;
 
+        public bool resetPositionOnDeath = true;
+
         public override AIAction AddActionComponent(GameObject go)
         {
             var action = go.AddComponent<AIActionFlyPatrol>();
             action.ChangeDirectionOnObstacle = changeDirectionOnObstacle;
+            action.ResetPositionOnDeath = resetPositionOnDeath;
+
             action.Label = label;
             return action;
         }
