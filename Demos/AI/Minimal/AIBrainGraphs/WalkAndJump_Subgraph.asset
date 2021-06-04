@@ -384,6 +384,7 @@ MonoBehaviour:
     m_Bits: 264448
   obstaclesDetectionRaycastLength: 0.5
   obstaclesDetectionRaycastOrigin: {x: 0.5, y: 0}
+  resetPositionOnDeath: 1
 --- !u!114 &7577509894642055444
 MonoBehaviour:
   m_ObjectHideFlags: 0
