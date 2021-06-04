@@ -14,7 +14,7 @@ namespace TheBitCave.CorgiExensions.AI.Graph
     {
         public override AIDecision AddDecisionComponent(GameObject go)
         {
-            var decision = go.AddComponent<AIDecisionDistanceToTarget>();
+            var decision = go.AddComponent<AIDecisionReloadNeeded>();
             decision.Label = label;
             return decision;
         }
