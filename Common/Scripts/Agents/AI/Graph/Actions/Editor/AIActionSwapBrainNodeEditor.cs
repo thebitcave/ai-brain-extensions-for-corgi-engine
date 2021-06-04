@@ -13,7 +13,7 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         protected override void SerializeAdditionalProperties()
         {
             _newAIBrain = serializedObject.FindProperty("newAIBrain");
-            _newAIBrain = serializedObject.FindProperty("keepTarget");
+            _keepTarget = serializedObject.FindProperty("keepTarget");
 
             serializedObject.Update();
             NodeEditorGUILayout.PropertyField(_newAIBrain);
@@ -21,4 +21,4 @@ namespace TheBitCave.CorgiExensions.AI.Graph
             serializedObject.ApplyModifiedProperties();
         }
     }
-}
+} 
