@@ -17,6 +17,7 @@ namespace TheBitCave.CorgiExensions.AI.Graph
 
             serializedObject.Update();
             NodeEditorGUILayout.PropertyField(_targetFeedbacks);
+            EditorGUIUtility.labelWidth = 200;
             NodeEditorGUILayout.PropertyField(_onlyPlayWhenEnteringState);
             serializedObject.ApplyModifiedProperties();
         }
