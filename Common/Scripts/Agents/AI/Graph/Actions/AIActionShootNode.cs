@@ -14,6 +14,7 @@ namespace TheBitCave.CorgiExensions.AI.Graph
         public bool faceTarget = true;
         public bool aimAtTarget = false;
         public Vector3 targetOffset = Vector3.zero;
+        public CharacterHandleWeapon targetHandleWeapon;
 
         public override AIAction AddActionComponent(GameObject go)
         {
@@ -22,6 +23,7 @@ namespace TheBitCave.CorgiExensions.AI.Graph
             action.FaceTarget = faceTarget;
             action.AimAtTarget = aimAtTarget;
             action.TargetOffset = targetOffset;
+            action.TargetHandleWeapon = targetHandleWeapon;
             return action;
         }
 
