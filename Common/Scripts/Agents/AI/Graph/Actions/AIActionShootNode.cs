@@ -26,6 +26,5 @@ namespace TheBitCave.CorgiExensions.AI.Graph
             action.TargetHandleWeapon = targetHandleWeapon;
             return action;
         }
-
     }
 }
